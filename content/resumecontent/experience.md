@@ -3,20 +3,20 @@ title: Experience
 order: 0
 ---
 
-#### Jun 2024 - present
-### Frontend Developer
-##### Project | Part time
+#### Jan 2025 - Feb 2025
+### Software Developer
+##### Company: The Byte Flow / Phoenix Design Aid | Internship
 Web design and development
 - Project Management
 - UX/UI design
-- HTML, CSS, Javascript
+- Javascript, PHP, HTML, CSS
 - Versions Control (Git)
 
-*From design to development of my portfolio website I have gained a lot of knowledge with the general concepts of web frontend development.*
+*I gained experience and valuable insights into professional development environments, including it’s processes and pipelines.*
 
 #### Aug 2023 - Feb 2024
 ### Technical Sound Designer
-##### Company: Gumbo Games (startup) | Part time
+##### Company: Gumbo Games | Part time
 
 - Developing audiosystems in Unity with C#.
 - Using the version control software tool Git in the development process.
@@ -25,7 +25,7 @@ Web design and development
 
 #### Jan 2023 - Aug 2023
 ### Software Developer, Sound Designer
-##### Company: AateVR | Internship
+##### Company: AATE VR | Internship
 <span>Master's Thesis Collaboration</span>
 - Design, conceptualization and project management.
 - Programming in C# and Unity, as well as deploying the software (code signing and apple’s notarization process).
@@ -57,17 +57,3 @@ The short fiction [Žebra](https://esbensloth.com/zebra) was made in the spring 
 *It was such an inspiring experience creating and experimenting with the sonic universe and mood of the film and I gained a lot of new knowledge in the area of audio post-production and scoring.*
 
 The film was screened as part of the official selection at ISFF 2ANNAS 2024 in Riga.
-
-#### Aug 2022 - Dec 2022
-### Lead Sound Designer
-##### Program: DADIU | The National Film School of Denmark
-As ***Lead Sound Designer*** I participated in a semester long course in game development, with a *strong focus on the practical aspects of developing on large interdisciplinary teams*. [Link](https://dadiu.itch.io/the-old-ones) to final project.
-
-<span>Tasks and areas of responsibility</span>
-- Vocal expression recordings and edit
-- SFX design
-- Foley
-- Implementation in Wwise and Unity.
-- Mix and master
-
-My two mentors during the production was <span>Bjørn Jacobsen (Cujo Sound)</span> and <span>Martin Stig Andersen</span>.
