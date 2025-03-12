@@ -927,6 +927,10 @@ html{font-family:Inter, sans-serif;--tw-text-opacity:1;color:rgb(50 50 50 / var(
 .\[\&_h4\]\:text-pink h4{--tw-text-opacity:1;color:rgb(227 60 114 / var(--tw-text-opacity))}
 @media (min-width: 640px){
 .sm\:\[\&_h4\]\:text-lg h4{font-size:1.125rem;line-height:1.75rem}}
+.\[\&_h5\]\:mt-1 h5{margin-top:0.25rem}
+.\[\&_h5\]\:text-lg h5{font-size:1.125rem;line-height:1.75rem}
+.\[\&_h5\]\:font-bold h5{font-weight:700}
+.\[\&_h5\]\:text-semilightblack h5{--tw-text-opacity:1;color:rgb(50 50 50 / var(--tw-text-opacity))}
 .\[\&_li\]\:ml-6 li{margin-left:1.5rem}
 .\[\&_li\]\:list-disc li{list-style-type:disc}
 .\[\&_p\]\:mb-3 p{margin-bottom:0.75rem}
