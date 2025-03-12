@@ -5,10 +5,10 @@ order: 1
 
 #### 2021 - 2024
 ### Audio Design | Aarhus University
-Master of Science (MSc) in Information Technology (Digital Design, Audio Design).
-**Subjects and main focus:**
+Master of Science (MSc) in Information Technology (Digital Design, Audio Design).<br>
+**Areas of focus:**
 - Sound and Interaction Design
-- C# programming and the Unity Engine
+- C# programming in the engine Unity
 - Max MSP and Pure Data
 - Spatial audio
 - Soundscape Design
@@ -18,7 +18,7 @@ Master of Science (MSc) in Information Technology (Digital Design, Audio Design)
 #### Aug 2022 - Dec 2022
 ### Game Development | The National Film School of Denmark
 ##### Diploma Program: DADIU
-As **technical lead sound designer** I was enrolled in a semester long course in game development, with a *strong focus on the practical aspects of developing on large interdisciplinary teams*. [Link](https://dadiu.itch.io/the-old-ones) to final project.
+As **technical lead sound designer** I was enrolled in a semester long course in game development, with a *strong focus on the practical aspects of development in large interdisciplinary teams*. [Link](https://dadiu.itch.io/the-old-ones) to final project.
 
 <span>Tasks and areas of responsibility</span>
 - Developing audio systems in Wwise and the game engine Unity
@@ -34,8 +34,8 @@ My two mentors during the production was <span>Bjørn Jacobsen (Cujo Sound)</spa
 
 #### 2017 - 2020
 ### Bachelor of Music | The Royal Academy of Music
-**Subjects and main focus:**
+**Areas of focus:**
 - Audio engineering and production
 - Interactive audio systems with visual scripting (MaxMSP)
 - Sound Design
-- Contemporary electronic music
+- Electronic music composition

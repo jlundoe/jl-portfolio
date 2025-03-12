@@ -16,7 +16,7 @@ Web design and development
 
 #### Aug 2023 - Feb 2024
 ### Technical Sound Designer
-##### Company: Gumbo Games (startup) | Part time
+##### Company: Gumbo Games | Part time
 
 - Developing audiosystems in Unity with C#.
 - Using the version control software tool Git in the development process.
@@ -25,7 +25,7 @@ Web design and development
 
 #### Jan 2023 - Aug 2023
 ### Software Developer, Sound Designer
-##### Company: AateVR | Internship
+##### Company: AATE VR | Internship
 <span>Master's Thesis Collaboration</span>
 - Design, conceptualization and project management.
 - Programming in C# and Unity, as well as deploying the software (code signing and apple’s notarization process).
