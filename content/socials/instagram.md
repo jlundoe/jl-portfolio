@@ -1,7 +1,7 @@
 ---
-alt: Instagram logo link
-src: logo-instagram
-href: https://www.instagram.com/lundoenielsen/
+alt: youtube logo link
+src: logo-youtube
+href: https://www.youtube.com/@jakob-lundoe
 customclass: w-7 h-auto
-someOrder: 2
+someOrder: 1
 ---
