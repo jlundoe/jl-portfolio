@@ -44,7 +44,7 @@ Published two tracks in a collaboration project. Follow [this link](https://open
 #### Apr 2023 - Aug 2023
 ### Sound Designer, Composer
 ##### Short Film Production | Freelance
-The short fiction [Žebra](https://esbensloth.com/zebra) was made in the spring and summer of 2023 and as a key member of the project my responsibilities was everything related to the audio aspects of the production. That includes the audio post-production and scoring of the film.
+The short fiction [Žebra](https://www.ekkofilm.dk/shortlist/film/zebra/) was made in the spring and summer of 2023 and as a key member of the project my responsibilities was everything related to the audio aspects of the production. That includes the audio post-production and scoring of the film.
 
 <span>Tasks and areas of responsibility</span>
 - Dialogue edit
