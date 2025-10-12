@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const delayTime = 500;
     let timerActive = false;
 
-    const showreelPageActive = (document.body.getAttribute("data-page").toLowerCase() === "showreel") || false;
+    const showreelPageActive = (document.body.getAttribute("data-page").toLowerCase() === "home") || false;
 
     if (!showreelPageActive)
         return;
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // on page load start video if url matches "on" state
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("showreel") === "on") {
+    if (urlParams.get("home") === "on") {
         cinemaModule.togglevideo(delayTime);
         cinemaModule.overlayToggle();
         cinemaModule.showreelButtonState(delayTime);
@@ -323,32 +323,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // NAV SIDEBAR TOGGLE
-document.addEventListener("DOMContentLoaded", () => {
-    const closeMenuButton = document.getElementById("closemenubutton");
-    const menuButton = document.getElementById("openmenubutton");
-    const sidebar = document.getElementById("sidebarnav");
-
-    let sidebarOpen = false;
-
-    menuButton.addEventListener("click", () => (!sidebarOpen) ? sidebarOpen = sidebarToggle.openMenu(sidebarOpen) : sidebarOpen = sidebarToggle.closeMenu(sidebarOpen));
-    closeMenuButton.addEventListener("click", () => (sidebarOpen) ? sidebarOpen = sidebarToggle.closeMenu(sidebarOpen) : sidebarOpen = sidebarToggle.openMenu(sidebarOpen));
-
-    document.addEventListener("click", (clickEvent) => {
-        if (!sidebarOpen) {
-            return;
-        } else if (!sidebar.contains(clickEvent.target) && !menuButton.contains(clickEvent.target)) {
-            sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
-        }
-    });
-
-    addEventListener("resize", () => {
-        const width = window.innerWidth;
-        if (width > 640)
-            {
-                sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
-            }
-    });
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     const closeMenuButton = document.getElementById("closemenubutton");
+//     const menuButton = document.getElementById("openmenubutton");
+//     const sidebar = document.getElementById("sidebarnav");
+//
+//     let sidebarOpen = false;
+//
+//     menuButton.addEventListener("click", () => (!sidebarOpen) ? sidebarOpen = sidebarToggle.openMenu(sidebarOpen) : sidebarOpen = sidebarToggle.closeMenu(sidebarOpen));
+//     closeMenuButton.addEventListener("click", () => (sidebarOpen) ? sidebarOpen = sidebarToggle.closeMenu(sidebarOpen) : sidebarOpen = sidebarToggle.openMenu(sidebarOpen));
+//
+//     document.addEventListener("click", (clickEvent) => {
+//         if (!sidebarOpen) {
+//             return;
+//         } else if (!sidebar.contains(clickEvent.target) && !menuButton.contains(clickEvent.target)) {
+//             sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
+//         }
+//     });
+//
+//     addEventListener("resize", () => {
+//         const width = window.innerWidth;
+//         if (width > 640)
+//             {
+//                 sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
+//             }
+//     });
+// });
 
 // DROPDOWN CONTENT TOGGLE
 document.addEventListener("DOMContentLoaded", () => {

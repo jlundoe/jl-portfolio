@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio | Jakob Lundoe</title>
+    <title>Home - Jakob Lundoe</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +37,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 <script src="/js/bundle.dev.js" defer></script>
 </head>
-    <body data-page="HOME">
-        <div id="mainviewport">
-            <div id="sidebarnav" class="fixed top-0 left-0 h-full -translate-x-full bg-white z-30 pl-6 pr-3 border-r border-black">
-                <div class="flex flex-col flex-nowrap justify-end items-start gap-12 h-full">
+<body data-page="HOME">
+<div id="mainviewport">
+    <div id="sidebarnav"
+         class="fixed top-0 left-0 h-full -translate-x-full bg-white z-30 pl-6 pr-3 border-r border-black">
+        <div class="flex flex-col flex-nowrap justify-end items-start gap-12 h-full">
     <div class="mb-auto mt-6 -ml-5 -mr-2">
         <img src="/img/jl-logo-new-black.webp" alt="jl logo alt" class="w-32">
     </div>
@@ -76,71 +77,11 @@
         <ion-icon name="chevron-back-sharp" alt="left arrow close menu icon" style="color: black; font-size: 34px; margin-bottom: 9px"></ion-icon>
     </button>
 </div>
-            </div>
-            
-<div class="flex justify-center items-center min-h-dvh overflow-x-hidden bg-no-repeat bg-center bg-cover" style="background-image: url('/img/pressphoto-jln.webp');">
-    <div id="overlay" class="fixed opacity-0 w-full h-full bg-overlay-color z-40 cursor-pointer pointer-events-none"></div>
-    <div class="fixed left-0 top-0">
+    </div>
+    <div id="headernav" class="hidden fixed top-0 left-0 w-full bg-white z-30 px-6 border-b border-black sm:block">
         
-<div class="py-4 px-6 flex-col gap-3.5">
-    
-    <div class="select-text text-white shadow-black text-shadow-md text-nowrap">
-        <h1 class="text-5xl" style="font-size: min(8vw, 50px);">Portfolio | Jakob Lundoe</h1>
-        <h2 class="text-3xl py-2" style="font-size: min(4.28vw, 30px);">Sound Designer, Developer and Composer</h2>
-    </div>
-    
-</div>
-    </div>
-    <div id="showreelvideocontainer" class="hidden place-items-center z-50">
-        <div class="grid place-items-center max-w-[80%] max-h-dvh">
-            <div id="reel-container" class="relative inline-block my-2 mx-1 sm:my-10 sm:mx-4">
-                <video playsinline preload="metadata" controls class="plyr-reel w-full max-h-dvh shadow-user-md z-60">
-                    <source src="https://content.jakoblundoe.com/jl-reel-short-temp-v1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <button id="close-reel-button" disabled class="scale-90 absolute animate-fadeout -mr-10 -mt-10 right-2 top-2 disabled:cursor-default disabled:opacity-0 disabled:pointer-events-none cursor-pointer z-60 pointer-events-auto transition ease-out duration-150
-                hover:opacity-25
-                active:opacity-35
-                sm:scale-100
-                ">
-                    <ion-icon name="close-circle-outline" size="large" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1" onmousedown="this.style.opacity=0.5" onmouseup="this.style.opacity=1" style="color: rgba(255, 255, 255, 0.884); transition: opacity 0.3s ease;" alt="circled cross icon"></ion-icon>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div id="spacer" class="h-10">
-    </div>
-    <div id="intro-textbox" class="fixed bottom-24 4md:left-14 shadow-user-sm mt-2.5 landscapes:hidden"> 
-        <div class="absolute inset-0 bg-black translate-x-1 translate-y-1 -z-10 shadow-user-sm">
-        </div>
-        <div class="relative bg-white w-[340px] h-auto border-[1px] border-black px-4 pt-3 pb-2 text-sm [&_p]:pb-3 sm:w-[460px] sm:text-base">
-            <div>
-                
-                <p><strong>Hey there!</strong> My name is Jakob and I am a technical sound designer and software developer. I am passionate about creating engaging interactive software experiences and systems/tools of all kinds and forms!</p>
-<p>Navigate to the <em>Work</em> and <em>About</em> page if you are interested in learning more about my journey with development and audio, up to now.</p>
-<p>Feel free to reach out for a talk or for any questions - I’d be happy to hear from you! <span><ion-icon name="happy-outline" style="font-size: 20px; margin-bottom: -4px; margin-left: 2px"></ion-icon></span></p>
 
-                
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    
-
-<div id="footer" class="flex flex-row flex-nowrap justify-end items-center pr-6 pl-4 h-12 bg-white fixed bottom-0 w-full z-20 transition ease-out duration-2000
-      sm:flex-row sm:justify-between
-      ">
-      <div id="bottomnavbar" class="flex flex-row flex-nowrap mr-auto h-12">
-        <div class="flex flex-row flex-nowrap justify-center items-center -mr-1">
+<div class="flex flex-row flex-nowrap justify-center items-center -mr-1">
     <div class="hidden w-12 h-auto items-center justify-start opacity-80 transition ease-out duration-100
                 hover:opacity-70 hover:scale-105
                 active:opacity-50 active:scale-105
@@ -156,72 +97,40 @@
         
         
         
-            
-                
-                    <a href="/home/" data-internal-link="true" class="underline decoration-light-black decoration-1">HOME</a>
-                
-            
-                
-                    <a href="/work/" data-internal-link="true">WORK</a>
-                
-            
-                
-                    <a href="/about/" data-internal-link="true">ABOUT</a>
-                
-            
-                
-                    <a href="/contact/" data-internal-link="true">CONTACT</a>
-                
-            
+        
+        
+        <a href="/home/" data-internal-link="true" class="underline decoration-light-black decoration-1">HOME</a>
+        
+        
+        
+        <a href="/work/" data-internal-link="true">WORK</a>
+        
+        
+        
+        <a href="/about/" data-internal-link="true">ABOUT</a>
+        
+        
+        
+        <a href="/contact/" data-internal-link="true">CONTACT</a>
+        
+        
         
     </div>
 </div>
-        <div class="flex flex-col flex-nowrap justify-center items-center -mr-1
-            sm:hidden">
-    <div id="menubuttoncontainer" class="flex flex-row h-auto items-center justify-start opacity-80 transition ease-out duration-100 flex-shrink-0
-                hover:opacity-70 hover:scale-105
-                active:opacity-50 active:scale-105
-                sm:hidden">
-        <button id="openmenubutton" class="">
-            <ion-icon name="menu" alt="hamburger menu logo" style="color: black; font-size: 32px; margin-top: 6.9px; margin-left: 6px;"></ion-icon>
-        <button>
+
+
+
+
+
+
+
+
+
+
     </div>
-</div>
-      </div>
-      <div>
-        <div class="flex flex-row flex-nowrap justify-end items-center gap-1.5
-            sm:justify-between sm:items-center">
+    
+    
 
-    
-        <div class="transition ease-out duration-150
-                    hover:opacity-70 hover:scale-105
-                    active:opacity-50">
-            <a href="https://www.linkedin.com/in/jakoblundoe" class="flex justify-center items-center">
-                <ion-icon name="logo-linkedin" alt="LinkedIn logo link" style="color: rgb(24, 22, 22); font-size: 32px; margin-left: 8px; margin-right: -1px;"></ion-icon>
-            </a>
-        </div>
-    
-        <div class="transition ease-out duration-150
-                    hover:opacity-70 hover:scale-105
-                    active:opacity-50">
-            <a href="https://www.youtube.com/@jakob-lundoe" class="flex justify-center items-center">
-                <ion-icon name="logo-youtube" alt="youtube logo link" style="color: rgb(24, 22, 22); font-size: 32px; margin-left: 8px; margin-right: -1px;"></ion-icon>
-            </a>
-        </div>
-    
-        <div class="transition ease-out duration-150
-                    hover:opacity-70 hover:scale-105
-                    active:opacity-50">
-            <a href="https://www.github.com/jlundoe" class="flex justify-center items-center">
-                <ion-icon name="logo-github" alt="Github logo link" style="color: rgb(24, 22, 22); font-size: 32px; margin-left: 8px; margin-right: -1px;"></ion-icon>
-            </a>
-        </div>
-    
 </div>
-      </div>
-</div>
-</div>
-
-        </div>
-    </body>
+</body>
 </html>

@@ -14,13 +14,7 @@
   </url><url>
     <loc>http://localhost:1313/archived/</loc>
   </url><url>
-    <loc>http://localhost:1313/bitesizecontent/prims-redesign/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bitesizecontent/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bitesizecontent/metalgearsolid-redesign/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
@@ -28,21 +22,17 @@
   </url><url>
     <loc>http://localhost:1313/resumecontent/courses/</loc>
   </url><url>
-    <loc>http://localhost:1313/projectcontent/droemmefanger/</loc>
+    <loc>http://localhost:1313/archived/droemmefanger/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/education/</loc>
   </url><url>
-    <loc>http://localhost:1313/bitesizecontent/electricity-sd/</loc>
-  </url><url>
     <loc>http://localhost:1313/resumecontent/experience/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bitesizecontent/explosiondesign/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</loc>
   </url><url>
-    <loc>http://localhost:1313/bitesizecontent/giantsrest-demo/</loc>
-  </url><url>
     <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/old_index/</loc>
   </url><url>
     <loc>http://localhost:1313/home/</loc>
   </url><url>
@@ -50,34 +40,22 @@
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/lazy-legacy/</loc>
   </url><url>
-    <loc>http://localhost:1313/projectcontent/lydro/</loc>
-  </url><url>
     <loc>http://localhost:1313/musiccontent-audio/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projectcontent/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/</loc>
   </url><url>
     <loc>http://localhost:1313/archived/samplii/</loc>
   </url><url>
-    <loc>http://localhost:1313/bitesizecontent/animation-sd/</loc>
-  </url><url>
-    <loc>http://localhost:1313/musiccontent-audio/sleepy-warrior/</loc>
+    <loc>http://localhost:1313/archived/sleepy-warrior/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bitesizecontent/theoldones-demo/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/theencore/</loc>
   </url><url>
-    <loc>http://localhost:1313/projectcontent/theoldones/</loc>
-  </url><url>
     <loc>http://localhost:1313/work/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projectcontent/zebra/</loc>
   </url>
 </urlset>

@@ -36,8 +36,8 @@ module.exports = {
       colors: {
         'pink': '#e33c72',
         'semilightblack': '#323232',
-        'black': '#141414',
-        'white': '#FFFFFF',
+        // 'black': '#141414',
+        // 'white': '#FFFFFF',
         'grey': '#a5a5a5',
         'dark-grey': '#444444',
         'light-black': '#262626',
@@ -46,12 +46,23 @@ module.exports = {
         'transp-grey': '#e2e2e21f',
         'overlay-color': '#000000b3',
         'light-grey': '#ececec',
+      //   V2 VARIABLES BELOW
+        'grey-base': '#898989',
+        'grey-tint-1': '#c4c4c4',
+        'grey-tint-2': '#e0e0e0',
+        'grey-tint-3': '#f4f4f4',
+        'grey-shade-1': '#505050',
+        'grey-shade-2': '#414141',
+        'grey-shade-3': '#2f2f2f',
+        'white': '#ffffff',
+        'black': '#1f1f1f',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'mono': ['Roboto Mono', 'monospace'],
         'fjalla': ['Fjalla One', 'sans-serif'],
-        'bebas': ['Bebas Neue', 'sans-serif']
+        'bebas': ['Bebas Neue', 'sans-serif'],
+        'spacegrotesk':['Space Grotesk', 'sans-serif']
       },
       dropShadow: {
         'user-md': '1px 1px 4px #000000',

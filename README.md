@@ -14,7 +14,9 @@ Link to current version: [https://jakoblundoe.com](https://jakoblundoe.com/).
 > [hammer.js](https://github.com/hammerjs/hammer.js.git)<br>
 > [autoprefixer](https://github.com/postcss/autoprefixer.git)<br>
 
-## Img
+[//]: # (## Img)
 
-![landing_page_img](portfolio_landingpage_img.png)
-Photo by Aske Stubkjær
+[//]: # ()
+[//]: # (![landing_page_img]&#40;portfolio_landingpage_img.png&#41;)
+
+[//]: # (Photo by Aske Stubkjær)

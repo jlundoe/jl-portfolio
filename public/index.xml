@@ -43,31 +43,10 @@
       <description></description>
     </item>
     <item>
-      <title>Audio Recreation</title>
-      <link>http://localhost:1313/bitesizecontent/prims-redesign/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/prims-redesign/</guid>
-      <description>&lt;p&gt;An attempt to re-create prism entertainments sound logo as closely as possible.&#xA;Created with only using soft synths and processing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cinematic</title>
-      <link>http://localhost:1313/bitesizecontent/metalgearsolid-redesign/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/metalgearsolid-redesign/</guid>
-      <description>&lt;p&gt;Cinematic redesign from Metal Gear Solid V.&#xA;My main focus in the design of this clip was to create a realistic feel&#xA;while simultaneously communicating the story and chaos of the individual moments.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>CONTACT</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CONTENT</title>
-      <link>http://localhost:1313/content/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/content/</guid>
       <description></description>
     </item>
     <item>
@@ -79,9 +58,9 @@
     </item>
     <item>
       <title>Droemmefanger</title>
-      <link>http://localhost:1313/projectcontent/droemmefanger/</link>
+      <link>http://localhost:1313/archived/droemmefanger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projectcontent/droemmefanger/</guid>
+      <guid>http://localhost:1313/archived/droemmefanger/</guid>
       <description>&lt;p&gt;Conceptualization, sound design, development&lt;/p&gt;</description>
     </item>
     <item>
@@ -92,13 +71,6 @@
       <description>&lt;h4 id=&#34;2021---2024&#34;&gt;2021 - 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;audio-design--aarhus-university&#34;&gt;Audio Design | Aarhus University&lt;/h3&gt;&#xA;&lt;p&gt;Master of Science (MSc) in Information Technology (Digital Design, Audio Design).&lt;br&gt;&#xA;&lt;strong&gt;Areas of focus:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sound and Interaction Design&lt;/li&gt;&#xA;&lt;li&gt;C# programming in the engine Unity&lt;/li&gt;&#xA;&lt;li&gt;Max MSP and Pure Data&lt;/li&gt;&#xA;&lt;li&gt;Spatial audio&lt;/li&gt;&#xA;&lt;li&gt;Soundscape Design&lt;/li&gt;&#xA;&lt;li&gt;Sound as a design material&lt;/li&gt;&#xA;&lt;li&gt;Media and Communication&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;aug-2022---dec-2022&#34;&gt;Aug 2022 - Dec 2022&lt;/h4&gt;&#xA;&lt;h3 id=&#34;game-development--the-national-film-school-of-denmark&#34;&gt;Game Development | The National Film School of Denmark&lt;/h3&gt;&#xA;&lt;h5 id=&#34;diploma-program-dadiu&#34;&gt;Diploma Program: DADIU&lt;/h5&gt;&#xA;&lt;p&gt;As &lt;strong&gt;technical lead sound designer&lt;/strong&gt; I was enrolled in a semester long course in game development, with a &lt;em&gt;strong focus on the practical aspects of development in large interdisciplinary teams&lt;/em&gt;. &lt;a href=&#34;https://dadiu.itch.io/the-old-ones&#34;&gt;Link&lt;/a&gt; to final project.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Elemental Design</title>
-      <link>http://localhost:1313/bitesizecontent/electricity-sd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/electricity-sd/</guid>
-      <description>&lt;p&gt;Electricity / Arcane Magic Design&lt;br&gt;&lt;br&gt;&#xA;&lt;em&gt;Animation Artist: &lt;a href=&#34;https://www.artstation.com/artwork/v2wdLa&#34;&gt;Deeamo Julien&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Experience</title>
       <link>http://localhost:1313/resumecontent/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -106,32 +78,11 @@
       <description>&lt;h4 id=&#34;jan-2025---feb-2025&#34;&gt;Jan 2025 - Feb 2025&lt;/h4&gt;&#xA;&lt;h3 id=&#34;software-developer&#34;&gt;Software Developer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-the-byte-flow--phoenix-design-aid--internship&#34;&gt;Company: The Byte Flow / Phoenix Design Aid | Internship&lt;/h5&gt;&#xA;&lt;p&gt;Web design and development&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Management&lt;/li&gt;&#xA;&lt;li&gt;UX/UI design&lt;/li&gt;&#xA;&lt;li&gt;Javascript, PHP, HTML, CSS&lt;/li&gt;&#xA;&lt;li&gt;Versions Control (Git)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;I gained experience and valuable insights into professional development environments, including it’s processes and pipelines.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;aug-2023---feb-2024&#34;&gt;Aug 2023 - Feb 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;technical-sound-designer&#34;&gt;Technical Sound Designer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-gumbo-games--part-time&#34;&gt;Company: Gumbo Games | Part time&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developing audiosystems in Unity with C#.&lt;/li&gt;&#xA;&lt;li&gt;Using the version control software tool Git in the development process.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learned a lot about remote collaboration and how to use version control tool Git in the development process.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Explosion Design</title>
-      <link>http://localhost:1313/bitesizecontent/explosiondesign/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/explosiondesign/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Game Concept</title>
       <link>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</guid>
       <description>&lt;p&gt;Composition, production, mix and master. &lt;br&gt;&#xA;&lt;em&gt;Concept and graphics by Alexandar Kierkegaard.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Game Jam -</title>
-      <link>http://localhost:1313/bitesizecontent/giantsrest-demo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/giantsrest-demo/</guid>
-      <description>&lt;p&gt;Tools: Reaper, Wwise and Unity&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>HOME</title>
-      <link>http://localhost:1313/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/</guid>
-      <description></description>
     </item>
     <item>
       <title>Kaito&#39;s Club</title>
@@ -148,13 +99,6 @@
       <description>&lt;p&gt;Production and mix by me.&#xA;Composition made in collaboration with Oliver Dengsø.&#xA;Listen on &lt;a href=&#34;https://open.spotify.com/track/3nNpxwma0gqAjTc3hvFqXs?si=6cf7754b8fd24ab8&#34;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Lydro</title>
-      <link>http://localhost:1313/projectcontent/lydro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projectcontent/lydro/</guid>
-      <description>&lt;p&gt;Concept, sound design, app development, programming&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Samplii</title>
       <link>http://localhost:1313/archived/samplii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -162,25 +106,11 @@
       <description></description>
     </item>
     <item>
-      <title>Short Animation</title>
-      <link>http://localhost:1313/bitesizecontent/animation-sd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/animation-sd/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Animations by Mathias Gregersen.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Sleepy Warrior</title>
-      <link>http://localhost:1313/musiccontent-audio/sleepy-warrior/</link>
+      <link>http://localhost:1313/archived/sleepy-warrior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/musiccontent-audio/sleepy-warrior/</guid>
+      <guid>http://localhost:1313/archived/sleepy-warrior/</guid>
       <description>&lt;p&gt;Production and mix by me.&#xA;Composition made in collaboration with Oliver Dengsø.&#xA;Listen on &lt;a href=&#34;https://open.spotify.com/track/2kNmsMoipBLcIFI44O2xUF?si=62303c9281dc4101&#34;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Student Game -</title>
-      <link>http://localhost:1313/bitesizecontent/theoldones-demo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitesizecontent/theoldones-demo/</guid>
-      <description>&lt;p&gt;Tools: Reaper, Wwise and Unity&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Encore</title>
@@ -190,25 +120,11 @@
       <description>&lt;p&gt;Composition, production, mix and master by me.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The Old Ones</title>
-      <link>http://localhost:1313/projectcontent/theoldones/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projectcontent/theoldones/</guid>
-      <description>&lt;p&gt;Sound design, technical implementation, sound recordist&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>WORK</title>
-      <link>http://localhost:1313/work/</link>
+      <link>http://localhost:1313/archived/old-workpage-index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/</guid>
+      <guid>http://localhost:1313/archived/old-workpage-index/</guid>
       <description>&lt;p&gt;&lt;span&gt;MY&lt;/span&gt; WORK&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Žebra</title>
-      <link>http://localhost:1313/projectcontent/zebra/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projectcontent/zebra/</guid>
-      <description>&lt;p&gt;Audio post production, sound design, scoring.&lt;br&gt;&#xA;&lt;a href=&#34;https://esbensloth.com/zebra&#34;&gt;Link&lt;/a&gt; to additional info.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
