@@ -1,8 +1,8 @@
 ---
 layout: contact
-title: CONTACT
+title: Contact
 tabTitle: Contact
 inNavbar: true
-navbarOrder: 4
+navbarOrder: 3
 page_class: contact_page
 ---

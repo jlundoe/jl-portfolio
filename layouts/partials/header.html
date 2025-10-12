@@ -1,17 +1,24 @@
 {{ $currentPage := . }}
-
-<div class="flex flex-row flex-nowrap justify-center items-center -mr-1">
-    <div class="hidden w-12 h-auto items-center justify-start opacity-80 transition ease-out duration-100
-                hover:opacity-70 hover:scale-105
-                active:opacity-50 active:scale-105
+<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-2 px-8
+            [&_a]:text-white [&_a]:font-light [&_a]:tracking-wide text-sm
+            [&_a]:transition [&_a]:ease-out [&_a]:duration-100 hover:[&_a]:opacity-75 active:[&_a]:opacity-60">
+    <div class="gap-4 hidden h-auto items-center justify-center opacity-80
                 sm:flex sm:justify-center">
-        <a href="/showreel" data-internal-link="true">
-            <img src="/img/jl-logo.webp" alt="Jakob Lundoe homepage logo" class="max-w-full max-h-full w-7">
-        </a>
+        <div>
+            <a href="/" data-internal-link="true">
+                <img src="/img/jl-logo-white.png" alt="Jakob Lundoe homepage logo" class="max-w-full max-h-full w-14
+                transition ease-out duration-100
+                hover:opacity-70 hover:scale-105
+                active:opacity-50 active:scale-105">
+            </a>
+        </div>
+        <div>
+            <a class="text-white" href="/" data-internal-link="true">
+                Jakob Lundoe
+            </a>
+        </div>
     </div>
-    <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-1.5 gap-8
-                [&_a]:font-mono [&_a]:text-light-black [&_a]:font-normal [&_a]:tracking-widest text-base [&_a]:transition [&_a]:ease-out [&_a]:duration-100
-                hover:[&_a]:opacity-75 active:[&_a]:opacity-60
+    <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-12
                 sm:flex sm:justify-center sm:items-center">
         {{ $pages := where .Site.Pages "Params.inNavbar" true}}
         {{ $currentPage := . }}

@@ -18,8 +18,6 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/content/</loc>
-  </url><url>
     <loc>http://localhost:1313/resumecontent/courses/</loc>
   </url><url>
     <loc>http://localhost:1313/archived/droemmefanger/</loc>
@@ -31,10 +29,6 @@
     <loc>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-  </url><url>
-    <loc>http://localhost:1313/old_index/</loc>
-  </url><url>
-    <loc>http://localhost:1313/home/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/sakas-club/</loc>
   </url><url>
@@ -48,14 +42,16 @@
   </url><url>
     <loc>http://localhost:1313/archived/samplii/</loc>
   </url><url>
+    <loc>http://localhost:1313/scripts/</loc>
+  </url><url>
     <loc>http://localhost:1313/archived/sleepy-warrior/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/</loc>
   </url><url>
+    <loc>http://localhost:1313/sound-libraries/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/theencore/</loc>
-  </url><url>
-    <loc>http://localhost:1313/work/</loc>
   </url>
 </urlset>

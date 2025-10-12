@@ -3,8 +3,8 @@
 
 @layer base {
     html {
-        @apply font-inter;
-        @apply text-semilightblack;
+        @apply font-spacegrotesk;
+        @apply text-grey-shade-3;
         @apply select-none;
         overflow-y: scroll;        
     }

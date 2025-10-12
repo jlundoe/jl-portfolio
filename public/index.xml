@@ -36,14 +36,14 @@
       <description></description>
     </item>
     <item>
-      <title>ABOUT</title>
+      <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
     <item>
-      <title>CONTACT</title>
+      <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
@@ -106,6 +106,13 @@
       <description></description>
     </item>
     <item>
+      <title>Scripts</title>
+      <link>http://localhost:1313/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scripts/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Sleepy Warrior</title>
       <link>http://localhost:1313/archived/sleepy-warrior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,18 +120,18 @@
       <description>&lt;p&gt;Production and mix by me.&#xA;Composition made in collaboration with Oliver Dengsø.&#xA;Listen on &lt;a href=&#34;https://open.spotify.com/track/2kNmsMoipBLcIFI44O2xUF?si=62303c9281dc4101&#34;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Sound Libraries</title>
+      <link>http://localhost:1313/sound-libraries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sound-libraries/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>The Encore</title>
       <link>http://localhost:1313/musiccontent-audio/theencore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/musiccontent-audio/theencore/</guid>
       <description>&lt;p&gt;Composition, production, mix and master by me.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>WORK</title>
-      <link>http://localhost:1313/archived/old-workpage-index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archived/old-workpage-index/</guid>
-      <description>&lt;p&gt;&lt;span&gt;MY&lt;/span&gt; WORK&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
