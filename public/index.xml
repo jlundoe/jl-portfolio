@@ -71,11 +71,25 @@
       <description>&lt;p&gt;Conceptualization, sound design, development&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Droemmefanger</title>
+      <link>http://localhost:1313/portfolio/items/droemmefanger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/droemmefanger/</guid>
+      <description>&lt;p&gt;Through live sound processing Droemmefanger captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Education</title>
       <link>http://localhost:1313/resumecontent/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resumecontent/education/</guid>
       <description>&lt;h4 id=&#34;2021---2024&#34;&gt;2021 - 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;audio-design--aarhus-university&#34;&gt;Audio Design | Aarhus University&lt;/h3&gt;&#xA;&lt;p&gt;Master of Science (MSc) in Information Technology (Digital Design, Audio Design).&lt;br&gt;&#xA;&lt;strong&gt;Areas of focus:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sound and Interaction Design&lt;/li&gt;&#xA;&lt;li&gt;C# programming in the engine Unity&lt;/li&gt;&#xA;&lt;li&gt;Max MSP and Pure Data&lt;/li&gt;&#xA;&lt;li&gt;Spatial audio&lt;/li&gt;&#xA;&lt;li&gt;Soundscape Design&lt;/li&gt;&#xA;&lt;li&gt;Sound as a design material&lt;/li&gt;&#xA;&lt;li&gt;Media and Communication&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;aug-2022---dec-2022&#34;&gt;Aug 2022 - Dec 2022&lt;/h4&gt;&#xA;&lt;h3 id=&#34;game-development--the-national-film-school-of-denmark&#34;&gt;Game Development | The National Film School of Denmark&lt;/h3&gt;&#xA;&lt;h5 id=&#34;diploma-program-dadiu&#34;&gt;Diploma Program: DADIU&lt;/h5&gt;&#xA;&lt;p&gt;As &lt;strong&gt;technical lead sound designer&lt;/strong&gt; I was enrolled in a semester long course in game development, with a &lt;em&gt;strong focus on the practical aspects of development in large interdisciplinary teams&lt;/em&gt;. &lt;a href=&#34;https://dadiu.itch.io/the-old-ones&#34;&gt;Link&lt;/a&gt; to final project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Elemental Design</title>
+      <link>http://localhost:1313/portfolio/items/elemental-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/elemental-design/</guid>
+      <description>&lt;p&gt;Some text about the redesign.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Animation Artist: &lt;a href=&#34;https://www.artstation.com/artwork/v2wdLa&#34;&gt;Deeamo Julien&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Experience</title>
