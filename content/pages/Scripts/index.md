@@ -2,7 +2,7 @@
 layout: scripts
 title: Scripts
 tabTitle: Scripts
-inNavbar: true
+inNav: true
 navbarOrder: 1
 page_class: scripts_page
 ---

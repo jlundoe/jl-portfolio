@@ -2,7 +2,8 @@
 layout: about
 title: About
 tabTitle: About
-inNavbar: true
-navbarOrder: 2
+inNav: false
+inRightNav: true
+navbarOrder: 0
 page_class: about_page
 ---

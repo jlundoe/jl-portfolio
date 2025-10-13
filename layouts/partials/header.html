@@ -1,6 +1,6 @@
 {{ $currentPage := . }}
-<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-2 px-8
-            [&_a]:text-white [&_a]:font-light [&_a]:tracking-wide text-sm
+<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-2 px-16
+            [&_a]:text-white [&_a]:font-light [&_a]:tracking-wide text-base
             [&_a]:transition [&_a]:ease-out [&_a]:duration-100 hover:[&_a]:opacity-75 active:[&_a]:opacity-60">
     <div class="gap-4 hidden h-auto items-center justify-center opacity-80
                 sm:flex sm:justify-center">
@@ -18,18 +18,35 @@
             </a>
         </div>
     </div>
-    <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-12
-                sm:flex sm:justify-center sm:items-center">
-        {{ $pages := where .Site.Pages "Params.inNavbar" true}}
-        {{ $currentPage := . }}
-        {{ with $pages }}
-        {{ range sort $pages "Params.navbarOrder" }}
-        {{ if eq .RelPermalink $currentPage.RelPermalink }}
-        <a href="{{ .RelPermalink }}" data-internal-link="true" class="underline decoration-light-black decoration-1">{{ .Title }}</a>
-        {{ else }}
-        <a href="{{ .RelPermalink }}" data-internal-link="true">{{ .Title }}</a>
-        {{ end }}
-        {{ end }}
-        {{ end }}
+    <div class="flex flex-row flex-nowrap gap-12">
+        <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-12 px-
+                    sm:flex sm:justify-center sm:items-center">
+            {{ $pages := where .Site.Pages "Params.inNav" true}}
+            {{ $currentPage := . }}
+            {{ with $pages }}
+            {{ range sort $pages "Params.navbarOrder" }}
+            {{ if eq .RelPermalink $currentPage.RelPermalink }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true" class="underline decoration-light-black decoration-1">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true">{{ .Title }}</a>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="h-6 rotate-270 outline outline-1 self-center outline-grey-shade-1"></div>
+        <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-12 px-
+                    sm:flex sm:justify-center sm:items-center">
+            {{ $pages := where .Site.Pages "Params.inRightNav" true}}
+            {{ $currentPage := . }}
+            {{ with $pages }}
+            {{ range sort $pages "Params.navbarOrder" }}
+            {{ if eq .RelPermalink $currentPage.RelPermalink }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true" class="underline decoration-light-black decoration-1">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true">{{ .Title }}</a>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
     </div>
 </div>

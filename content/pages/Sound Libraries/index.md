@@ -2,7 +2,7 @@
 layout: soundlibraries
 title: Sound Libraries
 tabTitle: Sound Libraries
-inNavbar: true
+inNav: true
 navbarOrder: 0
 page_class: soundlibraries_page
 ---
