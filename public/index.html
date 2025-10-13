@@ -64,8 +64,8 @@
         </div>
         <div id="headernav" class="hidden top-0 left-0 w-full z-30 px-0 sm:block">
             
-<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-2 px-16 [&_a]:text-nowrap
-            [&_a]:text-white [&_a]:font-light [&_a]:tracking-wide text-base
+<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-1 px-16 [&_a]:text-nowrap
+            [&_a]:text-white [&_a]:tracking-wide text-sm
             [&_a]:transition [&_a]:ease-out [&_a]:duration-100 hover:[&_a]:opacity-75 active:[&_a]:opacity-60">
     <div class="gap-4 hidden h-auto items-center justify-center opacity-80
                 sm:flex sm:justify-center">
@@ -79,7 +79,7 @@
         </div>
         <div class="mr-8">
             
-            <a href="/" data-internal-link="true" class="text-white relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+21px)]">
+            <a href="/" data-internal-link="true" class="text-white font-normal relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">
                 Jakob Lundoe
             </a>
             
@@ -92,11 +92,11 @@
             
                 
                     
-                        <a href="/sound-libraries/" data-internal-link="true">Sound Libraries</a>
+                        <a href="/sound-libraries/" data-internal-link="true" class="text-white font-light">Sound Libraries</a>
                     
                 
                     
-                        <a href="/scripts/" data-internal-link="true">Scripts</a>
+                        <a href="/scripts/" data-internal-link="true" class="text-white font-light">Scripts</a>
                     
                 
             
@@ -108,11 +108,11 @@
             
                 
                     
-                        <a href="/about/" data-internal-link="true">About</a>
+                        <a href="/about/" data-internal-link="true" class="text-white font-light">About</a>
                     
                 
                     
-                        <a href="/contact/" data-internal-link="true">Contact</a>
+                        <a href="/contact/" data-internal-link="true" class="text-white font-light">Contact</a>
                     
                 
             
@@ -134,11 +134,11 @@
         <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded border border-grey-tint-2 inline-flex justify-start items-start gap-2">
             <button data-tab="showreel" class="tab-button active px-20 py-2 bg-grey-shade-1 rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
             hover:bg-grey-shade-3">
-                <span class="text-white text-normal font-normal tracking-normal">Showreel</span>
+                <span class="text-white text-sm font-normal tracking-normal">Showreel</span>
             </button>
             <button data-tab="portfolio" class="tab-button px-20 py-2 bg-white rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
                 hover:bg-grey-tint-3">
-                <span class="text-black text-normal font-normal tracking-normal">Portfolio</span>
+                <span class="text-black text-sm font-normal tracking-normal">Portfolio</span>
             </button>
         </div>
     </div>
@@ -146,52 +146,54 @@
     
     <div class="tab-content-container">
         
-        <div id="showreel-content" class="tab-content flex flex-col items-center">
+        <div id="showreel-content" class="tab-content">
             
 
-    
-    
+    <div class="flex flex-col items-center gap-10 mt-8">
+        
         
             
-            
-            
-            
-            
-            
-            
-            
-            
-                <div class="self-stretch px-16 py-8 bg-grey-tint-3 rounded-lg inline-flex flex-col justify-start items-center">
-                    <div class="self-stretch text-center justify-start text-black text-3xl font-normal leading-9">Sound Design Reel
-                    </div>
-                    <div class="px-4 py-6 flex flex-col justify-center items-center gap-2.5">
-                        <div class="relative w-[854px] h-[480px] rounded-md overflow-hidden">
-                            <video playsinline preload="metadata" controls class="plyr-video inset-0 w-full h-full object-cover" poster="/img/thumbnails/SD-MetalGearSolid-thumbnail.webp">
-                                <source src="https://content.jakoblundoe.com/Cinematic-MGS5-60FPS-2K.mp4" alt="video file" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
-                                
-                                <div class="self-stretch flex flex-row justify-between items-start">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <div class="self-stretch px-16 py-8 bg-grey-tint-3 rounded-lg inline-flex flex-col justify-start items-center">
+                        <div class="self-stretch text-center justify-start text-black text-3xl font-normal leading-9">Sound Design Reel
+                        </div>
+                        <div class="px-4 py-6 flex flex-col justify-center items-center gap-2.5">
+                            <div class="relative w-[854px] h-[480px] rounded-md overflow-hidden">
+                                <video playsinline preload="metadata" controls class="plyr-video inset-0 w-full h-full object-cover" poster="/img/thumbnails/SD-MetalGearSolid-thumbnail.webp">
+                                    <source src="https://content.jakoblundoe.com/Cinematic-MGS5-60FPS-2K.mp4" alt="video file" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
                                     
-                                    <div class="flex flex-col justify-start items-start gap-1 text-nowrap">
-                                        <div class="self-stretch relative">
-                                            <div class="justify-start text-white text-base font-normal leading-normal">Droemmefanger
+                                    <div class="self-stretch flex flex-row justify-between items-start">
+                                        
+                                        <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
+                                            <div class="self-stretch relative">
+                                                <div class="justify-start text-white text-base font-normal leading-normal">Droemmefanger
+                                                </div>
+                                            </div>
+                                            <div class="self-stretch relative">
+                                                <div class="flex left-0 top-0 absolute justify-start text-grey-tint-2 text-sm font-normal leading-tight">A portable interactive sound installation
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="self-stretch relative">
-                                            <div class="flex left-0 top-0 absolute justify-start text-white/80 text-sm font-normal leading-tight">A portable interactive sound installation
+                                        
+                                        <div class="flex flex-col justify-start items-end gap-0.5">
+                                            <div class="self-stretch h-4 inline-flex justify-end items-start">
+                                                <div class="text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">Sound Installation
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="flex flex-col justify-start items-end">
-                                        <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                            <div class="text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">Sound Installation
-                                            </div>
-                                        </div>
-                                        <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                            <div class="flex-1 text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">2022
+                                            <div class="self-stretch h-4 inline-flex justify-end items-start">
+                                                <div class="flex-1 text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">2022
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -199,48 +201,48 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
             
         
     
 
-
-
-    
     
         
         
-        
-        
-        
-        
-        
-        
-            <div class="self-stretch px-20 py-14 inline-flex justify-between items-start">
-                <div class="w-96 inline-flex flex-col justify-start items-start gap-6">
-                    <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-                        <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">Crafting Audio Experiences</div>
-                    </div>
-                    <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
-                        <div class="self-stretch justify-start text-grey-shade-3 text-sm font-normal leading-relaxed [&_span]:text-grey-shade-3 [&_span]:text-sm [&_span]:font-bold [&_span]:leading-relaxed [&_p]:mb-2">
-                            <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive software experiences and systems/tools of all kinds and forms!</p>
+            
+            
+            
+            
+            
+            
+            
+            
+                <div class="self-stretch px-20 py-14 inline-flex justify-between items-start">
+                    <div class="w-96 inline-flex flex-col justify-start items-start gap-6">
+                        <div class="self-stretch inline-flex justify-start items-start gap-2.5">
+                            <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">Crafting Audio Experiences</div>
+                        </div>
+                        <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
+                            <div class="self-stretch justify-start text-grey-shade-3 text-sm font-normal leading-relaxed [&_span]:text-grey-shade-3 [&_span]:text-sm [&_span]:font-bold [&_span]:leading-relaxed [&_p]:mb-2">
+                                <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive software experiences and systems/tools of all kinds and forms!</p>
 <p>Check out my portfolio page and my reel above to see what I do, and navigate to the about page if you are interested in learning more about my journey with audio, up to now.</p>
 <p>Feel free to reach out for a talk or for any questions - I&rsquo;d be happy to hear from you!</p>
 
+                            </div>
                         </div>
-                    </div>
-                    <a href="/about/" data-internal-link="true" class="flex flex-row justify-center items-center px-6 gap-2 h-10 bg-grey-shade-3 rounded-lg hover:bg-grey-shade-2 transition-colors">
+                        <a href="/about/" data-internal-link="true" class="flex flex-row justify-center items-center px-6 gap-2 h-10 bg-grey-shade-3 rounded-lg hover:bg-grey-shade-2 transition-colors">
   <span class="font-light tracking-wider text-xs leading-5 text-white whitespace-nowrap">
     More Info
   </span>
 </a>
+                    </div>
+                    <div class="w-96 h-96 relative">
+                        <img class="w-96 h-96 left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
+                    </div>
                 </div>
-                <div class="w-96 h-96 relative">
-                    <img class="w-96 h-96 left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
-                </div>
-            </div>
+            
         
-    
+    </div>
 
 
         </div>
@@ -262,189 +264,211 @@
 
 
 
-
-<div class="flex flex-col gap-20">
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    <div class="flex flex-row justify-between items-start gap-10 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-        
-        <div class="relative w-[704px] h-96 rounded-md overflow-hidden">
-            
-            <a href="https://github.com/jlundoe/droemmefanger" class="block hover:brightness-50 transition duration-300">
-                <img src="/gifs/droemmefanger.gif" alt="Droemmefanger" class="w-full h-full object-cover rounded-md">
-            </a>
+        <div class="flex flex-col gap-20">
             
             
-            <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
-                <div class="self-stretch flex flex-row justify-between items-start">
-                    <div class="flex flex-col justify-start items-start gap-1 text-nowrap">
-                        <div class="justify-start text-white text-base font-normal leading-normal">Droemmefanger</div>
-                        <div class="text-white/80 text-sm font-normal leading-tight">A portable sound mangling box</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            <div class="flex flex-row justify-between items-start gap-10 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+                
+                <div class="relative w-[704px] h-[396px] rounded-md overflow-hidden">
+                    
+                    <a href="https://github.com/jlundoe/droemmefanger" class="block hover:brightness-50 transition duration-300">
+                        <img src="/gifs/droemmefanger.gif" alt="Droemmefanger" class="w-full h-full object-cover rounded-md">
+                    </a>
+                    
+                    
+                    <div class="absolute bottom-4 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
+                        <div class="self-stretch flex flex-row justify-between items-start">
+                            <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
+                                <div class="justify-start text-white text-base font-normal leading-normal">Droemmefanger</div>
+                                <div class="text-grey-tint-2 text-sm font-normal leading-tight">A portable sound mangling box</div>
+                            </div>
+                            <div class="flex flex-col justify-start items-end gap-1">
+                                <div class="text-right text-grey-tint-2 text-xs font-normal leading-none">Sound Installation</div>
+                                <div class="text-right text-grey-tint-2 text-xs font-normal leading-none">2022</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col justify-start items-end">
-                        <div class="text-right text-grey-tint-2 text-xs font-normal leading-none">Sound Installation</div>
-                        <div class="text-right text-grey-tint-2 text-xs font-normal leading-none">2022</div>
-                    </div>
                 </div>
-            </div>
-        </div>
 
-        
-        <div class="w-[560px] flex flex-col justify-start items-start gap-6">
-            <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="self-stretch flex flex-row justify-between items-center">
-                    <div class="text-grey-shade-3 text-3xl font-normal leading-10">Droemmefanger</div>
-                    <div class="text-right text-grey-base text-sm font-normal leading-tight">Sound Installation</div>
-                </div>
-                <div class="self-stretch flex justify-center items-center gap-2.5">
-                    <div class="flex-1 text-grey-shade-2 text-xl font-normal leading-7">A portable sound mangling box</div>
-                </div>
-                <div class="self-stretch flex justify-center items-center gap-2.5">
-                    <div class="flex-1 text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Through live sound processing Droemmefanger captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.</p>
+                
+                <div class="w-[560px] flex flex-col justify-start items-start gap-6">
+                    <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div class="self-stretch flex flex-row justify-between items-center">
+                            <div class="text-grey-shade-3 text-3xl font-normal leading-10">Droemmefanger</div>
+                            <div class="text-right text-grey-base text-sm font-normal leading-tight">Sound Installation</div>
+                        </div>
+                        <div class="self-stretch flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-grey-shade-2 text-xl font-normal leading-7">A portable sound mangling box</div>
+                        </div>
+                        <div class="self-stretch flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Through live sound processing Droemmefanger captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.</p>
 </div>
-                </div>
-            </div>
+                        </div>
+                    </div>
 
-            
-            <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="text-grey-shade-3 text-base font-medium leading-relaxed">Focus Areas</div>
-                <div class="self-stretch flex flex-col justify-start items-start gap-3">
                     
-                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                        <div class="w-2 h-2 bg-grey-shade-3 rounded-full"></div>
-                        <div class="text-grey-shade-1 text-base font-normal leading-normal">Pure Data Programming</div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div class="text-grey-shade-3 text-base font-medium leading-relaxed">Focus Areas</div>
+                        <div class="self-stretch flex flex-col justify-start items-start gap-3">
+                            
+                            <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                <div class="text-grey-shade-1 text-sm font-normal leading-normal">Pure Data Programming</div>
+                            </div>
+                            
+                            <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                <div class="text-grey-shade-1 text-sm font-normal leading-normal">Generative System Design</div>
+                            </div>
+                            
+                            <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                <div class="text-grey-shade-1 text-sm font-normal leading-normal">Interactive Soundscape Composition</div>
+                            </div>
+                            
+                        </div>
                     </div>
                     
-                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                        <div class="w-2 h-2 bg-grey-shade-3 rounded-full"></div>
-                        <div class="text-grey-shade-1 text-base font-normal leading-normal">Generative System Design</div>
-                    </div>
-                    
-                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                        <div class="w-2 h-2 bg-grey-shade-3 rounded-full"></div>
-                        <div class="text-grey-shade-1 text-base font-normal leading-normal">Interactive Soundscape Composition</div>
-                    </div>
-                    
-                </div>
-            </div>
-            
 
-            
-            <a href="https://github.com/jlundoe/droemmefanger" data-internal-link="true" class="flex flex-row justify-center items-center px-6 gap-2 h-10 bg-grey-shade-3 rounded-lg hover:bg-grey-shade-2 transition-colors">
+                    
+                    <a href="https://github.com/jlundoe/droemmefanger" data-internal-link="true" class="flex flex-row justify-center items-center px-6 gap-2 h-10 bg-grey-shade-3 rounded-lg hover:bg-grey-shade-2 transition-colors">
   <span class="font-light tracking-wider text-xs leading-5 text-white whitespace-nowrap">
     Learn more
   </span>
 </a>
-            
-        </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    <div class="flex flex-row-reverse justify-between items-start gap-10 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-        
-        <div class="relative w-[704px] h-96 rounded-md overflow-hidden">
-            
-            <video playsinline preload="metadata" controls class="plyr-video w-full h-full object-cover" poster="/img/thumbnails/electricity-sd-thumbnail.webp">
-                <source src="https://content.jakoblundoe.com/electricity-sd.mp4" alt="elemental-design-thumbnail" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            
-            <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
-                <div class="self-stretch flex flex-row justify-between items-start">
-                    <div class="flex flex-col justify-start items-start gap-1 text-nowrap">
-                        <div class="justify-start text-white text-base font-normal leading-normal">Elemental Design</div>
-                        <div class="text-white/80 text-sm font-normal leading-tight">Electricity &amp; Arcane Magic Design</div>
-                    </div>
-                    <div class="flex flex-col justify-start items-end">
-                        <div class="text-right text-grey-tint-2 text-xs font-normal leading-none">Sound Redesign</div>
-                        <div class="text-right text-grey-tint-2 text-xs font-normal leading-none"></div>
-                    </div>
+                    
                 </div>
             </div>
-        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
-        
-        <div class="w-[560px] flex flex-col justify-start items-start gap-6">
-            <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="self-stretch flex flex-row justify-between items-center">
-                    <div class="text-grey-shade-3 text-3xl font-normal leading-10">Elemental Design</div>
-                    <div class="text-right text-grey-base text-sm font-normal leading-tight">Sound Redesign</div>
+            
+
+            <div class="flex flex-row-reverse justify-between items-start gap-10 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+                
+                <div class="relative w-[704px] h-[396px] rounded-md overflow-hidden">
+                    
+                    <video playsinline preload="metadata" controls class="plyr-video w-full h-full object-cover" poster="/img/thumbnails/electricity-sd-thumbnail.webp">
+                        <source src="https://content.jakoblundoe.com/electricity-sd.mp4" alt="elemental-design-thumbnail" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    
+                    <div class="absolute bottom-4 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
+                        <div class="self-stretch flex flex-row justify-between items-start">
+                            <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
+                                <div class="justify-start text-white text-base font-normal leading-normal">Elemental Design</div>
+                                <div class="text-grey-tint-2 text-sm font-normal leading-tight">Electricity &amp; Arcane Magic Design</div>
+                            </div>
+                            <div class="flex flex-col justify-start items-end gap-1">
+                                <div class="text-right text-grey-tint-2 text-xs font-normal leading-none">Sound Redesign</div>
+                                <div class="text-right text-grey-tint-2 text-xs font-normal leading-none"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="self-stretch flex justify-center items-center gap-2.5">
-                    <div class="flex-1 text-grey-shade-2 text-xl font-normal leading-7">Electricity &amp; Arcane Magic Design</div>
-                </div>
-                <div class="self-stretch flex justify-center items-center gap-2.5">
-                    <div class="flex-1 text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Some text about the redesign.</p>
+
+                
+                <div class="w-[560px] flex flex-col justify-start items-start gap-6">
+                    <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div class="self-stretch flex flex-row justify-between items-center">
+                            <div class="text-grey-shade-3 text-3xl font-normal leading-10">Elemental Design</div>
+                            <div class="text-right text-grey-base text-sm font-normal leading-tight">Sound Redesign</div>
+                        </div>
+                        <div class="self-stretch flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-grey-shade-2 text-xl font-normal leading-7">Electricity &amp; Arcane Magic Design</div>
+                        </div>
+                        <div class="self-stretch flex justify-center items-center gap-2.5">
+                            <div class="flex-1 text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Some text about the redesign.</p>
 <p><em>Animation Artist: <a href="https://www.artstation.com/artwork/v2wdLa">Deeamo Julien</a></em></p>
 </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div class="text-grey-shade-3 text-base font-medium leading-relaxed">Focus Areas</div>
+                        <div class="self-stretch flex flex-col justify-start items-start gap-3">
+                            
+                            <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                <div class="text-grey-shade-1 text-sm font-normal leading-normal">Sound Effects Design</div>
+                            </div>
+                            
+                            <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                <div class="text-grey-shade-1 text-sm font-normal leading-normal">Props Recording</div>
+                            </div>
+                            
+                            <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                <div class="text-grey-shade-1 text-sm font-normal leading-normal">Sound Processing</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                    
                 </div>
             </div>
-
-            
-            <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="text-grey-shade-3 text-base font-medium leading-relaxed">Focus Areas</div>
-                <div class="self-stretch flex flex-col justify-start items-start gap-3">
-                    
-                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                        <div class="w-2 h-2 bg-grey-shade-3 rounded-full"></div>
-                        <div class="text-grey-shade-1 text-base font-normal leading-normal">Sound Effects Design</div>
-                    </div>
-                    
-                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                        <div class="w-2 h-2 bg-grey-shade-3 rounded-full"></div>
-                        <div class="text-grey-shade-1 text-base font-normal leading-normal">Props Recording</div>
-                    </div>
-                    
-                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                        <div class="w-2 h-2 bg-grey-shade-3 rounded-full"></div>
-                        <div class="text-grey-shade-1 text-base font-normal leading-normal">Sound Processing</div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-
             
         </div>
+    
+
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="fixed bottom-6 right-6 z-40 flex flex-col justify-start items-start gap-2.5">
+    
+    
+    <div class="w-12 h-12 bg-white rounded-full shadow-[0px_4px_8px_0_rgba(0,0,0,0.20)] outline outline-1 outline-offset-[-1px] outline-black/0 flex justify-center items-center transition ease-out duration-150 hover:bg-grey-tint-3 hover:scale-105 active:bg-grey-tint-2">
+        <a href="https://www.linkedin.com/in/jakoblundoe" class="flex justify-center items-center w-full h-full">
+            <ion-icon name="logo-linkedin" alt="LinkedIn logo link" class="text-grey-shade-2 text-xl"></ion-icon>
+        </a>
+    </div>
+    
+    <div class="w-12 h-12 bg-white rounded-full shadow-[0px_4px_8px_0_rgba(0,0,0,0.20)] outline outline-1 outline-offset-[-1px] outline-black/0 flex justify-center items-center transition ease-out duration-150 hover:bg-grey-tint-3 hover:scale-105 active:bg-grey-tint-2">
+        <a href="https://www.youtube.com/@jakob-lundoe" class="flex justify-center items-center w-full h-full">
+            <ion-icon name="logo-youtube" alt="youtube logo link" class="text-grey-shade-2 text-xl"></ion-icon>
+        </a>
+    </div>
+    
+    <div class="w-12 h-12 bg-white rounded-full shadow-[0px_4px_8px_0_rgba(0,0,0,0.20)] outline outline-1 outline-offset-[-1px] outline-black/0 flex justify-center items-center transition ease-out duration-150 hover:bg-grey-tint-3 hover:scale-105 active:bg-grey-tint-2">
+        <a href="https://www.github.com/jlundoe" class="flex justify-center items-center w-full h-full">
+            <ion-icon name="logo-github" alt="Github logo link" class="text-grey-shade-2 text-xl"></ion-icon>
+        </a>
     </div>
     
 </div>
-
-
-        </div>
-    </div>
-</div>
-
-        </div>
     </div>
 </body>
 </html>

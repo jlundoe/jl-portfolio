@@ -1,6 +1,6 @@
 {{ $currentPage := . }}
-<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-2 px-16 [&_a]:text-nowrap
-            [&_a]:text-white [&_a]:font-light [&_a]:tracking-wide text-base
+<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-1 px-16 [&_a]:text-nowrap
+            [&_a]:text-white [&_a]:tracking-wide text-sm
             [&_a]:transition [&_a]:ease-out [&_a]:duration-100 hover:[&_a]:opacity-75 active:[&_a]:opacity-60">
     <div class="gap-4 hidden h-auto items-center justify-center opacity-80
                 sm:flex sm:justify-center">
@@ -14,11 +14,11 @@
         </div>
         <div class="mr-8">
             {{ if .IsHome }}
-            <a href="/" data-internal-link="true" class="text-white relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+21px)]">
+            <a href="/" data-internal-link="true" class="text-white font-normal relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">
                 Jakob Lundoe
             </a>
             {{ else }}
-            <a class="text-white" href="/" data-internal-link="true">
+            <a href="/" data-internal-link="true" class="text-white font-light">
                 Jakob Lundoe
             </a>
             {{ end }}
@@ -31,9 +31,9 @@
             {{ with $pages }}
                 {{ range sort $pages "Params.navbarOrder" }}
                     {{ if eq .RelPermalink $currentPage.RelPermalink }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+21px)]">{{ .Title }}</a>
+                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative font-medium after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">{{ .Title }}</a>
                         {{ else }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true">{{ .Title }}</a>
+                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="text-white font-light">{{ .Title }}</a>
                     {{ end }}
                 {{ end }}
             {{ end }}
@@ -45,9 +45,9 @@
             {{ with $pages }}
                 {{ range sort $pages "Params.navbarOrder" }}
                     {{ if eq .RelPermalink $currentPage.RelPermalink }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+21px)]">{{ .Title }}</a>
+                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative font-medium after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">{{ .Title }}</a>
                         {{ else }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true">{{ .Title }}</a>
+                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="text-white font-light">{{ .Title }}</a>
                     {{ end }}
                 {{ end }}
             {{ end }}

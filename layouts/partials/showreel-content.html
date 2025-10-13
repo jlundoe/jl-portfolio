@@ -1,48 +1,50 @@
 {{ $showreelSection := .Site.GetPage "section" "showreel" }}
 {{ if $showreelSection }}
-    {{ $sectionPage := $showreelSection.GetPage "reel-sections" }}
-    {{ if $sectionPage }}
-        {{ range sort $sectionPage.Pages "Params.order" }}
-            {{ $pageTitle := .Params.title }}
-            {{ $pageDescriptionTitle:= .Params.descriptionTitle }}
-            {{ $pageDescription:= .Params.description }}
-            {{ $tagTitle := .Params.tagTitle }}
-            {{ $year := .Params.year }}
-            {{ $contentType := .Params.type }}
-            {{ $pageVideoPath := .Params.videoPath }}
-            {{ $thumbnailPath := .Params.thumbnail }}
-            {{ if eq $contentType "video" }}
-                <div class="self-stretch px-16 py-8 bg-grey-tint-3 rounded-lg inline-flex flex-col justify-start items-center">
-                    <div class="self-stretch text-center justify-start text-black text-3xl font-normal leading-9">{{ $pageTitle }}
-                    </div>
-                    <div class="px-4 py-6 flex flex-col justify-center items-center gap-2.5">
-                        <div class="relative w-[854px] h-[480px] rounded-md overflow-hidden">
-                            <video playsinline preload="metadata" controls class="plyr-video inset-0 w-full h-full object-cover" poster="{{ $thumbnailPath }}">
-                                <source src="{{ $pageVideoPath }}" alt="video file" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
-                                <!--                                    overlay text wrapper-->
-                                <div class="self-stretch flex flex-row justify-between items-start">
-                                    <!--                                        overlay description-->
-                                    <div class="flex flex-col justify-start items-start gap-1 text-nowrap">
-                                        <div class="self-stretch relative">
-                                            <div class="justify-start text-white text-base font-normal leading-normal">{{ $pageDescriptionTitle }}
+    <div class="flex flex-col items-center gap-10 mt-8">
+        {{ $sectionPage := $showreelSection.GetPage "reel-sections" }}
+        {{ if $sectionPage }}
+            {{ range sort $sectionPage.Pages "Params.order" }}
+                {{ $pageTitle := .Params.title }}
+                {{ $pageDescriptionTitle:= .Params.descriptionTitle }}
+                {{ $pageDescription:= .Params.description }}
+                {{ $tagTitle := .Params.tagTitle }}
+                {{ $year := .Params.year }}
+                {{ $contentType := .Params.type }}
+                {{ $pageVideoPath := .Params.videoPath }}
+                {{ $thumbnailPath := .Params.thumbnail }}
+                {{ if eq $contentType "video" }}
+                    <div class="self-stretch px-16 py-8 bg-grey-tint-3 rounded-lg inline-flex flex-col justify-start items-center">
+                        <div class="self-stretch text-center justify-start text-black text-3xl font-normal leading-9">{{ $pageTitle }}
+                        </div>
+                        <div class="px-4 py-6 flex flex-col justify-center items-center gap-2.5">
+                            <div class="relative w-[854px] h-[480px] rounded-md overflow-hidden">
+                                <video playsinline preload="metadata" controls class="plyr-video inset-0 w-full h-full object-cover" poster="{{ $thumbnailPath }}">
+                                    <source src="{{ $pageVideoPath }}" alt="video file" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
+                                    <!--                                    overlay text wrapper-->
+                                    <div class="self-stretch flex flex-row justify-between items-start">
+                                        <!--                                        overlay description-->
+                                        <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
+                                            <div class="self-stretch relative">
+                                                <div class="justify-start text-white text-base font-normal leading-normal">{{ $pageDescriptionTitle }}
+                                                </div>
+                                            </div>
+                                            <div class="self-stretch relative">
+                                                <div class="flex left-0 top-0 absolute justify-start text-grey-tint-2 text-sm font-normal leading-tight">{{ $pageDescription }}
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="self-stretch relative">
-                                            <div class="flex left-0 top-0 absolute justify-start text-white/80 text-sm font-normal leading-tight">{{ $pageDescription }}
+                                        <!--                                        overlay tags-->
+                                        <div class="flex flex-col justify-start items-end gap-0.5">
+                                            <div class="self-stretch h-4 inline-flex justify-end items-start">
+                                                <div class="text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $tagTitle }}
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <!--                                        overlay tags-->
-                                    <div class="flex flex-col justify-start items-end">
-                                        <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                            <div class="text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $tagTitle }}
-                                            </div>
-                                        </div>
-                                        <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                            <div class="flex-1 text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $year }}
+                                            <div class="self-stretch h-4 inline-flex justify-end items-start">
+                                                <div class="flex-1 text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $year }}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -50,39 +52,39 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                {{ end }}
             {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
 
-{{ $showreelSection := .Site.GetPage "section" "showreel" }}
-    {{ if $showreelSection }}
-    {{ $sectionPage := $showreelSection.GetPage "introduction-sections" }}
-        {{ if $sectionPage }}
-        {{ range sort $sectionPage.Pages "Params.order" }}
-        {{ $pageTitle := .Params.title }}
-        {{ $pageImg := .Params.img }}
-        {{ $btn_text := .Params.btn_text }}
-        {{ $btn_link := .Params.btn_link }}
-        {{ $pageVideoPath := .Params.videopath }}
-        {{ $thumbnailPath := .Params.thumbnail }}
-            <div class="self-stretch px-20 py-14 inline-flex justify-between items-start">
-                <div class="w-96 inline-flex flex-col justify-start items-start gap-6">
-                    <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-                        <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">{{ $pageTitle }}</div>
-                    </div>
-                    <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
-                        <div class="self-stretch justify-start text-grey-shade-3 text-sm font-normal leading-relaxed [&_span]:text-grey-shade-3 [&_span]:text-sm [&_span]:font-bold [&_span]:leading-relaxed [&_p]:mb-2">
-                            {{ .Content }}
+    {{ $showreelSection := .Site.GetPage "section" "showreel" }}
+        {{ if $showreelSection }}
+        {{ $sectionPage := $showreelSection.GetPage "introduction-sections" }}
+            {{ if $sectionPage }}
+            {{ range sort $sectionPage.Pages "Params.order" }}
+            {{ $pageTitle := .Params.title }}
+            {{ $pageImg := .Params.img }}
+            {{ $btn_text := .Params.btn_text }}
+            {{ $btn_link := .Params.btn_link }}
+            {{ $pageVideoPath := .Params.videopath }}
+            {{ $thumbnailPath := .Params.thumbnail }}
+                <div class="self-stretch px-20 py-14 inline-flex justify-between items-start">
+                    <div class="w-96 inline-flex flex-col justify-start items-start gap-6">
+                        <div class="self-stretch inline-flex justify-start items-start gap-2.5">
+                            <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">{{ $pageTitle }}</div>
                         </div>
+                        <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
+                            <div class="self-stretch justify-start text-grey-shade-3 text-sm font-normal leading-relaxed [&_span]:text-grey-shade-3 [&_span]:text-sm [&_span]:font-bold [&_span]:leading-relaxed [&_p]:mb-2">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                        {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link) }}
                     </div>
-                    {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link) }}
+                    <div class="w-96 h-96 relative">
+                        <img class="w-96 h-96 left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
+                    </div>
                 </div>
-                <div class="w-96 h-96 relative">
-                    <img class="w-96 h-96 left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
-                </div>
-            </div>
+            {{ end }}
         {{ end }}
-    {{ end }}
+    </div>
 {{ end }}

@@ -84,6 +84,34 @@ document.addEventListener('DOMContentLoaded', () => {
         volume: 0.8,
     });
 
+    // Hide overlay text when a video starts playing; show it again on pause/end
+    videoPlayers.forEach(player => {
+        try {
+            const plyrContainer = player.elements.container; // .plyr wrapper inserted by Plyr
+            const relativeContainer = plyrContainer && plyrContainer.parentElement;
+            if (!relativeContainer) return;
+            // Both portfolio and showreel overlays share pointer-events-none and absolute positioning
+            const overlay = relativeContainer.querySelector('.absolute.pointer-events-none');
+            if (!overlay) return;
+
+            // Ensure smooth opacity transitions if Tailwind utilities are available
+            overlay.classList.add('transition-opacity');
+            // Use a conservative duration utility if Tailwind is present; otherwise browser defaults will ignore it
+            overlay.classList.add('duration-300');
+
+            const hideOverlay = () => overlay.classList.add('opacity-0');
+            const showOverlay = () => overlay.classList.remove('opacity-0');
+
+            // Bind to Plyr events
+            player.on('play', hideOverlay);
+            player.on('pause', showOverlay);
+            player.on('ended', showOverlay);
+        } catch (e) {
+            // Fail silently to avoid breaking other scripts
+            // console.debug('Overlay toggle setup failed', e);
+        }
+    });
+
     // PLYR MUSIC VIDEO PLAYERS
     const musicVideoPlayers = Plyr.setup('.plyr-musicvideo', {
         controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'settings',],

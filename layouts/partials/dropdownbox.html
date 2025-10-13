@@ -9,13 +9,13 @@
                             active:opacity-60
                             ">
                  <div class="flex justify-center">
-                     <ion-icon name="chevron-up-sharp" alt="dropdown arrow icon" style="color: rgb(50, 50, 50); font-size: 36px;"></ion-icon>
+                     <ion-icon name="chevron-up-sharp" alt="dropdown arrow icon" style="color: #414141; font-size: 32px;"></ion-icon>
                  </div>
             </button>
-            <h2 class="select-text font-inter font-medium text-xl mx-2.5 text-semilightblack pt-1
+            <h2 class="select-text font-normal text-lg mx-2.5 text-grey-shade-3 pt-1
                         hover:opacity-80
                         active:opacity-60
-                        sm:text-2xl">
+                        sm:text-xl">
                 {{ $pageTitle }}
             </h2>
         </div>
@@ -23,18 +23,18 @@
     <div class="select-text mr-4
                 [&_p]:mt-3 [&_p]:mb-3
                 [&_ul]:mt-3 [&_ul]:mb-3 [&_li]:ml-6 [&_li]:list-disc
-                [&_h3]:font-bold [&_h3]:text-base [&_h3]:text-semilightblack
+                [&_h3]:font-bold [&_h3]:text-sm [&_h3]:text-grey-shade-3
                 [&_h4]:font-bold [&_h4]:text-pink [&_h4]:text-sm [&_h4]:mt-5
-                [&_h5]:font-bold [&_h5]:text-lg [&_h5]:text-semilightblack [&_h5]:mt-1
+                [&_h5]:font-bold [&_h5]:text-base [&_h5]:text-grey-shade-3 [&_h5]:mt-1
                 [&_a]:text-pink [&_a]:font-semibold hover:[&_a]:opacity-80 active:[&_a]:opacity-65
                 [&_span]:text-black [&_span]:font-medium
-                relative after:absolute ml-6 after:border after:border-t-0 after:border-semilightblack after:w-full
+                relative after:absolute ml-6 after:border after:border-t-0 after:border-grey-shade-2 after:w-full
                 sm:mr-2
-                sm:[&_h3]:text-xl
-                sm:[&_h4]:text-lg">
+                sm:[&_h3]:text-lg
+                sm:[&_h4]:text-sm">
         <div id="dropdown-content-{{ $pageTitle }}" class="grid grid-rows-0fr">
             <div class="overflow-hidden">
-                <div class=" select-text pl-1 -mt-4 mb-5">
+                <div class=" select-text text-sm pl-1 -mt-4 mb-5">
                     {{ .Content }}
                 </div>
             </div>

@@ -4,11 +4,11 @@
         <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded border border-grey-tint-2 inline-flex justify-start items-start gap-2">
             <button data-tab="showreel" class="tab-button active px-20 py-2 bg-grey-shade-1 rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
             hover:bg-grey-shade-3">
-                <span class="text-white text-normal font-normal tracking-normal">Showreel</span>
+                <span class="text-white text-sm font-normal tracking-normal">Showreel</span>
             </button>
             <button data-tab="portfolio" class="tab-button px-20 py-2 bg-white rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
                 hover:bg-grey-tint-3">
-                <span class="text-black text-normal font-normal tracking-normal">Portfolio</span>
+                <span class="text-black text-sm font-normal tracking-normal">Portfolio</span>
             </button>
         </div>
     </div>
@@ -16,7 +16,7 @@
     <!-- Tab Content -->
     <div class="tab-content-container">
         <!-- Showreel Content -->
-        <div id="showreel-content" class="tab-content flex flex-col items-center">
+        <div id="showreel-content" class="tab-content">
             {{ partial "showreel-content.html" . }}
         </div>
 

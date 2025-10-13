@@ -4087,36 +4087,77 @@
     if (tabButtons.length === 0) {
       return;
     }
+    const activateTab = (tabName) => {
+      if (!tabName) return;
+      try {
+        document.querySelectorAll("video, audio").forEach((m) => {
+          try {
+            m.pause();
+          } catch (e) {
+          }
+        });
+      } catch (e) {
+      }
+      tabButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        const span = btn.querySelector("span");
+        if (span) {
+          span.classList.remove("text-white");
+          span.classList.add("text-black");
+        }
+        btn.classList.remove("bg-grey-shade-1");
+        btn.classList.remove("hover:bg-grey-shade-3");
+        btn.classList.add("bg-white");
+        btn.classList.add("hover:bg-grey-tint-3");
+      });
+      const targetButton = Array.from(tabButtons).find((b) => b.getAttribute("data-tab") === tabName);
+      if (targetButton) {
+        targetButton.classList.add("active");
+        const span = targetButton.querySelector("span");
+        if (span) {
+          span.classList.remove("text-black");
+          span.classList.add("text-white");
+        }
+        targetButton.classList.remove("bg-white");
+        targetButton.classList.remove("hover:bg-grey-tint-3");
+        targetButton.classList.add("bg-grey-shade-1");
+        targetButton.classList.add("hover:bg-grey-shade-3");
+      }
+      document.querySelectorAll(".tab-content").forEach((content) => {
+        content.classList.remove("flex");
+        content.classList.add("hidden");
+      });
+      const selectedContent = document.getElementById(`${tabName}-content`);
+      if (selectedContent) {
+        selectedContent.classList.remove("hidden");
+        selectedContent.classList.add("flex");
+      }
+      try {
+        sessionStorage.setItem("activeTab", tabName);
+      } catch (e) {
+      }
+    };
     tabButtons.forEach((button) => {
       button.addEventListener("click", function() {
         const tabName = this.getAttribute("data-tab");
-        tabButtons.forEach((btn) => {
-          btn.classList.remove("active");
-          btn.querySelector("span").classList.remove("text-white");
-          btn.querySelector("span").classList.add("text-black");
-          btn.classList.remove("bg-grey-shade-1");
-          btn.classList.remove("hover:bg-grey-shade-3");
-          btn.classList.add("bg-white");
-          btn.classList.add("hover:bg-grey-tint-3");
-        });
-        this.classList.add("active");
-        this.querySelector("span").classList.remove("text-black");
-        this.querySelector("span").classList.add("text-white");
-        this.classList.remove("bg-white");
-        this.classList.remove("hover:bg-grey-tint-3");
-        this.classList.add("bg-grey-shade-1");
-        this.classList.add("hover:bg-grey-shade-3");
-        document.querySelectorAll(".tab-content").forEach((content) => {
-          content.classList.remove("flex");
-          content.classList.add("hidden");
-        });
-        const selectedContent = document.getElementById(`${tabName}-content`);
-        if (selectedContent) {
-          selectedContent.classList.remove("hidden");
-          selectedContent.classList.add("flex");
+        if (this.classList.contains("active")) {
+          return;
         }
+        activateTab(tabName);
       });
     });
+    let initialTab = null;
+    try {
+      initialTab = sessionStorage.getItem("activeTab");
+    } catch (e) {
+    }
+    if (initialTab) {
+      const exists = Array.from(tabButtons).some((b) => b.getAttribute("data-tab") === initialTab);
+      const alreadyActive = Array.from(tabButtons).some((b) => b.classList.contains("active") && b.getAttribute("data-tab") === initialTab);
+      if (exists && !alreadyActive) {
+        activateTab(initialTab);
+      }
+    }
   });
 
   // <stdin>
@@ -6252,6 +6293,23 @@
         global: false
       },
       volume: 0.8
+    });
+    videoPlayers.forEach((player) => {
+      try {
+        const plyrContainer = player.elements.container;
+        const relativeContainer = plyrContainer && plyrContainer.parentElement;
+        if (!relativeContainer) return;
+        const overlay = relativeContainer.querySelector(".absolute.pointer-events-none");
+        if (!overlay) return;
+        overlay.classList.add("transition-opacity");
+        overlay.classList.add("duration-300");
+        const hideOverlay = () => overlay.classList.add("opacity-0");
+        const showOverlay = () => overlay.classList.remove("opacity-0");
+        player.on("play", hideOverlay);
+        player.on("pause", showOverlay);
+        player.on("ended", showOverlay);
+      } catch (e) {
+      }
     });
     const musicVideoPlayers = import_plyr.default.setup(".plyr-musicvideo", {
       controls: ["play-large", "play", "progress", "current-time", "mute", "volume", "settings"],
