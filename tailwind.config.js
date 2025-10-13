@@ -49,6 +49,7 @@ module.exports = {
       //   V2 VARIABLES BELOW
         'grey-base': '#898989',
         'grey-tint-1': '#c4c4c4',
+        'grey-tint-1-5': '#d2d2d2',
         'grey-tint-2': '#e0e0e0',
         'grey-tint-3': '#f4f4f4',
         'grey-shade-1': '#505050',

@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="flex flex-col flex-nowrap min-h-dvh bg-white pb-20">
+    <!-- Tab Selector -->
+    <div class="flex justify-center items-center py-8">
+        <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded border border-grey-tint-2 inline-flex justify-start items-start gap-2">
+            <button data-tab="showreel" class="tab-button active px-20 py-2 bg-grey-shade-1 rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
+            hover:bg-grey-shade-3">
+                <span class="text-white text-normal font-normal tracking-normal">Showreel</span>
+            </button>
+            <button data-tab="portfolio" class="tab-button px-20 py-2 bg-white rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
+                hover:bg-grey-tint-3">
+                <span class="text-black text-normal font-normal tracking-normal">Portfolio</span>
+            </button>
+        </div>
+    </div>
 
-</body>
-</html>
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <!-- Showreel Content -->
+        <div id="showreel-content" class="tab-content">
+            {{ with .Resources.Match "showreel/*" }}
+            {{ range . }}
+            {{ .Content }}
+            {{ end }}
+            {{ end }}
+        </div>
+
+        <!-- Portfolio Content -->
+        <div id="portfolio-content" class="tab-content hidden">
+            {{ with .Resources.Match "portfolio/*" }}
+            {{ range . }}
+            {{ .Content }}
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>

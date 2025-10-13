@@ -1,3 +1,7 @@
+// Self-executing modules (run automatically on import)
+import './modules/tabs.js';
+
+// Modules with exported functionality (imported as namespaces)
 import * as cinemaModule from './modules/cinemamodule.js';
 import * as sidebarToggle from './modules/sidebartoggle.js';
 import * as dropdownToggle from './modules/dropdowntoggle.js';
