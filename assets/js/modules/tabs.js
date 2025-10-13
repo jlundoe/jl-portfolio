@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Hide all tab contents
             document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('flex');
                 content.classList.add('hidden');
             });
 
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedContent = document.getElementById(`${tabName}-content`);
             if (selectedContent) {
                 selectedContent.classList.remove('hidden');
+                selectedContent.classList.add('flex');
             }
         });
     });

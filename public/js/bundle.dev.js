@@ -4107,11 +4107,13 @@
         this.classList.add("bg-grey-shade-1");
         this.classList.add("hover:bg-grey-shade-3");
         document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("flex");
           content.classList.add("hidden");
         });
         const selectedContent = document.getElementById(`${tabName}-content`);
         if (selectedContent) {
           selectedContent.classList.remove("hidden");
+          selectedContent.classList.add("flex");
         }
       });
     });

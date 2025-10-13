@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/musiccontent-audio/cvex-brass-theme/</loc>
   </url><url>
+    <loc>http://localhost:1313/portfolio/items/</loc>
+  </url><url>
     <loc>http://localhost:1313/socials/github/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/instagram/</loc>
@@ -20,6 +22,8 @@
   </url><url>
     <loc>http://localhost:1313/resumecontent/courses/</loc>
   </url><url>
+    <loc>http://localhost:1313/showreel/introduction-sections/main-introduction/</loc>
+  </url><url>
     <loc>http://localhost:1313/archived/droemmefanger/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/education/</loc>
@@ -29,6 +33,8 @@
     <loc>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/showreel/introduction-sections/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/sakas-club/</loc>
   </url><url>
@@ -48,9 +54,13 @@
   </url><url>
     <loc>http://localhost:1313/showreel/</loc>
   </url><url>
+    <loc>http://localhost:1313/showreel/reel-sections/</loc>
+  </url><url>
     <loc>http://localhost:1313/archived/sleepy-warrior/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/</loc>
+  </url><url>
+    <loc>http://localhost:1313/showreel/reel-sections/main-reel/</loc>
   </url><url>
     <loc>http://localhost:1313/sound-libraries/</loc>
   </url><url>

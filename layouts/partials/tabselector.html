@@ -1,4 +1,4 @@
-<div class="flex flex-col flex-nowrap min-h-dvh bg-white pb-20">
+<div class="flex flex-col flex-nowrap min-h-dvh bg-white pb-20 justify-start items-center">
     <!-- Tab Selector -->
     <div class="flex justify-center items-center py-8">
         <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded border border-grey-tint-2 inline-flex justify-start items-start gap-2">
@@ -16,21 +16,13 @@
     <!-- Tab Content -->
     <div class="tab-content-container">
         <!-- Showreel Content -->
-        <div id="showreel-content" class="tab-content">
-            {{ with .Resources.Match "showreel/*" }}
-            {{ range . }}
-            {{ .Content }}
-            {{ end }}
-            {{ end }}
+        <div id="showreel-content" class="tab-content flex flex-col items-center">
+            {{ partial "showreel-content.html" . }}
         </div>
 
         <!-- Portfolio Content -->
-        <div id="portfolio-content" class="tab-content hidden">
-            {{ with .Resources.Match "portfolio/*" }}
-            {{ range . }}
-            {{ .Content }}
-            {{ end }}
-            {{ end }}
+        <div id="portfolio-content" class="tab-content flex-col items-center hidden">
+            {{ partial "portfolio-content.html" . }}
         </div>
     </div>
 </div>
