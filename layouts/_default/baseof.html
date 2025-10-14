@@ -4,10 +4,10 @@
 <body data-page="{{ .Params.title }}">
     <div id="mainviewport">
         <div id="sidebarnav"
-             class="fixed top-0 left-0 h-full -translate-x-full bg-white z-30 pl-6 pr-3 border-r border-black">
+             class="fixed top-0 right-0 h-full translate-x-full bg-white z-30 pl-6 pr-3 border-l border-black">
             {{ partial "sidebarnav" . }}
         </div>
-        <div id="headernav" class="hidden top-0 left-0 w-full z-30 px-0 sm:block">
+        <div id="headernav" class="top-0 left-0 w-full z-30 px-0 sm:block">
             {{ partial "header" . }}
         </div>
         <div id="banner" class="w-full p-0 m-0">

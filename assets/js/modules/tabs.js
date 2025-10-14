@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.classList.contains('active')) {
                 return;
             }
-
             activateTab(tabName);
         });
     });

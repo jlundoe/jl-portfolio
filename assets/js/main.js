@@ -283,7 +283,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
     // MAKE SURE NO PLAYERS PLAY SIMULTANEOUSLY
     const allPlyrPlayers = videoPlayers.concat(musicVideoPlayers, audioPlayers);
     allPlyrPlayers.forEach(player => {
@@ -298,89 +297,89 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // VIDEO TOGGLE
-document.addEventListener("DOMContentLoaded", () => {
-    const videocontainer = document.getElementById('showreelvideocontainer');
-    const video = document.querySelector('#reel-container');
-    const button = document.getElementById("showreelbutton");
-    const closeReelButton = document.getElementById("close-reel-button");
-    const delayTime = 500;
-    let timerActive = false;
-
-    const showreelPageActive = (document.body.getAttribute("data-page").toLowerCase() === "home") || false;
-
-    if (!showreelPageActive)
-        return;
-
-    const toggleShowreel = () => {
-        if (timerActive)
-            return;
-        const isShowreelOn = cinemaModule.togglevideo(delayTime);
-        cinemaModule.overlayToggle();
-        cinemaModule.showreelButtonState(delayTime);
-        cinemaModule.toggleTextBox();
-
-        console.log(isShowreelOn);
-        urlStateManager.updateURL(isShowreelOn);
-
-        timerActive = true;
-        setTimeout(() => {
-            timerActive = false;
-        }, delayTime);
-    }
-
-    document.addEventListener("keydown", (keydownEvent) => {
-        if (keydownEvent.key === "Escape" && videocontainer.classList.contains("grid")) {
-            toggleShowreel()
-        }
-    });
-
-    button.addEventListener("click", toggleShowreel);
-    closeReelButton.addEventListener("click", toggleShowreel);
-
-    window.addEventListener("click", (clickEvent) => {
-        if (!video.contains(clickEvent.target) && videocontainer.classList.contains("grid")){
-            toggleShowreel()
-        }
-    });
-
-    window.addEventListener("popstate", toggleShowreel);
-
-    // on page load start video if url matches "on" state
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("home") === "on") {
-        cinemaModule.togglevideo(delayTime);
-        cinemaModule.overlayToggle();
-        cinemaModule.showreelButtonState(delayTime);
-    }
-});
-
-// NAV SIDEBAR TOGGLE
 // document.addEventListener("DOMContentLoaded", () => {
-//     const closeMenuButton = document.getElementById("closemenubutton");
-//     const menuButton = document.getElementById("openmenubutton");
-//     const sidebar = document.getElementById("sidebarnav");
+//     const videocontainer = document.getElementById('showreelvideocontainer');
+//     const video = document.querySelector('#reel-container');
+//     const button = document.getElementById("showreelbutton");
+//     const closeReelButton = document.getElementById("close-reel-button");
+//     const delayTime = 500;
+//     let timerActive = false;
 //
-//     let sidebarOpen = false;
+//     const showreelPageActive = (document.body.getAttribute("data-page").toLowerCase() === "home") || false;
 //
-//     menuButton.addEventListener("click", () => (!sidebarOpen) ? sidebarOpen = sidebarToggle.openMenu(sidebarOpen) : sidebarOpen = sidebarToggle.closeMenu(sidebarOpen));
-//     closeMenuButton.addEventListener("click", () => (sidebarOpen) ? sidebarOpen = sidebarToggle.closeMenu(sidebarOpen) : sidebarOpen = sidebarToggle.openMenu(sidebarOpen));
+//     if (!showreelPageActive)
+//         return;
 //
-//     document.addEventListener("click", (clickEvent) => {
-//         if (!sidebarOpen) {
+//     const toggleShowreel = () => {
+//         if (timerActive)
 //             return;
-//         } else if (!sidebar.contains(clickEvent.target) && !menuButton.contains(clickEvent.target)) {
-//             sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
+//         const isShowreelOn = cinemaModule.togglevideo(delayTime);
+//         cinemaModule.overlayToggle();
+//         cinemaModule.showreelButtonState(delayTime);
+//         cinemaModule.toggleTextBox();
+//
+//         console.log(isShowreelOn);
+//         urlStateManager.updateURL(isShowreelOn);
+//
+//         timerActive = true;
+//         setTimeout(() => {
+//             timerActive = false;
+//         }, delayTime);
+//     }
+//
+//     document.addEventListener("keydown", (keydownEvent) => {
+//         if (keydownEvent.key === "Escape" && videocontainer.classList.contains("grid")) {
+//             toggleShowreel()
 //         }
 //     });
 //
-//     addEventListener("resize", () => {
-//         const width = window.innerWidth;
-//         if (width > 640)
-//             {
-//                 sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
-//             }
+//     button.addEventListener("click", toggleShowreel);
+//     closeReelButton.addEventListener("click", toggleShowreel);
+//
+//     window.addEventListener("click", (clickEvent) => {
+//         if (!video.contains(clickEvent.target) && videocontainer.classList.contains("grid")){
+//             toggleShowreel()
+//         }
 //     });
+//
+//     window.addEventListener("popstate", toggleShowreel);
+//
+//     // on page load start video if url matches "on" state
+//     const urlParams = new URLSearchParams(window.location.search);
+//     if (urlParams.get("home") === "on") {
+//         cinemaModule.togglevideo(delayTime);
+//         cinemaModule.overlayToggle();
+//         cinemaModule.showreelButtonState(delayTime);
+//     }
 // });
+
+// NAV SIDEBAR TOGGLE
+document.addEventListener("DOMContentLoaded", () => {
+    const closeMenuButton = document.getElementById("closemenubutton");
+    const menuButton = document.getElementById("openmenubutton");
+    const sidebar = document.getElementById("sidebarnav");
+
+    let sidebarOpen = false;
+
+    menuButton.addEventListener("click", () => (!sidebarOpen) ? sidebarOpen = sidebarToggle.openMenu(sidebarOpen) : sidebarOpen = sidebarToggle.closeMenu(sidebarOpen));
+    closeMenuButton.addEventListener("click", () => (sidebarOpen) ? sidebarOpen = sidebarToggle.closeMenu(sidebarOpen) : sidebarOpen = sidebarToggle.openMenu(sidebarOpen));
+
+    document.addEventListener("click", (clickEvent) => {
+        if (!sidebarOpen) {
+            return;
+        } else if (!sidebar.contains(clickEvent.target) && !menuButton.contains(clickEvent.target)) {
+            sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
+        }
+    });
+
+    addEventListener("resize", () => {
+        const width = window.innerWidth;
+        if (width > 640)
+            {
+                sidebarOpen = sidebarToggle.closeMenu(sidebarOpen);
+            }
+    });
+});
 
 // DROPDOWN CONTENT TOGGLE
 document.addEventListener("DOMContentLoaded", () => {

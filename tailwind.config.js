@@ -101,12 +101,12 @@ module.exports = {
           '100%': { opacity: '0' },
         },
         slide_right: {
-          '0%': { transform: 'translateX(-100%)'},
+          '0%': { transform: 'translateX(100%)'},
           '100%': { transform: 'translateX(0)'},
         },
         slide_left: {
           '0%': { transform: 'translateX(0)'},
-          '100%': { transform: 'translateX(-100%)'},
+          '100%': { transform: 'translateX(100%)'},
         },
         expand: {
           '0%': { gridTemplateRows: '0fr'},

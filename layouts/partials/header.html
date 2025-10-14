@@ -1,18 +1,21 @@
 {{ $currentPage := . }}
-<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-1 px-16 [&_a]:text-nowrap
-            [&_a]:text-white [&_a]:tracking-wide text-sm
-            [&_a]:transition [&_a]:ease-out [&_a]:duration-100 hover:[&_a]:opacity-75 active:[&_a]:opacity-60">
-    <div class="gap-4 hidden h-auto items-center justify-center opacity-80
-                sm:flex sm:justify-center">
+<div class="bg-grey-shade-3 flex flex-row flex-nowrap justify-between items-center py-1 px-4
+            [&_a]:text-nowrap [&_a]:text-white [&_a]:tracking-wide text-sm [&_a]:transition [&_a]:ease-out [&_a]:duration-100 hover:[&_a]:opacity-75 active:[&_a]:opacity-60
+            lg:px-16
+            md:px-12
+            sm:px-6 sm:justify-between">
+    <div class="gap-4 h-auto items-center justify-center opacity-80 shrink-0 flex flex-row flex-nowrap">
         <div>
             <a href="/" data-internal-link="true">
-                <img src="/img/jl-logo-white.png" alt="Jakob Lundoe homepage logo" class="max-w-full max-h-full w-14
+                <img src="/img/jl-logo-white.png" alt="Jakob Lundoe homepage logo" class="w-14
                 transition ease-out duration-100
                 hover:opacity-70 hover:scale-105
                 active:opacity-50 active:scale-105">
             </a>
         </div>
-        <div class="mr-8">
+        <div class="mr-2
+                    lg:mr-8
+                    sm:mr-4">
             {{ if .IsHome }}
             <a href="/" data-internal-link="true" class="text-white font-normal relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">
                 Jakob Lundoe
@@ -24,33 +27,52 @@
             {{ end }}
         </div>
     </div>
-    <div class="flex flex-row flex-nowrap gap-12">
-        <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-12 px-
-                    sm:flex sm:justify-center sm:items-center">
+    <div class="flex flex-row flex-nowrap gap-2
+                sm:gap-4
+                md:gap-8
+                lg:gap-12">
+        <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-4
+                    sm:flex sm:gap-6
+                    md:gap-10
+                    lg:gap-12">
             {{ $pages := where .Site.Pages "Params.inNav" true }}
             {{ with $pages }}
-                {{ range sort $pages "Params.navbarOrder" }}
-                    {{ if eq .RelPermalink $currentPage.RelPermalink }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative font-medium after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">{{ .Title }}</a>
-                        {{ else }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="text-white font-light">{{ .Title }}</a>
-                    {{ end }}
-                {{ end }}
+            {{ range sort $pages "Params.navbarOrder" }}
+            {{ if eq .RelPermalink $currentPage.RelPermalink }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative font-medium after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true" class="text-white font-light">{{ .Title }}</a>
+            {{ end }}
+            {{ end }}
             {{ end }}
         </div>
-        <div class="h-6 rotate-270 outline outline-1 self-center outline-grey-shade-1"></div>
-        <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-12 px-
-                    sm:flex sm:justify-center sm:items-center">
+        <div class="hidden h-6 outline outline-1 self-center outline-grey-shade-1
+                    sm:flex"></div>
+        <div class="hidden flex-row flex-nowrap justify-center items-center py-1 px-4 gap-4
+                    sm:flex sm:gap-6
+                    md:gap-10
+                    lg:gap-12">
             {{ $pages := where .Site.Pages "Params.inRightNav" true}}
             {{ with $pages }}
-                {{ range sort $pages "Params.navbarOrder" }}
-                    {{ if eq .RelPermalink $currentPage.RelPermalink }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative font-medium after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">{{ .Title }}</a>
-                        {{ else }}
-                        <a href="{{ .RelPermalink }}" data-internal-link="true" class="text-white font-light">{{ .Title }}</a>
-                    {{ end }}
-                {{ end }}
+            {{ range sort $pages "Params.navbarOrder" }}
+            {{ if eq .RelPermalink $currentPage.RelPermalink }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true" class="relative font-medium after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">{{ .Title }}</a>
+            {{ else }}
+            <a href="{{ .RelPermalink }}" data-internal-link="true" class="text-white font-light">{{ .Title }}</a>
             {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="flex flex-col flex-nowrap justify-center items-center mx-2
+            sm:hidden">
+            <div id="menubuttoncontainer" class="flex flex-row h-auto items-center justify-start opacity-80 transition ease-out duration-100 flex-shrink-0
+                hover:opacity-70 hover:scale-105
+                active:opacity-50 active:scale-105
+                sm:hidden">
+                <button id="openmenubutton" class="">
+                    <ion-icon name="menu-outline" alt="hamburger menu logo" style="color: #FFFFFF; font-size: 32px; margin-top: 6.9px; margin-left: 6px;"></ion-icon>
+                </button>
+            </div>
         </div>
     </div>
 </div>

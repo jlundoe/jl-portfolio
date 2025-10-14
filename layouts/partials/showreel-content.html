@@ -68,8 +68,8 @@
             {{ $btn_link := .Params.btn_link }}
             {{ $pageVideoPath := .Params.videopath }}
             {{ $thumbnailPath := .Params.thumbnail }}
-                <div class="self-stretch px-20 py-14 inline-flex justify-between items-start">
-                    <div class="w-96 inline-flex flex-col justify-start items-start gap-6">
+                <div class="self-stretch px-12 py-14 inline-flex justify-between items-start">
+                    <div class="w-[428px] inline-flex flex-col justify-start items-start gap-6">
                         <div class="self-stretch inline-flex justify-start items-start gap-2.5">
                             <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">{{ $pageTitle }}</div>
                         </div>
@@ -80,8 +80,8 @@
                         </div>
                         {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link) }}
                     </div>
-                    <div class="w-96 h-96 relative">
-                        <img class="w-96 h-96 left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
+                    <div class="w-[396px] h-[412px] relative">
+                        <img class="w-[396px] h-[412px] left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
                     </div>
                 </div>
             {{ end }}

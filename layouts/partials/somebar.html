@@ -1,7 +1,9 @@
 <div class="fixed bottom-6 right-6 z-40 flex flex-col justify-start items-start gap-2.5">
     {{ $socials := where .Site.RegularPages "Section" "socials" }}
     {{ range sort $socials "Params.someOrder" }}
-    <div class="w-12 h-12 bg-white rounded-full shadow-[0px_4px_8px_0_rgba(0,0,0,0.20)] outline outline-1 outline-offset-[-1px] outline-black/0 flex justify-center items-center transition ease-out duration-150 hover:bg-grey-tint-3 hover:scale-105 active:bg-grey-tint-2">
+    <div class="w-10 h-10 bg-white rounded-full shadow-[0px_4px_8px_0_rgba(0,0,0,0.20)] outline outline-1 outline-offset-[-1px] outline-black/0 flex justify-center items-center transition ease-out duration-150 hover:bg-grey-tint-3 hover:scale-105 active:bg-grey-tint-2
+                md:w-11 md:h-11
+                lg:w-12 lg:h-12">
         <a href="{{ .Params.href }}" class="flex justify-center items-center w-full h-full">
             <ion-icon name="{{ .Params.src }}" alt="{{ .Params.alt }}" class="text-grey-shade-2 text-xl"></ion-icon>
         </a>

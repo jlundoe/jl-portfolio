@@ -25,12 +25,6 @@
     mod
   ));
 
-  // ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/cinemamodule.js
-  var require_cinemamodule = __commonJS({
-    "ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/cinemamodule.js"() {
-    }
-  });
-
   // node_modules/plyr/dist/plyr.min.js
   var require_plyr_min = __commonJS({
     "node_modules/plyr/dist/plyr.min.js"(exports, module) {
@@ -4160,8 +4154,29 @@
     }
   });
 
-  // <stdin>
-  var cinemaModule = __toESM(require_cinemamodule());
+  // ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/sidebartoggle.js
+  function openMenu(sidebarOpen) {
+    const sideBar = document.getElementById("sidebarnav");
+    const menuButton = document.getElementById("openmenubutton");
+    if (menuButton && sideBar && !sidebarOpen) {
+      menuButton.classList.remove("flex");
+      menuButton.classList.add("hidden");
+      sideBar.classList.remove("animate-slideout");
+      sideBar.classList.add("animate-slidein");
+      return true;
+    }
+  }
+  function closeMenu(sidebarOpen) {
+    const closeMenuButton = document.getElementById("closemenubutton");
+    const sideBar = document.getElementById("sidebarnav");
+    const menuButton = document.getElementById("openmenubutton");
+    if (closeMenuButton && sidebarOpen) {
+      menuButton.classList.remove("hidden");
+      sideBar.classList.remove("animate-slidein");
+      sideBar.classList.add("animate-slideout");
+      return false;
+    }
+  }
 
   // ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/dropdowntoggle.js
   function openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem) {
@@ -6217,17 +6232,6 @@
     }
   }
 
-  // ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/url-state-manager.js
-  var updateURL = (isShowreelOn) => {
-    const url = new URL(window.location);
-    if (isShowreelOn) {
-      url.searchParams.set("home", "on");
-    } else {
-      url.searchParams.delete("home");
-    }
-    history.pushState(null, "", url.toString());
-  };
-
   // <stdin>
   var import_plyr = __toESM(require_plyr_min());
   var import_hammerjs = __toESM(require_hammer());
@@ -6465,48 +6469,25 @@
     });
   });
   document.addEventListener("DOMContentLoaded", () => {
-    const videocontainer = document.getElementById("showreelvideocontainer");
-    const video = document.querySelector("#reel-container");
-    const button = document.getElementById("showreelbutton");
-    const closeReelButton = document.getElementById("close-reel-button");
-    const delayTime = 500;
-    let timerActive = false;
-    const showreelPageActive = document.body.getAttribute("data-page").toLowerCase() === "home" || false;
-    if (!showreelPageActive)
-      return;
-    const toggleShowreel = () => {
-      if (timerActive)
+    const closeMenuButton = document.getElementById("closemenubutton");
+    const menuButton = document.getElementById("openmenubutton");
+    const sidebar = document.getElementById("sidebarnav");
+    let sidebarOpen = false;
+    menuButton.addEventListener("click", () => !sidebarOpen ? sidebarOpen = openMenu(sidebarOpen) : sidebarOpen = closeMenu(sidebarOpen));
+    closeMenuButton.addEventListener("click", () => sidebarOpen ? sidebarOpen = closeMenu(sidebarOpen) : sidebarOpen = openMenu(sidebarOpen));
+    document.addEventListener("click", (clickEvent) => {
+      if (!sidebarOpen) {
         return;
-      const isShowreelOn = (void 0)(delayTime);
-      (void 0)();
-      (void 0)(delayTime);
-      (void 0)();
-      console.log(isShowreelOn);
-      updateURL(isShowreelOn);
-      timerActive = true;
-      setTimeout(() => {
-        timerActive = false;
-      }, delayTime);
-    };
-    document.addEventListener("keydown", (keydownEvent) => {
-      if (keydownEvent.key === "Escape" && videocontainer.classList.contains("grid")) {
-        toggleShowreel();
+      } else if (!sidebar.contains(clickEvent.target) && !menuButton.contains(clickEvent.target)) {
+        sidebarOpen = closeMenu(sidebarOpen);
       }
     });
-    button.addEventListener("click", toggleShowreel);
-    closeReelButton.addEventListener("click", toggleShowreel);
-    window.addEventListener("click", (clickEvent) => {
-      if (!video.contains(clickEvent.target) && videocontainer.classList.contains("grid")) {
-        toggleShowreel();
+    addEventListener("resize", () => {
+      const width = window.innerWidth;
+      if (width > 640) {
+        sidebarOpen = closeMenu(sidebarOpen);
       }
     });
-    window.addEventListener("popstate", toggleShowreel);
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("home") === "on") {
-      (void 0)(delayTime);
-      (void 0)();
-      (void 0)(delayTime);
-    }
   });
   document.addEventListener("DOMContentLoaded", () => {
     const aboutPageActive = document.body.getAttribute("data-page").toLowerCase() === "about" || false;
