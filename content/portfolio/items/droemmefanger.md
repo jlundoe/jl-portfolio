@@ -8,6 +8,7 @@ thumbnail: /gifs/droemmefanger.gif
 thumbnail_alt: Droemmefanger
 btn_text: Learn more
 btn_link: https://github.com/jlundoe/droemmefanger
+btn_target: _blank
 areas_title: Focus Areas
 focus_areas:
   - "Pure Data Programming"

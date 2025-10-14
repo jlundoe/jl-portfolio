@@ -883,7 +883,7 @@ html{font-family:Space Grotesk, sans-serif;--tw-text-opacity:1;color:rgb(47 47 4
 .hover\:opacity-70:hover{opacity:0.7}
 .hover\:opacity-80:hover{opacity:0.8}
 .hover\:shadow-user-sm:hover{--tw-shadow:0.5px 0.5px 2px rgba(0, 0, 0, 0.575);--tw-shadow-colored:0.5px 0.5px 2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
-.hover\:brightness-50:hover{--tw-brightness:brightness(.5);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}}
+.hover\:brightness-75:hover{--tw-brightness:brightness(.75);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}}
 .active\:scale-105:active{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .active\:bg-grey-tint-2:active{--tw-bg-opacity:1;background-color:rgb(224 224 224 / var(--tw-bg-opacity))}
 .active\:opacity-50:active{opacity:0.5}
