@@ -1,4 +1,5 @@
 {{ $section := .Site.GetPage "section" "musiccontent-audio" }}
+<div class="columns-1 md:columns-2 3md:columns-3 gap-6 px-4">
 {{ range $index, $page := sort $section.Pages "Params.order" }}
 {{ $pageTitle := $page.Params.title }}
 {{ $contentType := $page.Params.type }}
@@ -8,7 +9,7 @@
 {{ $thumbnailPath := .Params.thumbnail }}
 
     {{ if eq $cardType "audio" }}
-    <div class="flex flex-col gap-2 justify-start mt-4 mb-4 mx-16 px-2 3md:mx-4" style="grid-row-end: span 20;">
+    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
         <div class="flex flex-col justify-start max-w-[480px] min-w-[341px]">
             <div class="shadow-md">
                 <div>
@@ -54,7 +55,7 @@
         </div>
     </div>
     {{ else if eq $cardType "video" }}
-    <div class="flex flex-col gap-2 mt-4 mb-4 mx-16 px-2 3md:mx-4" style="grid-row-end: span 16;">
+    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
         <div class="max-w-[480px]">
             <div id="musicvideo" class="shadow-md" style="border-radius: 2px;">
                 <video playsinline preload="metadata" controls class="plyr-musicvideo" loop style="border-radius: 2px;" poster="{{ $thumbnailPath }}">
@@ -83,8 +84,4 @@
     </div>
     {{ end }}
 {{ end }}
-
-
-
-<!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-</div> -->
+</div>

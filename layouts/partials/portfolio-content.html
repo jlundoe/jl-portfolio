@@ -1,127 +1,133 @@
-{{ $portfolioSection := .Site.GetPage "section" "portfolio" }}
-{{ if $portfolioSection }}
-    {{ with $portfolioSection }}
-        {{ $pageTitle := .Params.title }}
-        <!--    hero wrapper -->
-        <div class="w-full flex flex-col justify-start items-center gap-4 mt-8 mb-12 px-4">
-            <div class="self-stretch">
-                <div class="text-center">
-                    <h1>{{ $pageTitle }}</h1>
+<div class="max-w-[1440px]">
+    {{ $portfolioSection := .Site.GetPage "section" "portfolio" }}
+    {{ if $portfolioSection }}
+        {{ with $portfolioSection }}
+            {{ $pageTitle := .Params.title }}
+            <!--    hero wrapper -->
+            <div class="w-full flex flex-col justify-start items-center gap-4 mt-8 mb-12 px-4">
+                <div class="self-stretch">
+                    <div class="text-center">
+                        <h1>{{ $pageTitle }}</h1>
+                    </div>
+                </div>
+                <div class="max-w-[672px]">
+                    <div class="[&_p]:text-center [&_p]:text-grey-shade-1 [&_p]:text-base [&_p]:font-normal [&_p]:leading-normal">{{ .Content }}</div>
                 </div>
             </div>
-            <div class="max-w-[672px]">
-                <div class="[&_p]:text-center [&_p]:text-grey-shade-1 [&_p]:text-base [&_p]:font-normal [&_p]:leading-normal">{{ .Content }}</div>
-            </div>
-        </div>
-    {{ end }}
+        {{ end }}
 
-<!-- content wrapper -->
-{{ $sectionItem := $portfolioSection.GetPage "items" }}
-    {{ if $sectionItem }}
-        <div class="flex flex-col gap-14 mx-6
-                    lg:gap-20">
-            {{ range $index, $element := (sort $sectionItem.Pages "Params.order") }}
-            {{ $itemTitle := .Params.title }}
-            {{ $subHeader:= .Params.subHeader }}
-            {{ $tagTitle := .Params.tagTitle }}
-            {{ $year := .Params.year }}
-            {{ $contentType := .Params.type }}
-            {{ $areas_title := .Params.areas_title }}
-            {{ $focus_areas := .Params.focus_areas }}
-            {{ $videoPath := .Params.videoPath }}
-            {{ $thumbnail := .Params.thumbnail }}
-            {{ $thumbnail_alt := .Params.thumbnail_alt }}
-            {{ $btn_text := .Params.btn_text }}
-            {{ $btn_link := .Params.btn_link }}
-            {{ $btn_target := .Params.btn_target }}
+    <!-- content wrapper -->
+    {{ $sectionItem := $portfolioSection.GetPage "items" }}
+        {{ if $sectionItem }}
+            <div class="flex flex-col gap-14 mx-4 justify-center items-center
+                        3md:gap-20">
+                {{ range $index, $element := (sort $sectionItem.Pages "Params.order") }}
+                {{ $itemTitle := .Params.title }}
+                {{ $subHeader:= .Params.subHeader }}
+                {{ $tagTitle := .Params.tagTitle }}
+                {{ $year := .Params.year }}
+                {{ $contentType := .Params.type }}
+                {{ $areas_title := .Params.areas_title }}
+                {{ $focus_areas := .Params.focus_areas }}
+                {{ $videoPath := .Params.videoPath }}
+                {{ $thumbnail := .Params.thumbnail }}
+                {{ $thumbnail_alt := .Params.thumbnail_alt }}
+                {{ $btn_text := .Params.btn_text }}
+                {{ $btn_link := .Params.btn_link }}
+                {{ $btn_target := .Params.btn_target }}
 
-            {{ $isEven := eq (mod $index 2) 0 }}
+                {{ $isEven := eq (mod $index 2) 0 }}
 
-            <div class="flex flex-col {{ if $isEven }}lg:flex-row{{ else }}lg:flex-row-reverse{{ end }} justify-start items-center w-full max-w-[704px] gap-6
-                        lg:justify-between lg:items-start lg:max-w-none lg:w-auto lg:10">
-                <!-- Media (video or image) -->
-                <div class="relative w-full max-w-[704px] aspect-video rounded-md overflow-hidden">
-                    {{ if eq $contentType "video" }}
-                    <video playsinline preload="metadata" controls class="plyr-video w-full h-full object-cover" poster="{{ $thumbnail }}">
-                        <source src="{{ $videoPath }}" alt="{{ $thumbnail_alt }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    {{ else }}
-                    <a href="{{ $btn_link }}" class="block">
-                        <img src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full h-full object-cover rounded-md hover:brightness-75 transition duration-300">
-                    </a>
-                    {{ end }}
-                    <!-- Overlay -->
-                    <!-- overlay text wrapper -->
-                    <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-row justify-between items-start pointer-events-none">
-                        <!-- overlay description -->
-                        <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
-                            <div class="self-stretch relative">
-                                <div class="justify-start text-white text-base font-normal leading-normal">
+                <div class="flex flex-col {{ if $isEven }}3md:flex-row{{ else }}3md:flex-row-reverse{{ end }} justify-start items-center w-full max-w-[704px] gap-6
+                            3md:justify-between 3md:items-start 3md:max-w-none 3md:w-auto 3md:10">
+                    <!-- Media (video or image) -->
+                    <div class="relative w-full max-w-[704px] aspect-video rounded-md overflow-hidden">
+                        {{ if eq $contentType "video" }}
+                        <video playsinline preload="metadata" controls class="plyr-video w-full h-full object-cover" poster="{{ $thumbnail }}">
+                            <source src="{{ $videoPath }}" alt="{{ $thumbnail_alt }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        {{ else }}
+                        <a href="{{ $btn_link }}" class="block">
+                            <img src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full h-full object-cover rounded-md hover:brightness-75 transition duration-300">
+                        </a>
+                        {{ end }}
+                        <!-- Overlay -->
+                        <!-- overlay text wrapper -->
+                        <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-row justify-between items-start pointer-events-none">
+                            <!-- overlay description -->
+                            <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
+                                <div class="self-stretch relative">
+                                    <div class="justify-start overlay-item-title">{{ $itemTitle }}
+                                    </div>
+                                </div>
+                                <div class="self-stretch relative">
+                                    <div class="flex left-0 top-0 absolute justify-start overlay-subheader">{{ $subHeader }}
+                                    </div>
                                 </div>
                             </div>
-                            <div class="self-stretch relative">
-                                <div class="flex left-0 top-0 absolute justify-start text-grey-tint-2 text-sm font-normal leading-tight">{{ $subHeader }}
+                            <!-- overlay tags -->
+                            <div class="flex flex-col justify-start items-end gap-0.5">
+                                <div class="self-stretch h-4 inline-flex justify-end items-start">
+                                    <div class="text-right justify-start overlay-tag-title">{{ $tagTitle }}
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- overlay tags -->
-                        <div class="flex flex-col justify-start items-end gap-0.5">
-                            <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                <div class="text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $tagTitle }}
-                                </div>
-                            </div>
-                            <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                <div class="flex-1 text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $year }}
+                                <div class="self-stretch h-4 inline-flex justify-end items-start">
+                                    <div class="flex-1 text-right justify-start overlay-year">{{ $year }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Text content -->
-                <div class="w-full lg:flex-1 lg:min-w-0 flex flex-col justify-start items-start gap-4">
-                    <div class="w-full flex flex-col justify-start items-start gap-6 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-                        <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                            <div class="self-stretch flex flex-row justify-between items-center">
-                                <div class="text-grey-shade-3 text-3xl font-normal leading-10">
-                                    <h2>{{ $itemTitle }}</h2>
+                    <!-- Text content -->
+                    <div class="w-full 3md:flex-1 3md:min-w-0 flex flex-col justify-start items-start gap-4">
+                        <div class="w-full flex flex-col justify-start items-start gap-6 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+                            <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                                <div class="self-stretch flex flex-row justify-between items-center">
+                                    <div class="text-grey-shade-3 text-3xl font-normal leading-10">
+                                        <h2>{{ $itemTitle }}</h2>
+                                    </div>
+                                    <div class="text-right text-grey-base text-sm font-normal leading-tight">{{ $tagTitle }}</div>
                                 </div>
-                                <div class="text-right text-grey-base text-sm font-normal leading-tight">{{ $tagTitle }}</div>
-                            </div>
-                            <div class="flex justify-center items-center gap-2.5">
-                                <div class="text-grey-shade-2 text-xl font-normal leading-7">
-                                    <h3>{{ $subHeader }}</h3>
+                                <div class="flex justify-center items-center gap-2.5">
+                                    <div class="text-grey-shade-2 text-xl font-normal leading-7">
+                                        <h3>{{ $subHeader }}</h3>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center gap-2.5">
+                                    <div class="text-grey-shade-1 text-sm font-normal leading-relaxed">{{ .Content }}</div>
                                 </div>
                             </div>
-                            <div class="flex justify-center items-center gap-2.5">
-                                <div class="text-grey-shade-1 text-sm font-normal leading-relaxed">{{ .Content }}</div>
+
+                            {{ if $focus_areas }}
+                            <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                                <div class="text-grey-shade-3 text-base font-medium leading-relaxed">{{ $areas_title }}</div>
+                                <div class="self-stretch flex flex-col justify-start items-start gap-3">
+                                    {{ range $focus_areas }}
+                                    <div class="self-stretch flex flex-row justify-start items-center gap-3">
+                                        <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
+                                        <div class="text-grey-shade-1 text-sm font-normal leading-normal">{{ . }}</div>
+                                    </div>
+                                    {{ end }}
+                                </div>
                             </div>
+                            {{ end }}
                         </div>
-
-                        {{ if $focus_areas }}
-                        <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                            <div class="text-grey-shade-3 text-base font-medium leading-relaxed">{{ $areas_title }}</div>
-                            <div class="self-stretch flex flex-col justify-start items-start gap-3">
-                                {{ range $focus_areas }}
-                                <div class="self-stretch flex flex-row justify-start items-center gap-3">
-                                    <div class="w-1.5 h-1.5 bg-grey-shade-3 rounded-full"></div>
-                                    <div class="text-grey-shade-1 text-sm font-normal leading-normal">{{ . }}</div>
-                                </div>
-                                {{ end }}
-                            </div>
+                        {{ if $btn_text }}
+                        <div class="mt-2">
+                            {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link "target" $btn_target) }}
                         </div>
                         {{ end }}
                     </div>
-                    {{ if $btn_text }}
-                    <div class="mt-2">
-                        {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link "target" $btn_target) }}
-                    </div>
-                    {{ end }}
                 </div>
+                {{ end }}
             </div>
-            {{ end }}
-        </div>
+        {{ end }}
     {{ end }}
-{{ end }}
-{{ partial "musicsection" . }}
+    <div class="mt-32 pt-16 flex flex-col justify-center items-center border-t-2 border-grey-tint-2 mx-4">
+    </div>
+    <div class="flex flex-col justify-center items-center">
+        {{ partial "musicsection" . }}
+    </div>
+</div>

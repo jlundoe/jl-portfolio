@@ -2,8 +2,8 @@
 title: Lazy Legacy
 type: Music
 cardType: audio
-filePath: /workcontent/music/Kolo-music/LazyLegacy_etmstr3
-imgPath: /workcontent/music/Kolo-music/lazy-legacy-img.webp
+filePath: /music/Kolo-music/LazyLegacy_etmstr3
+imgPath: /img/thumbnails/lazy-legacy-img.webp
 order: 1
 ---
 Production and mix by me.
