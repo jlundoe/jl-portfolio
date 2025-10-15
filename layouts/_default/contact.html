@@ -1,31 +1,30 @@
 {{ define "main" }}
 <div class="flex flex-col flex-nowrap justify-center bg-white" style="min-height: calc(100vh - 10vw - 60px);">
     <div class="flex flex-col flex-nowrap justify-center items-center gap-8 m-auto px-10">
-        <div class="select-text flex flex-row justify-center items-start gap-2.5 text-3xl font-medium tracking-wider text-center
-                    sm:text-3xl">
+        <div class="select-text flex flex-row justify-center items-start gap-2.5 tracking-wider text-center">
             {{ with .Resources.Get "pagecontent/description.md" }}
-                {{ .Content }}
+            <h2>{{ .Content | plainify | htmlUnescape | strings.TrimSpace }}</h2>
             {{ end }}
         </div>
-        <div class="select-text flex flex-col flex-nowrap self-center gap-2.5">
-            <div class="flex self-center p-1 gap-2.5 font-normal text-base tracking-wide -mt-4
-                        sm:text-lg">
+        <div class="select-text flex flex-col flex-nowrap self-center gap-5">
+            <div class="flex self-center p-1 gap-2.5 -mt-4
+                        sm:[&_p]:text-lg [&_p]:font-normal [&_p]:text-base [&_p]:tracking-wide">
                 {{ with .Resources.Get "pagecontent/email.md"}}
                     {{ .Content }}
                 {{ end }}
             </div>
-            <div class="flex flex-col justify-center items-center mt-4 gap-2.5">
-                <a href="mailto:me@jakoblundoe.com" class="flex flex-row flex-nowrap justify-center text-nowrap items-center py-4 px-7 gap-2.5 mt-8 border-2 border-solid border-pink rounded-md transition ease-out duration-200 font-normal text-lg text-pink tracking-wide shadow-user-xsm text-shadow-sm
-                hover:bg-transp-grey hover:scale-102 hover:shadow-user-sm
-                active:opacity-70
-                sm:text-xl">
-                    {{ with .Resources.Get "pagecontent/buttontext.md" }}
-                        {{ .Content }}
+            {{ with .Resources.Get "pagecontent/button.md" }}
+                {{ $btn_text := .Params.btn_text }}
+                {{ $btn_link := .Params.btn_link }}
+                {{ $btn_target := .Params.btn_target }}
+                <div class="[&_span]:text-lg [&_span]:font-light [&_span]:text-sm [&_span]:tracking-wide
+                            [&_a]:py-6">
+                    {{ if $btn_text }}
+                        {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link "target" $btn_target) }}
                     {{ end }}
-                </a>
-            </div>
+                </div>
+            {{ end }}
         </div>
     </div>
-    {{ partial "footer.html" . }}
 </div>
 {{ end }}

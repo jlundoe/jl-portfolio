@@ -7,22 +7,22 @@
             <div class="flex flex-col flex-nowrap justify-start items-start max-w-[500px] gap-2.5 mt-1 px-6
                         sm:px-8 sm:mt-5
                         2md:max-w-[600px]"> 
-                <div class="select-text flex flex-row flex-nowrap gap-3 items-start font-medium text-pink text-3xl text-start tracking-wider mb-7 truncate
-                            sm:text-3xl">
-                    {{ with .Resources.Get "pagecontent/header.md" }}
-                        {{ .Content }}
-                    {{ end }}
-                    <h1 class="text-semilightblack text-3xl font-extralight truncate
-                                sm:text-3xl"> ABOUT ME </h1>
+                <div class="select-text flex flex-row flex-nowrap gap-3 items-start font-medium text-start tracking-wider mb-7 truncate">
+                    <h2 class="text-pink">A BIT</h2>
+                    <h2 class="font-extralight truncate"> ABOUT ME </h2>
                 </div>
                 <div class="select-text flex flex-row items-start gap-2.5 -mt-3 font-normal text-xl tracking-wide
+                            [&_h2]:text-xl [&_h2]:leading-7 [&_h2]:text-grey-shade-3
+                            [&_h3]:text-base [&_h3]:leading-6 [&_h3]:text-grey-shade-2
                             sm:text-xl sm:font-normal sm:tracking-wider
                             2md:text-left">
                     {{ with .Resources.Get "pagecontent/subheader.md" }}
                         {{ .Content }}
                     {{ end }}
                 </div>
-                <div class="select-text flex flex-col items-start gap-2.5 mt-4 pb-8 -mb-9 font-normal text-sm tracking-wide
+                <div class="select-text flex flex-col items-start mt-4 pb-8 -mb-9 font-normal text-sm tracking-wide
+                            [&_h2]:text-xl [&_h2]:leading-7 [&_h2]:text-grey-shade-3
+                            [&_h3]:text-base [&_h3]:leading-6 [&_h3]:text-grey-shade-2
                             sm:text-sm sm:font-normal sm:tracking-wide
                             2md:text-left">
                     {{ with .Resources.Get "pagecontent/description.md" }}
@@ -41,6 +41,5 @@
             {{ partial "dropdownbox.html" . }}
         </div >
     </div>
-    {{ partial "footer.html" . }}
 </div>
 {{ end }}

@@ -6,7 +6,27 @@
         @apply font-spacegrotesk;
         @apply text-grey-shade-3;
         /*@apply select-none;*/
-        overflow-y: scroll;        
+        overflow-y: scroll;
+    }
+    h2 {
+        @apply text-black text-2xl font-normal leading-9 sm:text-3xl;
+    }
+    h3 {
+        @apply text-grey-shade-2 text-xl font-normal leading-7;
+    }
+    h4 {
+        @apply text-grey-shade-2 text-lg font-normal leading-7;
+    }
+    p {
+        @apply text-grey-shade-3 text-sm font-normal leading-relaxed;
+    }
+    /* spans inside paragraphs */
+    p span {
+        @apply text-grey-shade-3 text-sm font-bold leading-relaxed;
+    }
+    /* add margin-bottom to paragraphs (similar to [&_p]:mb-2 on a wrapper) */
+    p + p {
+        @apply mt-2; /* margin-top on any p that follows another p */
     }
 }
 

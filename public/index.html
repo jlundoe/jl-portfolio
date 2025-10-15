@@ -43,14 +43,19 @@
     <div id="mainviewport">
         <div id="sidebarnav"
              class="fixed top-0 right-0 h-full translate-x-full bg-white z-30 pl-6 pr-3 border-l border-black">
-            <div class="flex flex-col flex-nowrap justify-end items-start gap-12 h-full">
-    <a href="/" data-internal-link="true">
-        <img src="/img/jl-logo-new-black.webp" alt="Jakob Lundoe homepage logo" class="mb-auto mt-6 -ml-5 -mr-2 w-32
+            <div class="flex flex-col flex-nowrap justify-start items-start gap-12 h-full">
+    <button id="closemenubutton" class="fixed flex self-end justify-end w-11 h-auto items-end opacity-80 transition ease-out duration-200 my-3 mx-2
+            hover:opacity-70 hover:scale-105
+            active:opacity-50 active:scale-105">
+        <ion-icon name="close-outline" alt="close menu icon" style="color: black; font-size: 36px; margin-bottom: 9px"></ion-icon>
+    </button>
+    <a href="/" data-internal-link="true" class="mt-2">
+        <img src="/img/jl-logo-new-black.webp" alt="Jakob Lundoe homepage logo" class="mb-auto -ml-5 -mr-2 w-32
                 transition ease-out duration-100
                 hover:opacity-70 hover:scale-105
                 active:opacity-50 active:scale-105">
     </a>
-    <div class="flex flex-col flex-nowrap shrink-0 gap-4 items-start -mb-3
+    <div class="flex flex-col flex-nowrap shrink-0 gap-4 items-start -mb-3 mt-4 mr-4
         [&_a]:font-mono [&_a]:text-light-black [&_a]:font-normal [&_a]:tracking-widest text-base [&_a]:transition [&_a]:ease-out [&_a]:duration-100
         hover:[&_a]:opacity-75 active:[&_a]:opacity-60
         sm:justify-center sm:items-center">
@@ -82,11 +87,6 @@
             
         
     </div>
-    <button id="closemenubutton" class="flex flex-col w-11 h-auto items-center justify-end opacity-80 transition ease-out duration-200 flex-shrink-0 ml-16 -mr-2
-            hover:opacity-70 hover:scale-105
-            active:opacity-50 active:scale-105">
-        <ion-icon name="chevron-back-sharp" alt="left arrow close menu icon" style="color: black; font-size: 34px; margin-bottom: 9px"></ion-icon>
-    </button>
 </div>
         </div>
         <div id="headernav" class="top-0 left-0 w-full z-30 px-0 sm:block">
@@ -109,7 +109,7 @@
                     lg:mr-8
                     sm:mr-4">
             
-            <a href="/" data-internal-link="true" class="text-white font-normal relative after:absolute after:left-0 after:right-0 after:h-[3px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">
+            <a href="/" data-internal-link="true" class="text-white font-normal relative after:absolute after:left-0 after:right-0 after:h-[4px] after:bg-white after:transition-all after:duration-300 after:top-[calc(100%+19px)]">
                 Jakob Lundoe
             </a>
             
@@ -181,25 +181,31 @@
     <div class="flex flex-col flex-nowrap min-h-dvh bg-white pb-20 justify-start items-center">
     
     <div class="flex justify-center items-center py-8">
-        <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded border border-grey-tint-2 inline-flex justify-start items-start gap-2">
-            <button data-tab="showreel" class="tab-button active px-20 py-2 bg-grey-shade-1 rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
-            hover:bg-grey-shade-3">
-                <span class="text-white text-sm font-normal tracking-normal">Showreel</span>
+        <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded border border-grey-tint-2 inline-flex justify-start items-start gap-2
+                    [&>button]:px-12 [&>button]:py-2 [&>button]:rounded [&>button]:border [&>button]:border-grey-tint-1 [&>button]:flex [&>button]:justify-center [&>button]:items-center [&>button]:gap-2.5 [&>button]:transition-all [&>button]:duration-200
+                    [&_span]:text-sm
+                    sm:[&_button]:px-20">
+            <button data-tab="showreel" class="tab-button bg-grey-shade-1
+                    hover:bg-grey-shade-3">
+                <span class="text-white font-normal tracking-normal">Showreel</span>
             </button>
-            <button data-tab="portfolio" class="tab-button px-20 py-2 bg-white rounded border border-grey-tint-1 flex justify-center items-center gap-2.5 transition-all duration-200
-                hover:bg-grey-tint-3">
-                <span class="text-black text-sm font-normal tracking-normal">Portfolio</span>
+            <button data-tab="portfolio" class="tab-button bg-white
+            hover:bg-grey-tint-3">
+                <span class="text-black font-normal tracking-normal">Portfolio</span>
             </button>
         </div>
     </div>
 
     
-    <div class="tab-content-container">
+    <div class="tab-content-container self-stretch w-full min-w-0">
         
-        <div id="showreel-content" class="tab-content">
+        <div id="showreel-content" class="tab-content flex-col items-center min-w-0 w-full">
             
 
-    <div class="flex flex-col items-center gap-10 mt-8">
+    <div class="flex flex-col items-center gap-10 mt-8 self-stretch w-full min-w-0 px-4
+                lg:px-20
+                md:px-16
+                sm:px-12">
         
         
             
@@ -212,15 +218,20 @@
                 
                 
                 
-                    <div class="self-stretch px-16 py-8 bg-grey-tint-3 rounded-lg inline-flex flex-col justify-start items-center">
-                        <div class="self-stretch text-center justify-start text-black text-3xl font-normal leading-9">Sound Design Reel
+                    <div class="max-w-[1280px] px-4 pt-5 pb-2 bg-grey-tint-3 rounded-none -mx-4 sm:mx-0 sm:rounded-lg
+                                lg:px-16 lg:pt-10 lg:pb-8
+                                sm:pt-8">
+                        <div class="text-center justify-start text-black text-3xl font-normal leading-9">
+                            <h2>Sound Design Reel</h2>
                         </div>
-                        <div class="px-4 py-6 flex flex-col justify-center items-center gap-2.5">
-                            <div class="relative w-[854px] h-[480px] rounded-md overflow-hidden">
-                                <video playsinline preload="metadata" controls class="plyr-video inset-0 w-full h-full object-cover" poster="/img/thumbnails/SD-MetalGearSolid-thumbnail.webp">
-                                    <source src="https://content.jakoblundoe.com/Cinematic-MGS5-60FPS-2K.mp4" alt="video file" type="video/mp4">
+                        <div class="px-2 pt-4 pb-6 flex flex-col justify-center items-center gap-2.5
+                                    sm:pt-6 sm:pb-6">
+                            <div class="relative w-full aspect-video rounded-md overflow-hidden">
+                                <video playsinline preload="metadata" controls class="plyr-video inset-0 h-full w-full object-contain" poster="/img/thumbnails/SD-MetalGearSolid-thumbnail.webp">
+                                    <source src="https://content.jakoblundoe.com/Cinematic-MGS5-60FPS-2K.mp4" alt="video file" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
+
                                 <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
                                     
                                     <div class="self-stretch flex flex-row justify-between items-start">
@@ -267,13 +278,20 @@
             
             
             
-                <div class="self-stretch px-12 py-14 inline-flex justify-between items-start">
-                    <div class="w-[428px] inline-flex flex-col justify-start items-start gap-6">
+                <div class="self-stretch px-2 py-4 flex flex-col justify-center items-center gap-12
+                            lg:px-12 lg:py-10 [&_p]:text-center [&_h2]:text-center
+                            md:px-10 md:py-8 md:flex-row md:gap-x-[clamp(1rem,8vw,8rem)] md:items-start
+                            md:[&_p]:text-start md:[&_h2]:text-start
+                            sm:px-8 sm:py-6">
+                    <div class="max-w-[520px] flex flex-col justify-start items-center gap-6
+                                md:items-start md:flex-1 md:min-w-0">
                         <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-                            <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">Crafting Audio Experiences</div>
+                            <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">
+                                <h2> Crafting Audio Experiences </h2>
+                            </div>
                         </div>
                         <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
-                            <div class="self-stretch justify-start text-grey-shade-3 text-sm font-normal leading-relaxed [&_span]:text-grey-shade-3 [&_span]:text-sm [&_span]:font-bold [&_span]:leading-relaxed [&_p]:mb-2">
+                            <div class="self-stretch justify-start mb-2">
                                 <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive software experiences and systems/tools of all kinds and forms!</p>
 <p>Check out my portfolio page and my reel above to see what I do, and navigate to the about page if you are interested in learning more about my journey with audio, up to now.</p>
 <p>Feel free to reach out for a talk or for any questions - I&rsquo;d be happy to hear from you!</p>
@@ -286,19 +304,18 @@
   </span>
 </a>
                     </div>
-                    <div class="w-[396px] h-[412px] relative">
-                        <img class="w-[396px] h-[412px] left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
+                    <div class="relative w-full h-[clamp(280px,80vw,460px)] shrink md:w-[clamp(300px,28vw,396px)] md:h-[clamp(320px,32vw,460px)]">
+                        <img class="absolute inset-0 size-full rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
                     </div>
                 </div>
             
         
     </div>
 
-
         </div>
 
         
-        <div id="portfolio-content" class="tab-content flex-col items-center hidden">
+        <div id="portfolio-content" class="tab-content flex-col items-center min-w-0 w-full hidden">
             
 
     
@@ -362,16 +379,16 @@
                 
                 <div class="self-stretch flex flex-col justify-start items-start gap-4">
                     <div class="w-[560px] flex flex-col justify-start items-start gap-6 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-                        <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div class="flex flex-col justify-start items-start gap-4">
                             <div class="self-stretch flex flex-row justify-between items-center">
                                 <div class="text-grey-shade-3 text-3xl font-normal leading-10">Droemmefanger</div>
                                 <div class="text-right text-grey-base text-sm font-normal leading-tight">Sound Installation</div>
                             </div>
-                            <div class="self-stretch flex justify-center items-center gap-2.5">
-                                <div class="flex-1 text-grey-shade-2 text-xl font-normal leading-7">A portable sound mangling box</div>
+                            <div class="flex justify-center items-center gap-2.5">
+                                <div class="text-grey-shade-2 text-xl font-normal leading-7">A portable sound mangling box</div>
                             </div>
-                            <div class="self-stretch flex justify-center items-center gap-2.5">
-                                <div class="flex-1 text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Through live sound processing Droemmefanger captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.</p>
+                            <div class="flex justify-center items-center gap-2.5">
+                                <div class="text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Through live sound processing Droemmefanger captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.</p>
 </div>
                             </div>
                         </div>
@@ -454,16 +471,16 @@
                 
                 <div class="self-stretch flex flex-col justify-start items-start gap-4">
                     <div class="w-[560px] flex flex-col justify-start items-start gap-6 [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-                        <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div class="flex flex-col justify-start items-start gap-4">
                             <div class="self-stretch flex flex-row justify-between items-center">
                                 <div class="text-grey-shade-3 text-3xl font-normal leading-10">Elemental Design</div>
                                 <div class="text-right text-grey-base text-sm font-normal leading-tight">Sound Redesign</div>
                             </div>
-                            <div class="self-stretch flex justify-center items-center gap-2.5">
-                                <div class="flex-1 text-grey-shade-2 text-xl font-normal leading-7">Electricity &amp; Arcane Magic Design</div>
+                            <div class="flex justify-center items-center gap-2.5">
+                                <div class="text-grey-shade-2 text-xl font-normal leading-7">Electricity &amp; Arcane Magic Design</div>
                             </div>
-                            <div class="self-stretch flex justify-center items-center gap-2.5">
-                                <div class="flex-1 text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Some text about the redesign.</p>
+                            <div class="flex justify-center items-center gap-2.5">
+                                <div class="text-grey-shade-1 text-sm font-normal leading-relaxed"><p>Some text about the redesign.</p>
 <p><em>Animation Artist: <a href="https://www.artstation.com/artwork/v2wdLa">Deeamo Julien</a></em></p>
 </div>
                             </div>

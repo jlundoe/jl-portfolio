@@ -1,6 +1,9 @@
 {{ $showreelSection := .Site.GetPage "section" "showreel" }}
 {{ if $showreelSection }}
-    <div class="flex flex-col items-center gap-10 mt-8">
+    <div class="flex flex-col items-center gap-10 mt-8 self-stretch w-full min-w-0 px-4
+                lg:px-20
+                md:px-16
+                sm:px-12">
         {{ $sectionPage := $showreelSection.GetPage "reel-sections" }}
         {{ if $sectionPage }}
             {{ range sort $sectionPage.Pages "Params.order" }}
@@ -13,19 +16,24 @@
                 {{ $pageVideoPath := .Params.videoPath }}
                 {{ $thumbnailPath := .Params.thumbnail }}
                 {{ if eq $contentType "video" }}
-                    <div class="self-stretch px-16 py-8 bg-grey-tint-3 rounded-lg inline-flex flex-col justify-start items-center">
-                        <div class="self-stretch text-center justify-start text-black text-3xl font-normal leading-9">{{ $pageTitle }}
+                    <div class="max-w-[1280px] px-4 pt-5 pb-2 bg-grey-tint-3 rounded-none -mx-4 sm:mx-0 sm:rounded-lg
+                                lg:px-16 lg:pt-10 lg:pb-8
+                                sm:pt-8">
+                        <div class="text-center justify-start text-black text-3xl font-normal leading-9">
+                            <h2>{{ $pageTitle }}</h2>
                         </div>
-                        <div class="px-4 py-6 flex flex-col justify-center items-center gap-2.5">
-                            <div class="relative w-[854px] h-[480px] rounded-md overflow-hidden">
-                                <video playsinline preload="metadata" controls class="plyr-video inset-0 w-full h-full object-cover" poster="{{ $thumbnailPath }}">
-                                    <source src="{{ $pageVideoPath }}" alt="video file" type="video/mp4">
+                        <div class="px-2 pt-4 pb-6 flex flex-col justify-center items-center gap-2.5
+                                    sm:pt-6 sm:pb-6">
+                            <div class="relative w-full aspect-video rounded-md overflow-hidden">
+                                <video playsinline preload="metadata" controls class="plyr-video inset-0 h-full w-full object-contain" poster="{{ $thumbnailPath }}">
+                                    <source src="{{ $pageVideoPath }}" alt="video file" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
+
                                 <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-col justify-start items-start pointer-events-none">
-                                    <!--                                    overlay text wrapper-->
+                                    <!-- overlay text wrapper -->
                                     <div class="self-stretch flex flex-row justify-between items-start">
-                                        <!--                                        overlay description-->
+                                        <!-- overlay description -->
                                         <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
                                             <div class="self-stretch relative">
                                                 <div class="justify-start text-white text-base font-normal leading-normal">{{ $pageDescriptionTitle }}
@@ -36,7 +44,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--                                        overlay tags-->
+                                        <!-- overlay tags -->
                                         <div class="flex flex-col justify-start items-end gap-0.5">
                                             <div class="self-stretch h-4 inline-flex justify-end items-start">
                                                 <div class="text-right justify-start text-grey-tint-2 text-xs font-normal leading-none">{{ $tagTitle }}
@@ -68,20 +76,27 @@
             {{ $btn_link := .Params.btn_link }}
             {{ $pageVideoPath := .Params.videopath }}
             {{ $thumbnailPath := .Params.thumbnail }}
-                <div class="self-stretch px-12 py-14 inline-flex justify-between items-start">
-                    <div class="w-[428px] inline-flex flex-col justify-start items-start gap-6">
+                <div class="self-stretch px-2 py-4 flex flex-col justify-center items-center gap-12
+                            lg:px-12 lg:py-10 [&_p]:text-center [&_h2]:text-center
+                            md:px-10 md:py-8 md:flex-row md:gap-x-[clamp(1rem,8vw,8rem)] md:items-start
+                            md:[&_p]:text-start md:[&_h2]:text-start
+                            sm:px-8 sm:py-6">
+                    <div class="max-w-[520px] flex flex-col justify-start items-center gap-6
+                                md:items-start md:flex-1 md:min-w-0">
                         <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-                            <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">{{ $pageTitle }}</div>
+                            <div class="flex-1 justify-start text-grey-shade-3 text-3xl font-normal leading-9">
+                                <h2> {{ $pageTitle }} </h2>
+                            </div>
                         </div>
                         <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
-                            <div class="self-stretch justify-start text-grey-shade-3 text-sm font-normal leading-relaxed [&_span]:text-grey-shade-3 [&_span]:text-sm [&_span]:font-bold [&_span]:leading-relaxed [&_p]:mb-2">
+                            <div class="self-stretch justify-start mb-2">
                                 {{ .Content }}
                             </div>
                         </div>
                         {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link) }}
                     </div>
-                    <div class="w-[396px] h-[412px] relative">
-                        <img class="w-[396px] h-[412px] left-0 top-0 absolute rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
+                    <div class="relative w-full h-[clamp(280px,80vw,460px)] shrink md:w-[clamp(300px,28vw,396px)] md:h-[clamp(320px,32vw,460px)]">
+                        <img class="absolute inset-0 size-full rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
                     </div>
                 </div>
             {{ end }}
