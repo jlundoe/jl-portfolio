@@ -6351,8 +6351,9 @@
         enabled: false
       }
     });
-    const workPageActive = document.body.getAttribute("data-page").toLowerCase() === "work" || false;
-    if (!workPageActive) {
+    const pageAttribute = document.body.getAttribute("data-page");
+    const musicPageActive = pageAttribute && pageAttribute.toLowerCase() === "home";
+    if (!musicPageActive) {
       return;
     }
     const playMusicOverlays = document.querySelectorAll("[id^='play-music-overlay-']");
@@ -6407,13 +6408,13 @@
         }
       }
       audioPlayers[index].on("play", () => {
-        ionIconElem.setAttribute("name", "pause-circle-outline");
+        ionIconElem.setAttribute("name", "pause");
       });
       audioPlayers[index].on("pause", () => {
-        ionIconElem.setAttribute("name", "play-circle-outline");
+        ionIconElem.setAttribute("name", "play");
       });
       audioPlayers[index].on("end", () => {
-        ionIconElem.setAttribute("name", "play-circle-outline");
+        ionIconElem.setAttribute("name", "play");
       });
       if (!isTouchDevice()) {
         let audioMotion;
