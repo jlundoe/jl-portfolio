@@ -2,7 +2,7 @@
 title: Game Concept
 type: Soundtrack
 cardType: video
-filePath: /workcontent/music/Alex-gameconcept/alexgraphics.mp4
+filePath: /music/Alex-gameconcept/alexgraphics.mp4
 thumbnail: /img/thumbnails/alexgraphics-thumbnail.webp
 order: 3
 ---

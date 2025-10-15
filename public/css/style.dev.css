@@ -506,6 +506,9 @@ video {
 html{font-family:Space Grotesk, sans-serif;--tw-text-opacity:1;color:rgb(47 47 47 / var(--tw-text-opacity));
         /*@apply select-none;*/
         overflow-y: scroll}
+h1{font-size:1.5rem;font-weight:400;line-height:2.25rem;--tw-text-opacity:1;color:rgb(47 47 47 / var(--tw-text-opacity))}
+@media (min-width: 640px){
+h1{font-size:1.875rem;line-height:2.25rem}}
 h2{font-size:1.5rem;font-weight:400;line-height:2.25rem;--tw-text-opacity:1;color:rgb(31 31 31 / var(--tw-text-opacity))}
 @media (min-width: 640px){
 h2{font-size:1.875rem;line-height:2.25rem}}
@@ -545,7 +548,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .absolute{position:absolute}
 .relative{position:relative}
 .inset-0{inset:0px}
-.bottom-4{bottom:1rem}
 .bottom-6{bottom:1.5rem}
 .bottom-8{bottom:2rem}
 .left-0{left:0px}
@@ -561,6 +563,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .mx-16{margin-left:4rem;margin-right:4rem}
 .mx-2{margin-left:0.5rem;margin-right:0.5rem}
 .mx-2\.5{margin-left:0.625rem;margin-right:0.625rem}
+.mx-6{margin-left:1.5rem;margin-right:1.5rem}
 .mx-7{margin-left:1.75rem;margin-right:1.75rem}
 .my-3{margin-top:0.75rem;margin-bottom:0.75rem}
 .-mb-3{margin-bottom:-0.75rem}
@@ -608,10 +611,8 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .h-1{height:0.25rem}
 .h-1\.5{height:0.375rem}
 .h-10{height:2.5rem}
-.h-12{height:3rem}
 .h-4{height:1rem}
 .h-6{height:1.5rem}
-.h-\[396px\]{height:396px}
 .h-\[8vw\]{height:8vw}
 .h-\[clamp\(280px\2c 80vw\2c 460px\)\]{height:clamp(280px,80vw,460px)}
 .h-auto{height:auto}
@@ -629,9 +630,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .w-14{width:3.5rem}
 .w-32{width:8rem}
 .w-7{width:1.75rem}
-.w-\[560px\]{width:560px}
-.w-\[672px\]{width:672px}
-.w-\[704px\]{width:704px}
 .w-full{width:100%}
 .min-w-0{min-width:0px}
 .min-w-\[341px\]{min-width:341px}
@@ -641,6 +639,8 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .max-w-\[480px\]{max-width:480px}
 .max-w-\[500px\]{max-width:500px}
 .max-w-\[520px\]{max-width:520px}
+.max-w-\[672px\]{max-width:672px}
+.max-w-\[704px\]{max-width:704px}
 .max-w-\[982px\]{max-width:982px}
 .max-w-full{max-width:100%}
 .flex-1{flex:1 1 0%}
@@ -679,7 +679,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}
 .grid-rows-0fr{grid-template-rows:0fr}
 .flex-row{flex-direction:row}
-.flex-row-reverse{flex-direction:row-reverse}
 .flex-col{flex-direction:column}
 .flex-wrap{flex-wrap:wrap}
 .flex-nowrap{flex-wrap:nowrap}
@@ -696,9 +695,9 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .gap-1\.5{gap:0.375rem}
 .gap-10{gap:2.5rem}
 .gap-12{gap:3rem}
+.gap-14{gap:3.5rem}
 .gap-2{gap:0.5rem}
 .gap-2\.5{gap:0.625rem}
-.gap-20{gap:5rem}
 .gap-3{gap:0.75rem}
 .gap-4{gap:1rem}
 .gap-5{gap:1.25rem}
@@ -788,7 +787,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .leading-relaxed{line-height:1.625}
 .leading-snug{line-height:1.375}
 .leading-tight{line-height:1.25}
-.tracking-normal{letter-spacing:0em}
 .tracking-wide{letter-spacing:0.025em}
 .tracking-wider{letter-spacing:0.05em}
 .text-black{--tw-text-opacity:1;color:rgb(31 31 31 / var(--tw-text-opacity))}
@@ -938,7 +936,16 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .lg\:mr-8{margin-right:2rem}
 .lg\:h-12{height:3rem}
 .lg\:w-12{width:3rem}
+.lg\:w-auto{width:auto}
+.lg\:min-w-0{min-width:0px}
+.lg\:max-w-none{max-width:none}
+.lg\:flex-1{flex:1 1 0%}
+.lg\:flex-row{flex-direction:row}
+.lg\:flex-row-reverse{flex-direction:row-reverse}
+.lg\:items-start{align-items:flex-start}
+.lg\:justify-between{justify-content:space-between}
 .lg\:gap-12{gap:3rem}
+.lg\:gap-20{gap:5rem}
 .lg\:px-12{padding-left:3rem;padding-right:3rem}
 .lg\:px-16{padding-left:4rem;padding-right:4rem}
 .lg\:px-20{padding-left:5rem;padding-right:5rem}
@@ -1025,7 +1032,9 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .\[\&_p\]\:text-center p{text-align:center}
 .\[\&_p\]\:text-base p{font-size:1rem;line-height:1.5rem}
 .\[\&_p\]\:font-normal p{font-weight:400}
+.\[\&_p\]\:leading-normal p{line-height:1.5}
 .\[\&_p\]\:tracking-wide p{letter-spacing:0.025em}
+.\[\&_p\]\:text-grey-shade-1 p{--tw-text-opacity:1;color:rgb(80 80 80 / var(--tw-text-opacity))}
 @media (min-width: 640px){
 .sm\:\[\&_p\]\:text-lg p{font-size:1.125rem;line-height:1.75rem}}
 @media (min-width: 768px){
@@ -1035,8 +1044,11 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .\[\&_span\]\:font-light span{font-weight:300}
 .\[\&_span\]\:font-medium span{font-weight:500}
 .\[\&_span\]\:font-normal span{font-weight:400}
+.\[\&_span\]\:tracking-normal span{letter-spacing:0em}
 .\[\&_span\]\:tracking-wide span{letter-spacing:0.025em}
 .\[\&_span\]\:text-black span{--tw-text-opacity:1;color:rgb(31 31 31 / var(--tw-text-opacity))}
 .\[\&_span\]\:text-pink span{--tw-text-opacity:1;color:rgb(227 60 114 / var(--tw-text-opacity))}
+@media (min-width: 640px){
+.sm\:\[\&_span\]\:tracking-wide span{letter-spacing:0.025em}}
 .\[\&_ul\]\:mb-3 ul{margin-bottom:0.75rem}
 .\[\&_ul\]\:mt-3 ul{margin-top:0.75rem}

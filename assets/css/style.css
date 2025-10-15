@@ -8,6 +8,9 @@
         /*@apply select-none;*/
         overflow-y: scroll;
     }
+    h1 {
+        @apply text-grey-shade-3 text-2xl font-normal leading-9 sm:text-3xl;
+    }
     h2 {
         @apply text-black text-2xl font-normal leading-9 sm:text-3xl;
     }
