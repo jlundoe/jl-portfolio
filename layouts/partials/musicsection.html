@@ -7,10 +7,9 @@
 {{ $pageImg := $page.Params.imgPath }}
 {{ $cardType := $page.Params.cardType}}
 {{ $thumbnailPath := .Params.thumbnail }}
-
     {{ if eq $cardType "audio" }}
-    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
-        <div class="flex flex-col justify-start max-w-[480px] min-w-[341px]">
+    <div class="flex flex-col gap-2 mb-6 break-inside-avoid" style="-webkit-column-break-inside: avoid; page-break-inside: avoid;">
+        <div class="flex flex-col justify-start max-w-[480px] min-w-[341px] w-full">
             <div class="shadow-md">
                 <div>
                     <div class="relative max-w-[480px]" style="border-top-left-radius: 2px; border-top-right-radius: 2px;">
@@ -20,15 +19,8 @@
                         <div id="play-music-overlay-{{ $index }}" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
                                                                                                 hover:cursor-pointer">
                             <div id="play-music-btn-{{ $index }}" class="ease-in-out duration-50 opacity-100">
-                                <ion-icon name="play-circle-outline" style="font-size: 64px; color: rgba(255, 255, 255, 0.9);">
-                                </ion-icon>
                                 <div class="flex justify-center items-center w-16 h-16 rounded-full bg-black bg-opacity-50">
                                     <ion-icon name="play" style="font-size: 24px; color: #ffffff;"></ion-icon>
-                                </div>
-                                <div class="absolute inset-0 flex justify-center items-center">
-                                    <h3 class="font-bebas text-5xl text-white tracking-wide mb-48">
-                                        {{ $pageTitle }}
-                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -38,13 +30,13 @@
                     </audio>
                 </div>
             </div>
-            <div class="select-text flex flex-col font-mono mt-2 ml-1
+            <div class="select-text flex flex-col mt-2 ml-1
             [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
                 <div class="flex flex-row items-center gap-2 align-center">
                     <p class="text-base font-semibold text-semilightblack">
                         {{ $pageTitle }}
                     </p>
-                    <p class="text-sm font-normal">
+                    <p class="text-sm font-normal pb-2">
                         |
                     </p>
                     <p class="text-sm font-normal mt-[2px]">
@@ -58,30 +50,30 @@
         </div>
     </div>
     {{ else if eq $cardType "video" }}
-    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
-        <div class="max-w-[480px]">
+    <div class="flex flex-col gap-2 mb-6 break-inside-avoid" style="-webkit-column-break-inside: avoid; page-break-inside: avoid;">
+        <div class="flex flex-col justify-start max-w-[480px] min-w-[341px] w-full">
             <div id="musicvideo" class="shadow-md" style="border-radius: 2px;">
                 <video playsinline preload="metadata" controls class="plyr-musicvideo" loop style="border-radius: 2px;" poster="{{ $thumbnailPath }}">
                     <source src="{{ $pageFilePath }}" alt="video file" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-        </div>
-        <div class="select-text flex flex-col font-mono ml-1
-        [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-            <div class="flex flex-row items-center gap-2 align-center">
-                <p class="text-base font-semibold text-semilightblack">
-                    {{ $pageTitle }}
-                </p>
-                <p class="text-sm font-normal">
-                    |
-                </p>
-                <p class="text-sm font-normal mt-[2px]">
-                    {{ $contentType }}
-                </p>
-            </div>
-            <div class="select-text text-sm">
-                {{ .Content }}
+            <div class="select-text flex flex-col mt-2 ml-1
+            [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+                <div class="flex flex-row items-center gap-2 align-center">
+                    <p class="text-base font-semibold text-semilightblack">
+                        {{ $pageTitle }}
+                    </p>
+                    <p class="text-sm font-normal pb-2">
+                        |
+                    </p>
+                    <p class="text-sm font-normal mt-[2px]">
+                        {{ $contentType }}
+                    </p>
+                </div>
+                <div class="select-text text-sm">
+                    {{ .Content }}
+                </div>
             </div>
         </div>
     </div>
