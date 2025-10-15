@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="mx-2 my-8
+            lg:mx-8
+            md:mx-6
+            sm:mx-4">
+    {{ $portfolioSection := .Site.GetPage "section" "scripts" }}
+        {{ if $portfolioSection }}
+            {{ with $portfolioSection }}
+            {{ $pageTitle := .Params.pageHeader }}
+            <!--    hero wrapper -->
+                <div class="w-full flex flex-col justify-start items-center gap-4 mt-8 mb-12 px-4">
+                    <div class="self-stretch">
+                        <div class="text-center">
+                            <h1>{{ $pageTitle }}</h1>
+                        </div>
+                    </div>
+                    <div class="max-w-[672px]">
+                        <div class="[&_p]:text-center [&_p]:text-grey-shade-1 [&_p]:text-base [&_p]:font-normal [&_p]:leading-normal">{{ .Content }}</div>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+        {{ partial "script-section" . }}
+</div>
+{{ end }}

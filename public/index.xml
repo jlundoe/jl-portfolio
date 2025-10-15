@@ -36,6 +36,20 @@
       <description></description>
     </item>
     <item>
+      <title>Adjust Item Playrate</title>
+      <link>http://localhost:1313/adjust-item-playrate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/adjust-item-playrate/</guid>
+      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adjust Item Volume</title>
+      <link>http://localhost:1313/adjust-item-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/adjust-item-volume/</guid>
+      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,6 +99,13 @@
       <description>&lt;h4 id=&#34;jan-2025---feb-2025&#34;&gt;Jan 2025 - Feb 2025&lt;/h4&gt;&#xA;&lt;h3 id=&#34;software-developer&#34;&gt;Software Developer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-the-byte-flow--phoenix-design-aid--internship&#34;&gt;Company: The Byte Flow / Phoenix Design Aid | Internship&lt;/h5&gt;&#xA;&lt;p&gt;Web design and development&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Management&lt;/li&gt;&#xA;&lt;li&gt;UX/UI design&lt;/li&gt;&#xA;&lt;li&gt;Javascript, PHP, HTML, CSS&lt;/li&gt;&#xA;&lt;li&gt;Versions Control (Git)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;I gained experience and valuable insights into professional development environments, including it’s processes and pipelines.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;aug-2023---feb-2024&#34;&gt;Aug 2023 - Feb 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;technical-sound-designer&#34;&gt;Technical Sound Designer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-gumbo-games--part-time&#34;&gt;Company: Gumbo Games | Part time&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developing audiosystems in Unity with C#.&lt;/li&gt;&#xA;&lt;li&gt;Using the version control software tool Git in the development process.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learned a lot about remote collaboration and how to use version control tool Git in the development process.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Explosion Pack</title>
+      <link>http://localhost:1313/explosion-pack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/explosion-pack/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Game Concept</title>
       <link>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,13 +134,6 @@
       <description></description>
     </item>
     <item>
-      <title>Scripts</title>
-      <link>http://localhost:1313/scripts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scripts/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sleepy Warrior</title>
       <link>http://localhost:1313/musiccontent-audio/sleepy-warrior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -131,13 +145,6 @@
       <link>http://localhost:1313/showreel/reel-sections/main-reel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/showreel/reel-sections/main-reel/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sound Libraries</title>
-      <link>http://localhost:1313/sound-libraries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sound-libraries/</guid>
       <description></description>
     </item>
     <item>

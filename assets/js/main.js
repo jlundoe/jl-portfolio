@@ -382,7 +382,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// DROPDOWN CONTENT TOGGLE
+// DROPDOWN CONTENT TOGGLE - ABOUT PAGE
 document.addEventListener("DOMContentLoaded", () => {
     const aboutPageActive = (document.body.getAttribute("data-page").toLowerCase() === "about") || false;
     if (!aboutPageActive)
@@ -391,6 +391,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const resumeContentElem = document.getElementsByClassName("resume-content");
 
     for (const elem of resumeContentElem) {
+        const buttonContainerElem = elem.firstElementChild.firstElementChild;
+
+        const buttonElemIDs = buttonContainerElem.querySelector("button").id;
+        const contentElemIDs = elem.children[1]?.firstElementChild.id;
+
+        const dropdownButtonElem = document.getElementById(buttonElemIDs);
+        const dropdownContentElem = document.getElementById(contentElemIDs);
+
+        let isDropdownOpen = false;
+        buttonContainerElem.addEventListener("click", () => {
+            if (!isDropdownOpen) {
+                isDropdownOpen = dropdownToggle.openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+            } else if (isDropdownOpen) {
+                isDropdownOpen = dropdownToggle.closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+            }
+        });
+    }
+});
+
+// DROPDOWN CONTENT TOGGLE - SCRIPTS PAGE
+document.addEventListener("DOMContentLoaded", () => {
+    const scriptsPageActive = (document.body.getAttribute("data-page").toLowerCase() === "scripts") || false;
+    if (!scriptsPageActive)
+        return;
+
+    const scriptContentElem = document.getElementsByClassName("script-content");
+
+    for (const elem of scriptContentElem) {
         const buttonContainerElem = elem.firstElementChild.firstElementChild;
 
         const buttonElemIDs = buttonContainerElem.querySelector("button").id;

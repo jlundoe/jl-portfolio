@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Script Items on JL-PORTFOLIO</title>
+    <link>http://localhost:1313/pages/scripts/items/</link>
+    <description>Recent content in Script Items on JL-PORTFOLIO</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/pages/scripts/items/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adjust Item Playrate</title>
+      <link>http://localhost:1313/adjust-item-playrate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/adjust-item-playrate/</guid>
+      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adjust Item Volume</title>
+      <link>http://localhost:1313/adjust-item-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/adjust-item-volume/</guid>
+      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

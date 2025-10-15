@@ -6511,6 +6511,27 @@
       });
     }
   });
+  document.addEventListener("DOMContentLoaded", () => {
+    const scriptsPageActive = document.body.getAttribute("data-page").toLowerCase() === "scripts" || false;
+    if (!scriptsPageActive)
+      return;
+    const scriptContentElem = document.getElementsByClassName("script-content");
+    for (const elem of scriptContentElem) {
+      const buttonContainerElem = elem.firstElementChild.firstElementChild;
+      const buttonElemIDs = buttonContainerElem.querySelector("button").id;
+      const contentElemIDs = elem.children[1]?.firstElementChild.id;
+      const dropdownButtonElem = document.getElementById(buttonElemIDs);
+      const dropdownContentElem = document.getElementById(contentElemIDs);
+      let isDropdownOpen = false;
+      buttonContainerElem.addEventListener("click", () => {
+        if (!isDropdownOpen) {
+          isDropdownOpen = openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+        } else if (isDropdownOpen) {
+          isDropdownOpen = closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+        }
+      });
+    }
+  });
 })();
 /*! Bundled license information:
 

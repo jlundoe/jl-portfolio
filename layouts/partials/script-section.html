@@ -1,0 +1,55 @@
+{{ $scriptsSection := .Site.GetPage "scripts" }}
+{{ if $scriptsSection }}
+    {{ $itemsSection := $scriptsSection.GetPage "items" }}
+    {{ if $itemsSection }}
+        {{ range sort $itemsSection.Pages "Params.order" }}
+            {{ $pageTitle := .Params.title }}
+            {{ $thumbnail := .Params.thumbnail }}
+            {{ $tags := .Params.tags }}
+            {{ $download := .Params.download }}
+            <div class="script-content w-full max-w-4xl mx-auto mb-4">
+                <div class="mt-2 py-1 mx-2">
+                    <div id="dropdown-button-container-{{ $pageTitle }}" class="flex flex-row flex-nowrap justify-between items-center py-2 px-4 hover:cursor-pointer border border-grey-shade-2 rounded-lg bg-white hover:shadow-md transition-shadow duration-200">
+                        <div class="flex flex-row items-center flex-1">
+                            <button id="dropdown-button-{{ $pageTitle }}" class="flex justify-center rotate-180 transition ease-out duration-300 mr-3 hover:opacity-80 hover:scale-102 active:opacity-60">
+                                <ion-icon name="chevron-up-sharp" alt="dropdown arrow icon" style="color: #414141; font-size: 28px;"></ion-icon>
+                            </button>
+                            <h2 class="select-text font-normal text-lg text-grey-shade-3 py-2 hover:opacity-80 active:opacity-60 sm:text-xl">
+                                {{ $pageTitle }}
+                            </h2>
+                        </div>
+                        <div class="flex flex-row items-center gap-3">
+                            {{ if $download }}
+                                <div class="mx-4">
+                                    {{ partial "button-download" (dict "download" $download) }}
+                                </div>
+                            {{ end }}
+                            {{ if $thumbnail }}
+                            <div class="flex-shrink-0">
+                                <img src="{{ $thumbnail }}" alt="{{ $pageTitle }} preview" class="w-16 h-16 object-cover rounded border border-grey-shade-2">
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                <div class="select-text mx-4
+                            [&_p]:mt-3 [&_p]:mb-3 [&_p]:text-grey-shade-3 [&_ul]:mt-3 [&_ul]:mb-3 [&_li]:ml-6 [&_li]:list-disc [&_h3]:font-medium [&_h3]:text-grey-shade-3 [&_h3]:mt-6 [&_h3]:mb-2 [&_h6]:font-semibold [&_h6]:text-sm [&_h6]:text-grey-shade-3 [&_h6]:mt-4 [&_h6]:mb-1 [&_a]:text-pink [&_a]:font-semibold hover:[&_a]:opacity-80 active:[&_a]:opacity-65 [&_img]:mt-4 [&_img]:mb-4 [&_img]:rounded [&_img]:border [&_img]:border-grey-shade-2 [&_img]:max-w-full [&_img]:h-auto [&_br]:my-2 relative">
+                    <div id="dropdown-content-{{ $pageTitle }}" class="grid grid-rows-0fr">
+                        <div class="overflow-hidden">
+                            <div class="select-text px-2 pt-4 pb-6">
+                                {{ .Content }}
+                                {{ if $tags }}
+                                <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-grey-shade-2">
+                                    {{ range $tags }}
+                                    <span class="inline-block px-3 py-1 text-xs font-medium text-white bg-pink rounded-full">{{ . }}</span>
+                                    {{ end }}
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+{{ end }}

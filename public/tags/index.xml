@@ -7,5 +7,47 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reaper</title>
+      <link>http://localhost:1313/tags/reaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reaper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recording</title>
+      <link>http://localhost:1313/tags/recording/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/recording/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Script</title>
+      <link>http://localhost:1313/tags/script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/script/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sfx</title>
+      <link>http://localhost:1313/tags/sfx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sfx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synthesis</title>
+      <link>http://localhost:1313/tags/synthesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/synthesis/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

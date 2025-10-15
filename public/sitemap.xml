@@ -10,7 +10,13 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/adjust-item-playrate/</loc>
+  </url><url>
+    <loc>http://localhost:1313/adjust-item-volume/</loc>
+  </url><url>
     <loc>http://localhost:1313/archived/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/automation/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
@@ -27,6 +33,8 @@
     <loc>http://localhost:1313/portfolio/items/elemental-design/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/experience/</loc>
+  </url><url>
+    <loc>http://localhost:1313/explosion-pack/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
@@ -46,11 +54,21 @@
   </url><url>
     <loc>http://localhost:1313/portfolio/items/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/reaper/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/recording/</loc>
+  </url><url>
     <loc>http://localhost:1313/resumecontent/</loc>
   </url><url>
     <loc>http://localhost:1313/archived/samplii/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/script/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/scripts/items/</loc>
+  </url><url>
     <loc>http://localhost:1313/scripts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sfx/</loc>
   </url><url>
     <loc>http://localhost:1313/showreel/</loc>
   </url><url>
@@ -63,6 +81,10 @@
     <loc>http://localhost:1313/showreel/reel-sections/main-reel/</loc>
   </url><url>
     <loc>http://localhost:1313/sound-libraries/</loc>
+  </url><url>
+    <loc>http://localhost:1313/pages/sound-libraries/items/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/synthesis/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
