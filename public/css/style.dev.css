@@ -620,7 +620,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .h-auto{height:auto}
 .h-full{height:100%}
 .max-h-32{max-height:8rem}
-.max-h-\[360px\]{max-height:360px}
 .min-h-28{min-height:7rem}
 .min-h-dvh{min-height:100dvh}
 .w-1{width:0.25rem}
@@ -636,6 +635,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .min-w-0{min-width:0px}
 .min-w-\[341px\]{min-width:341px}
 .max-w-4xl{max-width:56rem}
+.max-w-\[1120px\]{max-width:1120px}
 .max-w-\[1280px\]{max-width:1280px}
 .max-w-\[1440px\]{max-width:1440px}
 .max-w-\[430px\]{max-width:430px}
@@ -769,10 +769,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .text-center{text-align:center}
 .text-right{text-align:right}
 .text-start{text-align:start}
-.font-bebas{font-family:Bebas Neue, sans-serif}
-.font-mono{font-family:Roboto Mono, monospace}
 .text-3xl{font-size:1.875rem;line-height:2.25rem}
-.text-5xl{font-size:3rem;line-height:1}
 .text-base{font-size:1rem;line-height:1.5rem}
 .text-lg{font-size:1.125rem;line-height:1.75rem}
 .text-sm{font-size:0.875rem;line-height:1.25rem}
@@ -797,7 +794,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .text-grey-shade-1{--tw-text-opacity:1;color:rgb(80 80 80 / var(--tw-text-opacity))}
 .text-grey-shade-2{--tw-text-opacity:1;color:rgb(65 65 65 / var(--tw-text-opacity))}
 .text-grey-shade-3{--tw-text-opacity:1;color:rgb(47 47 47 / var(--tw-text-opacity))}
-.text-light-grey{--tw-text-opacity:1;color:rgb(236 236 236 / var(--tw-text-opacity))}
 .text-pink{--tw-text-opacity:1;color:rgb(227 60 114 / var(--tw-text-opacity))}
 .text-semilightblack{--tw-text-opacity:1;color:rgb(50 50 50 / var(--tw-text-opacity))}
 .text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}
