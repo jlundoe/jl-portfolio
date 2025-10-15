@@ -568,6 +568,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .mx-2\.5{margin-left:0.625rem;margin-right:0.625rem}
 .mx-4{margin-left:1rem;margin-right:1rem}
 .mx-7{margin-left:1.75rem;margin-right:1.75rem}
+.mx-auto{margin-left:auto;margin-right:auto}
 .my-3{margin-top:0.75rem;margin-bottom:0.75rem}
 .-mb-3{margin-bottom:-0.75rem}
 .-mb-9{margin-bottom:-2.25rem}
@@ -958,13 +959,13 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 @media (min-width: 952px){
 .\31md\:max-w-\[400px\]{max-width:400px}}
 @media (min-width: 1053px){
+.\32md\:mx-4{margin-left:1rem;margin-right:1rem}
 .\32md\:max-w-\[1082px\]{max-width:1082px}
 .\32md\:max-w-\[1380px\]{max-width:1380px}
 .\32md\:max-w-\[600px\]{max-width:600px}
 .\32md\:text-left{text-align:left}}
 @media (min-width: 1096px){
 .\33md\:grid{display:grid}
-.\33md\:w-auto{width:auto}
 .\33md\:min-w-0{min-width:0px}
 .\33md\:max-w-none{max-width:none}
 .\33md\:flex-1{flex:1 1 0%}
@@ -974,7 +975,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .\33md\:flex-row{flex-direction:row}
 .\33md\:flex-row-reverse{flex-direction:row-reverse}
 .\33md\:items-start{align-items:flex-start}
-.\33md\:justify-between{justify-content:space-between}
+.\33md\:gap-10{gap:2.5rem}
 .\33md\:gap-20{gap:5rem}}
 .\[\&\>button\]\:flex>button{display:flex}
 .\[\&\>button\]\:items-center>button{align-items:center}

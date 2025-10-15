@@ -316,7 +316,8 @@
 
         
         <div id="portfolio-content" class="tab-content flex-col items-center min-w-0 w-full hidden">
-            <div class="max-w-[1440px]">
+            <div class="max-w-[1440px] mx-auto
+            2md:mx-4">
     
     
         
@@ -358,9 +359,9 @@
                 
 
                 <div class="flex flex-col 3md:flex-row justify-start items-center w-full max-w-[704px] gap-6
-                            3md:justify-between 3md:items-start 3md:max-w-none 3md:w-auto 3md:10">
+                            3md:items-start 3md:max-w-none 3md:gap-10">
                     
-                    <div class="relative w-full max-w-[704px] aspect-video rounded-md overflow-hidden">
+                    <div class="relative w-full max-w-[704px] 3md:flex-1 3md:min-w-0 aspect-video rounded-md overflow-hidden">
                         
                         <a href="https://github.com/jlundoe/droemmefanger" class="block">
                             <img src="/gifs/droemmefanger.gif" alt="Droemmefanger" class="w-full h-full object-cover rounded-md hover:brightness-75 transition duration-300">
@@ -468,9 +469,9 @@
                 
 
                 <div class="flex flex-col 3md:flex-row-reverse justify-start items-center w-full max-w-[704px] gap-6
-                            3md:justify-between 3md:items-start 3md:max-w-none 3md:w-auto 3md:10">
+                            3md:items-start 3md:max-w-none 3md:gap-10">
                     
-                    <div class="relative w-full max-w-[704px] aspect-video rounded-md overflow-hidden">
+                    <div class="relative w-full max-w-[704px] 3md:flex-1 3md:min-w-0 aspect-video rounded-md overflow-hidden">
                         
                         <video playsinline preload="metadata" controls class="plyr-video w-full h-full object-cover" poster="/img/thumbnails/electricity-sd-thumbnail.webp">
                             <source src="https://content.jakoblundoe.com/electricity-sd.mp4" alt="elemental-design-thumbnail" type="video/mp4">
@@ -629,55 +630,16 @@
 
     
     <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
-        <div class="max-w-[480px]">
-            <div id="musicvideo" class="shadow-md" style="border-radius: 2px;">
-                <video playsinline preload="metadata" controls class="plyr-musicvideo" loop style="border-radius: 2px;" poster="/img/thumbnails/alexgraphics-thumbnail.webp">
-                    <source src="/music/Alex-gameconcept/alexgraphics.mp4" alt="video file" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-        <div class="select-text flex flex-col font-mono ml-1
-        [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-            <div class="flex flex-row items-center gap-2 align-center">
-                <p class="text-base font-semibold text-semilightblack">
-                    Game Concept
-                </p>
-                <p class="text-sm font-normal">
-                    |
-                </p>
-                <p class="text-sm font-normal mt-[2px]">
-                    Soundtrack
-                </p>
-            </div>
-            <div class="select-text text-sm">
-                <p>Composition, production, mix and master. <br>
-<em>Concept and graphics by Alexandar Kierkegaard.</em></p>
-
-            </div>
-        </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-    
-    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
         <div class="flex flex-col justify-start max-w-[480px] min-w-[341px]">
             <div class="shadow-md">
                 <div>
                     <div class="relative max-w-[480px]" style="border-top-left-radius: 2px; border-top-right-radius: 2px;">
-                        <div id="audioContainer-2" class="absolute inset-0 w-full h-full" style="border-radius: inherit;">
+                        <div id="audioContainer-1" class="absolute inset-0 w-full h-full" style="border-radius: inherit;">
                         </div>
                         <img src="/img/thumbnails/lazy-legacy-img.webp" alt="music cover image" style="border-radius: inherit;">
-                        <div id="play-music-overlay-2" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
+                        <div id="play-music-overlay-1" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
                                                                                                 hover:cursor-pointer">
-                            <div id="play-music-btn-2" class="ease-in-out duration-50 opacity-100">
+                            <div id="play-music-btn-1" class="ease-in-out duration-50 opacity-100">
                                 <ion-icon name="play-circle-outline" style="font-size: 64px; color: rgba(255, 255, 255, 0.9);">
                                 </ion-icon>
                                 <div class="absolute inset-0 flex justify-center items-center">
@@ -730,12 +692,107 @@ Listen on <a href="https://open.spotify.com/track/3nNpxwma0gqAjTc3hvFqXs?si=6cf7
             <div class="shadow-md">
                 <div>
                     <div class="relative max-w-[480px]" style="border-top-left-radius: 2px; border-top-right-radius: 2px;">
-                        <div id="audioContainer-3" class="absolute inset-0 w-full h-full" style="border-radius: inherit;">
+                        <div id="audioContainer-2" class="absolute inset-0 w-full h-full" style="border-radius: inherit;">
+                        </div>
+                        <img src="/img/thumbnails/waveform-thumbnail.webp" alt="music cover image" style="border-radius: inherit;">
+                        <div id="play-music-overlay-2" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
+                                                                                                hover:cursor-pointer">
+                            <div id="play-music-btn-2" class="ease-in-out duration-50 opacity-100">
+                                <ion-icon name="play-circle-outline" style="font-size: 64px; color: rgba(255, 255, 255, 0.9);">
+                                </ion-icon>
+                                <div class="absolute inset-0 flex justify-center items-center">
+                                    <h3 class="font-bebas text-5xl text-white tracking-wide mb-48">
+                                        The Encore
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio preload="metadata" alt="audio file" class="plyr-audio">
+                        <source src="/music/theencore/theencore-master-v1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="select-text flex flex-col font-mono mt-2 ml-1
+            [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+                <div class="flex flex-row items-center gap-2 align-center">
+                    <p class="text-base font-semibold text-semilightblack">
+                        The Encore
+                    </p>
+                    <p class="text-sm font-normal">
+                        |
+                    </p>
+                    <p class="text-sm font-normal mt-[2px]">
+                        Soundtrack
+                    </p>
+                </div>
+                <div class="select-text text-sm">
+                    <p>Composition, production, mix and master by me.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    
+    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
+        <div class="max-w-[480px]">
+            <div id="musicvideo" class="shadow-md" style="border-radius: 2px;">
+                <video playsinline preload="metadata" controls class="plyr-musicvideo" loop style="border-radius: 2px;" poster="/img/thumbnails/alexgraphics-thumbnail.webp">
+                    <source src="/music/Alex-gameconcept/alexgraphics.mp4" alt="video file" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="select-text flex flex-col font-mono ml-1
+        [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+            <div class="flex flex-row items-center gap-2 align-center">
+                <p class="text-base font-semibold text-semilightblack">
+                    Game Concept
+                </p>
+                <p class="text-sm font-normal">
+                    |
+                </p>
+                <p class="text-sm font-normal mt-[2px]">
+                    Soundtrack
+                </p>
+            </div>
+            <div class="select-text text-sm">
+                <p>Composition, production, mix and master. <br>
+<em>Concept and graphics by Alexandar Kierkegaard.</em></p>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    
+    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
+        <div class="flex flex-col justify-start max-w-[480px] min-w-[341px]">
+            <div class="shadow-md">
+                <div>
+                    <div class="relative max-w-[480px]" style="border-top-left-radius: 2px; border-top-right-radius: 2px;">
+                        <div id="audioContainer-4" class="absolute inset-0 w-full h-full" style="border-radius: inherit;">
                         </div>
                         <img src="/img/thumbnails/sleepy-warrior-img.webp" alt="music cover image" style="border-radius: inherit;">
-                        <div id="play-music-overlay-3" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
+                        <div id="play-music-overlay-4" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
                                                                                                 hover:cursor-pointer">
-                            <div id="play-music-btn-3" class="ease-in-out duration-50 opacity-100">
+                            <div id="play-music-btn-4" class="ease-in-out duration-50 opacity-100">
                                 <ion-icon name="play-circle-outline" style="font-size: 64px; color: rgba(255, 255, 255, 0.9);">
                                 </ion-icon>
                                 <div class="absolute inset-0 flex justify-center items-center">
@@ -768,62 +825,6 @@ Listen on <a href="https://open.spotify.com/track/3nNpxwma0gqAjTc3hvFqXs?si=6cf7
                     <p>Production and mix by me.
 Composition made in collaboration with Oliver Dengsø.
 Listen on <a href="https://open.spotify.com/track/2kNmsMoipBLcIFI44O2xUF?si=62303c9281dc4101">Spotify</a>.</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-    
-    <div class="flex flex-col gap-2 mb-6 break-inside-avoid">
-        <div class="flex flex-col justify-start max-w-[480px] min-w-[341px]">
-            <div class="shadow-md">
-                <div>
-                    <div class="relative max-w-[480px]" style="border-top-left-radius: 2px; border-top-right-radius: 2px;">
-                        <div id="audioContainer-4" class="absolute inset-0 w-full h-full" style="border-radius: inherit;">
-                        </div>
-                        <img src="/img/thumbnails/waveform-thumbnail.webp" alt="music cover image" style="border-radius: inherit;">
-                        <div id="play-music-overlay-4" style="border-radius: inherit;" class="absolute inset-0 opacity-0 flex justify-center items-center bg-less-transp-black ease-in-out duration-500
-                                                                                                hover:cursor-pointer">
-                            <div id="play-music-btn-4" class="ease-in-out duration-50 opacity-100">
-                                <ion-icon name="play-circle-outline" style="font-size: 64px; color: rgba(255, 255, 255, 0.9);">
-                                </ion-icon>
-                                <div class="absolute inset-0 flex justify-center items-center">
-                                    <h3 class="font-bebas text-5xl text-white tracking-wide mb-48">
-                                        The Encore
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <audio preload="metadata" alt="audio file" class="plyr-audio">
-                        <source src="/music/theencore/theencore-master-v1.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-            <div class="select-text flex flex-col font-mono mt-2 ml-1
-            [&_a]:text-pink [&_a]:font-medium hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
-                <div class="flex flex-row items-center gap-2 align-center">
-                    <p class="text-base font-semibold text-semilightblack">
-                        The Encore
-                    </p>
-                    <p class="text-sm font-normal">
-                        |
-                    </p>
-                    <p class="text-sm font-normal mt-[2px]">
-                        Soundtrack
-                    </p>
-                </div>
-                <div class="select-text text-sm">
-                    <p>Composition, production, mix and master by me.</p>
 
                 </div>
             </div>
