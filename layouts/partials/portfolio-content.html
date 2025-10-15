@@ -53,32 +53,8 @@
                             <img src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full h-full object-cover rounded-md hover:brightness-75 transition duration-300">
                         </a>
                         {{ end }}
-                        <!-- Overlay -->
                         <!-- overlay text wrapper -->
-                        <div class="absolute bottom-8 left-0 right-0 px-6 flex flex-row justify-between items-start pointer-events-none">
-                            <!-- overlay description -->
-                            <div class="flex flex-col justify-start items-start gap-0.5 text-nowrap">
-                                <div class="self-stretch relative">
-                                    <div class="justify-start overlay-item-title">{{ $itemTitle }}
-                                    </div>
-                                </div>
-                                <div class="self-stretch relative">
-                                    <div class="flex left-0 top-0 absolute justify-start overlay-subheader">{{ $subHeader }}
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- overlay tags -->
-                            <div class="flex flex-col justify-start items-end gap-0.5">
-                                <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                    <div class="text-right justify-start overlay-tag-title">{{ $tagTitle }}
-                                    </div>
-                                </div>
-                                <div class="self-stretch h-4 inline-flex justify-end items-start">
-                                    <div class="flex-1 text-right justify-start overlay-year">{{ $year }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {{ partial "video-overlay" (dict "itemTitle" $itemTitle "subHeader" $subHeader "tagTitle" $tagTitle "year" $year) }}
                     </div>
 
                     <!-- Text content -->
