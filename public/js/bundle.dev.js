@@ -4099,8 +4099,7 @@
           span.classList.remove("text-white");
           span.classList.add("text-black");
         }
-        btn.classList.remove("bg-grey-shade-1");
-        btn.classList.remove("hover:bg-grey-shade-3");
+        btn.classList.remove("bg-grey-shade-2");
         btn.classList.add("bg-white");
         btn.classList.add("hover:bg-grey-tint-3");
       });
@@ -4114,8 +4113,7 @@
         }
         targetButton.classList.remove("bg-white");
         targetButton.classList.remove("hover:bg-grey-tint-3");
-        targetButton.classList.add("bg-grey-shade-1");
-        targetButton.classList.add("hover:bg-grey-shade-3");
+        targetButton.classList.add("bg-grey-shade-2");
       }
       document.querySelectorAll(".tab-content").forEach((content) => {
         content.classList.remove("flex");
