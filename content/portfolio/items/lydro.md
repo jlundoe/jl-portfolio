@@ -14,7 +14,7 @@ focus_areas:
 - "Spatial Audio and Sound Recording"
 - "App Development and Programming"
 - "Soundscape Design and Composition"
-- "Unity Game Engine / Fmod Studio / C#"
+- "Reaper / Unity Game Engine / Fmod Studio / C#"
 order: 2
 ---
 Lydro is an XR-based spatialized sound experience, which utilizes the 3dof head tracking technology available in modern headphone devices. It is a fully interactive experience, where the user can explore the environment and interact with the soundscape.

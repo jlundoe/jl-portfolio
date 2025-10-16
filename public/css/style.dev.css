@@ -701,7 +701,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .gap-1\.5{gap:0.375rem}
 .gap-10{gap:2.5rem}
 .gap-12{gap:3rem}
-.gap-14{gap:3.5rem}
+.gap-16{gap:4rem}
 .gap-2{gap:0.5rem}
 .gap-2\.5{gap:0.625rem}
 .gap-3{gap:0.75rem}
@@ -963,7 +963,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .\33md\:flex-row-reverse{flex-direction:row-reverse}
 .\33md\:items-start{align-items:flex-start}
 .\33md\:gap-10{gap:2.5rem}
-.\33md\:gap-20{gap:5rem}}
+.\33md\:gap-28{gap:7rem}}
 .\[\&\>button\]\:flex>button{display:flex}
 .\[\&\>button\]\:items-center>button{align-items:center}
 .\[\&\>button\]\:justify-center>button{justify-content:center}
