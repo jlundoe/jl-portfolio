@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/showreel/introduction-sections/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Crafting Audio Experiences</title>
+      <title>Exploring Audio and Systems</title>
       <link>http://localhost:1313/showreel/introduction-sections/main-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/showreel/introduction-sections/main-introduction/</guid>
-      <description>&lt;p&gt;&lt;span&gt;Hi there!&lt;/span&gt; My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive software experiences and systems/tools of all kinds and forms!&lt;/p&gt;&#xA;&lt;p&gt;Check out my portfolio page and my reel above to see what I do, and navigate to the about page if you are interested in learning more about my journey with audio, up to now.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to reach out for a talk or for any questions - I&amp;rsquo;d be happy to hear from you!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;span&gt;Hi there!&lt;/span&gt; My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive audio experiences and systems/tools of all kinds and forms!&lt;/p&gt;&#xA;&lt;p&gt;Check out my portfolio page and my reel above to see what I do, and navigate to the about page if you are interested in learning more about my journey with audio, up to now.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to reach out for a talk or for any questions - I&amp;rsquo;d be happy to hear from you!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

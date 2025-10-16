@@ -1,7 +1,7 @@
 ---
 title: Sound Design Reel
 descriptionTitle: Featured Redesigns
-description: My current reel showcasing my latest sound redesigns and implementation projects
+description: My current reel showcasing my latest sound redesigns
 tagTitle: Jakob Lundoe
 year: 2025
 order: 0
