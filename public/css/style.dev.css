@@ -547,6 +547,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .overlay-tag-title{font-size:0.75rem;line-height:1rem;font-weight:400;line-height:1;--tw-text-opacity:1;color:rgb(224 224 224 / var(--tw-text-opacity))}
 .overlay-year{font-size:0.75rem;line-height:1rem;font-weight:400;line-height:1;--tw-text-opacity:1;color:rgb(224 224 224 / var(--tw-text-opacity))}
 .pointer-events-none{pointer-events:none}
+.visible{visibility:visible}
 .collapse{visibility:collapse}
 .fixed{position:fixed}
 .absolute{position:absolute}

@@ -26,6 +26,12 @@
   </url><url>
     <loc>http://localhost:1313/showreel/introduction-sections/main-introduction/</loc>
   </url><url>
+    <loc>http://localhost:1313/create-fx-track/</loc>
+  </url><url>
+    <loc>http://localhost:1313/create-resample-track/</loc>
+  </url><url>
+    <loc>http://localhost:1313/create-time-selection-between-items/</loc>
+  </url><url>
     <loc>http://localhost:1313/portfolio/items/droemmefanger/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/education/</loc>
@@ -76,6 +82,10 @@
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/sleepy-warrior/</loc>
   </url><url>
+    <loc>http://localhost:1313/smart-item-mute-toggle/</loc>
+  </url><url>
+    <loc>http://localhost:1313/smart-write-automation-to-timeselection/</loc>
+  </url><url>
     <loc>http://localhost:1313/socials/</loc>
   </url><url>
     <loc>http://localhost:1313/showreel/reel-sections/main-reel/</loc>
@@ -89,5 +99,9 @@
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/theencore/</loc>
+  </url><url>
+    <loc>http://localhost:1313/toggle-activate-monitor-fx/</loc>
+  </url><url>
+    <loc>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</loc>
   </url>
 </urlset>
