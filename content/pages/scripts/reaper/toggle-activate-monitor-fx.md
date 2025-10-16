@@ -10,4 +10,4 @@ Toggle activate/deactivate individually targeted FX or Containers on the monitor
 ![toggle activate monitor FX gif](/gifs/JL_toggle-activate-monitor-fx.gif)
 ###### User Config<br>
 -- Define name of FX to toggle on/off.
--- MUST be an exact match (except for upper and lower case letters)..
+-- MUST be an exact match (except for upper and lower case letters).
