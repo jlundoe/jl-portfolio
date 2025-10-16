@@ -1,9 +1,9 @@
 ---
 title: Sound Design Reel
-descriptionTitle: Droemmefanger
-description: A portable interactive sound installation
-tagTitle: Sound Installation
-year: 2022
+descriptionTitle: Featured Redesigns
+description: My current reel showcasing my latest sound redesigns and implementation projects
+tagTitle: Jakob Lundoe
+year: 2025
 order: 0
 type: video
 videopath: https://content.jakoblundoe.com/Cinematic-MGS5-60FPS-2K.mp4

@@ -16,6 +16,8 @@
   </url><url>
     <loc>http://localhost:1313/archived/</loc>
   </url><url>
+    <loc>http://localhost:1313/portfolio/items/sound-logo-redesign/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -42,9 +44,15 @@
   </url><url>
     <loc>http://localhost:1313/resumecontent/experience/</loc>
   </url><url>
+    <loc>http://localhost:1313/portfolio/items/explosion-design/</loc>
+  </url><url>
     <loc>http://localhost:1313/explosion-pack/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/items/giants-rest/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/items/the-old-ones/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</loc>
   </url><url>
@@ -55,6 +63,8 @@
     <loc>http://localhost:1313/musiccontent-audio/sakas-club/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/lazy-legacy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/items/lydro/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/</loc>
   </url><url>

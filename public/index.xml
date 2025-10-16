@@ -50,6 +50,13 @@
       <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Audio Logo Design</title>
+      <link>http://localhost:1313/portfolio/items/sound-logo-redesign/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/sound-logo-redesign/</guid>
+      <description>&lt;p&gt;An attempt to re-create prism entertainments sound logo as closely as possible.&#xA;Created with only using soft synths and processing.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,11 +127,32 @@
       <description>&lt;h4 id=&#34;jan-2025---feb-2025&#34;&gt;Jan 2025 - Feb 2025&lt;/h4&gt;&#xA;&lt;h3 id=&#34;software-developer&#34;&gt;Software Developer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-the-byte-flow--phoenix-design-aid--internship&#34;&gt;Company: The Byte Flow / Phoenix Design Aid | Internship&lt;/h5&gt;&#xA;&lt;p&gt;Web design and development&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Management&lt;/li&gt;&#xA;&lt;li&gt;UX/UI design&lt;/li&gt;&#xA;&lt;li&gt;Javascript, PHP, HTML, CSS&lt;/li&gt;&#xA;&lt;li&gt;Versions Control (Git)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;I gained experience and valuable insights into professional development environments, including it’s processes and pipelines.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;aug-2023---feb-2024&#34;&gt;Aug 2023 - Feb 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;technical-sound-designer&#34;&gt;Technical Sound Designer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-gumbo-games--part-time&#34;&gt;Company: Gumbo Games | Part time&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developing audiosystems in Unity with C#.&lt;/li&gt;&#xA;&lt;li&gt;Using the version control software tool Git in the development process.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learned a lot about remote collaboration and how to use version control tool Git in the development process.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Explosion Design</title>
+      <link>http://localhost:1313/portfolio/items/explosion-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/explosion-design/</guid>
+      <description>&lt;p&gt;Took small firework recordings and processed them into large, low-end explosions. Watch the video to hear the before and after.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Explosion Pack</title>
       <link>http://localhost:1313/explosion-pack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/explosion-pack/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Game Audio Implementation</title>
+      <link>http://localhost:1313/portfolio/items/giants-rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/giants-rest/</guid>
+      <description>&lt;p&gt;As a student assignment, I was tasked with recording, designing and implementing all sounds for a demo game named The Giant&amp;rsquo;s Rest. Everything from the background ambience to the monsters screams is made by me.&#xA;Made in Reaper, and implemented into Unity game engine with the middleware Wwise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Game Audio Implementation</title>
+      <link>http://localhost:1313/portfolio/items/the-old-ones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/the-old-ones/</guid>
+      <description>&lt;p&gt;As a student assignment, I was tasked with recording, designing and implementing all sounds for a demo game named The Old Ones. Everything from the background ambience to the monsters screams is made by me.&#xA;Made in Reaper, and implemented into Unity game engine with the middleware Wwise.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Game Concept</title>
@@ -146,6 +174,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/musiccontent-audio/lazy-legacy/</guid>
       <description>&lt;p&gt;Production and mix by me.&#xA;Composition made in collaboration with Oliver Dengsø.&#xA;Listen on &lt;a href=&#34;https://open.spotify.com/track/3nNpxwma0gqAjTc3hvFqXs?si=6cf7754b8fd24ab8&#34;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lydro</title>
+      <link>http://localhost:1313/portfolio/items/lydro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/lydro/</guid>
+      <description>&lt;p&gt;Lydro is an XR-based spatialized sound experience, which utilizes the 3dof head tracking technology available in modern headphone devices. It is a fully interactive experience, where the user can explore the environment and interact with the soundscape.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The app was conceptualized as part of a larger &lt;a href=&#34;https://danishsoundcluster.dk/praksisnaere-loesningsmodeller-til-positiv-og-engagerede-brug-af-musik-og-lydinterventioner-paa-plejehjem/&#34;&gt;research project&lt;/a&gt; on Aarhus University in 2023, in collaboration with the VR company &lt;a href=&#34;https://aatevr.com/&#34;&gt;AATE VR&lt;/a&gt;. The whole experience was designed and developed by me.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Samplii</title>
