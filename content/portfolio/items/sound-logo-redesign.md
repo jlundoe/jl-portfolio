@@ -16,5 +16,4 @@ focus_areas:
 - "Sound Effects Design"
 - "Sound Processing"
 ---
-An attempt to re-create prism entertainments sound logo as closely as possible.
-Created with only using soft synths and processing.
+My take on re-creating Prism Entertainment’s sound logo. Designed with soft synths and processing, aiming to match the original as closely as possible.
