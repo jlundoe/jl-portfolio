@@ -4177,98 +4177,133 @@
   }
 
   // ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/dropdowntoggle.js
-  function openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem) {
+  function openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem, enableAutoScroll = false) {
     if (dropdownContentElem && dropdownButtonElem && !isDropdownOpen) {
       dropdownButtonElem.classList.remove("rotate-180");
       dropdownContentElem.classList.remove("animate-collapse");
       dropdownContentElem.classList.add("animate-expand");
+      cleanupAnimationState(dropdownContentElem);
       if (!dropdownContentElem.getAttribute("data-height")) {
         const fullHeight = dropdownContentElem.offsetHeight;
         dropdownContentElem.setAttribute("data-height", fullHeight);
         const duration = calcAnimTime(dropdownContentElem);
         dropdownContentElem.style.animationDuration = `${duration}ms`;
-        addAnimationEventListeners(dropdownContentElem);
+        addAnimationEventListeners(dropdownContentElem, enableAutoScroll);
       } else {
         const duration = calcAnimTime(dropdownContentElem);
         dropdownContentElem.style.animationDuration = `${duration}ms`;
-        addAnimationEventListeners(dropdownContentElem);
+        addAnimationEventListeners(dropdownContentElem, enableAutoScroll);
       }
       return true;
     }
     ;
   }
-  function closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem) {
+  function closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem, enableAutoScroll = false) {
     if (dropdownContentElem && dropdownButtonElem && isDropdownOpen) {
       dropdownContentElem.setAttribute("data-height", dropdownContentElem.offsetHeight);
       dropdownButtonElem.classList.add("rotate-180");
       dropdownContentElem.classList.remove("animate-expand");
       dropdownContentElem.classList.add("animate-collapse");
-      addAnimationEventListeners(dropdownContentElem);
+      cleanupAnimationState(dropdownContentElem);
+      addAnimationEventListeners(dropdownContentElem, enableAutoScroll);
       return false;
     }
     ;
   }
-  function addAnimationEventListeners(dropdownContentElem) {
+  function cleanupAnimationState(dropdownContentElem) {
+    const existingFrameId = dropdownContentElem._animationFrameId;
+    if (existingFrameId) {
+      cancelAnimationFrame(existingFrameId);
+      dropdownContentElem._animationFrameId = null;
+    }
+    dropdownContentElem.removeAttribute("data-isOpen");
+    dropdownContentElem.removeAttribute("data-isClosed");
+    if (dropdownContentElem._eventHandlers) {
+      const handlers = dropdownContentElem._eventHandlers;
+      dropdownContentElem.removeEventListener("animationstart", handlers.expandStart);
+      dropdownContentElem.removeEventListener("animationend", handlers.expandEnd);
+      dropdownContentElem.removeEventListener("animationcancel", handlers.expandCancel);
+      dropdownContentElem.removeEventListener("animationstart", handlers.collapseStart);
+      dropdownContentElem.removeEventListener("animationend", handlers.collapseEnd);
+      dropdownContentElem.removeEventListener("animationcancel", handlers.collapseCancel);
+      dropdownContentElem._eventHandlers = null;
+    }
+  }
+  function addAnimationEventListeners(dropdownContentElem, enableAutoScroll = false) {
     const animatedElem = dropdownContentElem;
     const headerOffset = 68;
     let elementPosition = animatedElem.getBoundingClientRect().top;
     let offsetPosition = elementPosition + window.scrollY - headerOffset;
     let animationActive = false;
     let frameId = null;
-    let pageScrolled = false;
+    let elementIsExpanded = false;
     function scrollAnimate() {
       window.scrollTo({
         top: offsetPosition
       });
       if (animationActive) {
-        requestAnimationFrame(scrollAnimate);
+        frameId = requestAnimationFrame(scrollAnimate);
+        dropdownContentElem._animationFrameId = frameId;
       }
     }
-    let isOpen = dropdownContentElem.getAttribute("data-isOpen");
-    let isClosed = dropdownContentElem.getAttribute("data-isClosed");
-    dropdownContentElem.addEventListener("animationstart", function(anim) {
-      if (anim.animationName === "expand" && !isOpen) {
-        dropdownContentElem.setAttribute("data-isOpen", "true");
-        frameId = requestAnimationFrame(scrollAnimate);
-        anim.animationName.animationListenersAdded = true;
-        animationActive = true;
+    const handlers = {
+      expandStart: function(anim) {
+        if (anim.animationName === "expand") {
+          dropdownContentElem.setAttribute("data-isOpen", "true");
+          if (enableAutoScroll) {
+            frameId = requestAnimationFrame(scrollAnimate);
+            dropdownContentElem._animationFrameId = frameId;
+            animationActive = true;
+          }
+        }
+      },
+      expandEnd: function(anim) {
+        if (anim.animationName === "expand") {
+          if (enableAutoScroll && frameId) {
+            cancelAnimationFrame(frameId);
+            dropdownContentElem._animationFrameId = null;
+          }
+          animationActive = false;
+          elementIsExpanded = true;
+        }
+      },
+      expandCancel: function(anim) {
+        if (anim.animationName === "expand") {
+          if (enableAutoScroll && frameId) {
+            cancelAnimationFrame(frameId);
+            dropdownContentElem._animationFrameId = null;
+          }
+          animationActive = false;
+          elementIsExpanded = true;
+        }
+      },
+      collapseStart: function(anim) {
+        if (anim.animationName === "collapse") {
+          dropdownContentElem.setAttribute("data-isClosed", "true");
+        }
+      },
+      collapseEnd: function(anim) {
+        if (anim.animationName === "collapse") {
+          elementIsExpanded = false;
+        }
+      },
+      collapseCancel: function(anim) {
+        if (anim.animationName === "collapse") {
+          if (enableAutoScroll && frameId) {
+            cancelAnimationFrame(frameId);
+            dropdownContentElem._animationFrameId = null;
+          }
+          elementIsExpanded = false;
+        }
       }
-    });
-    dropdownContentElem.addEventListener("animationend", function(anim) {
-      if (anim.animationName === "expand" && !isOpen) {
-        cancelAnimationFrame(frameId);
-        animationActive = false;
-        elementIsExpanded = true;
-        pageScrolled = false;
-      }
-    });
-    dropdownContentElem.addEventListener("animationcancel", function(anim) {
-      if (anim.animationName === "expand" && !isOpen) {
-        cancelAnimationFrame(frameId);
-        animationActive = false;
-        elementIsExpanded = true;
-        pageScrolled = false;
-      }
-    });
-    dropdownContentElem.addEventListener("animationstart", function(anim) {
-      if (anim.animationName === "collapse" && !isClosed) {
-        dropdownContentElem.setAttribute("data-isClosed", "true");
-        pageScrolled = true;
-      }
-    });
-    dropdownContentElem.addEventListener("animationend", function(anim) {
-      if (anim.animationName === "collapse" && !isClosed) {
-        elementIsExpanded = false;
-        pageScrolled = false;
-      }
-    });
-    dropdownContentElem.addEventListener("animationcancel", function(anim) {
-      if (anim.animationName === "collapse" && !isClosed) {
-        cancelAnimationFrame(frameId);
-        elementIsExpanded = false;
-        pageScrolled = false;
-      }
-    });
+    };
+    dropdownContentElem._eventHandlers = handlers;
+    dropdownContentElem.addEventListener("animationstart", handlers.expandStart);
+    dropdownContentElem.addEventListener("animationend", handlers.expandEnd);
+    dropdownContentElem.addEventListener("animationcancel", handlers.expandCancel);
+    dropdownContentElem.addEventListener("animationstart", handlers.collapseStart);
+    dropdownContentElem.addEventListener("animationend", handlers.collapseEnd);
+    dropdownContentElem.addEventListener("animationcancel", handlers.collapseCancel);
   }
   function calcAnimTime(dropdownContentElem) {
     const elemHeight = parseFloat(dropdownContentElem.getAttribute("data-height")) || 0;
@@ -6493,18 +6528,29 @@
     if (!aboutPageActive)
       return;
     const resumeContentElem = document.getElementsByClassName("resume-content");
+    const dropdownStates = [];
     for (const elem of resumeContentElem) {
       const buttonContainerElem = elem.firstElementChild.firstElementChild;
       const buttonElemIDs = buttonContainerElem.querySelector("button").id;
       const contentElemIDs = elem.children[1]?.firstElementChild.id;
       const dropdownButtonElem = document.getElementById(buttonElemIDs);
       const dropdownContentElem = document.getElementById(contentElemIDs);
-      let isDropdownOpen = false;
+      const dropdownState = {
+        isOpen: false,
+        buttonElem: dropdownButtonElem,
+        contentElem: dropdownContentElem
+      };
+      dropdownStates.push(dropdownState);
       buttonContainerElem.addEventListener("click", () => {
-        if (!isDropdownOpen) {
-          isDropdownOpen = openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
-        } else if (isDropdownOpen) {
-          isDropdownOpen = closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+        if (!dropdownState.isOpen) {
+          dropdownStates.forEach((state) => {
+            if (state !== dropdownState && state.isOpen) {
+              state.isOpen = closeDropdown(state.isOpen, state.buttonElem, state.contentElem, true);
+            }
+          });
+          dropdownState.isOpen = openDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, true);
+        } else {
+          dropdownState.isOpen = closeDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, true);
         }
       });
     }
@@ -6514,18 +6560,29 @@
     if (!scriptsPageActive)
       return;
     const scriptContentElem = document.getElementsByClassName("script-content");
+    const dropdownStates = [];
     for (const elem of scriptContentElem) {
       const buttonContainerElem = elem.firstElementChild.firstElementChild;
       const buttonElemIDs = buttonContainerElem.querySelector("button").id;
       const contentElemIDs = elem.children[1]?.firstElementChild.id;
       const dropdownButtonElem = document.getElementById(buttonElemIDs);
       const dropdownContentElem = document.getElementById(contentElemIDs);
-      let isDropdownOpen = false;
+      const dropdownState = {
+        isOpen: false,
+        buttonElem: dropdownButtonElem,
+        contentElem: dropdownContentElem
+      };
+      dropdownStates.push(dropdownState);
       buttonContainerElem.addEventListener("click", () => {
-        if (!isDropdownOpen) {
-          isDropdownOpen = openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
-        } else if (isDropdownOpen) {
-          isDropdownOpen = closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+        if (!dropdownState.isOpen) {
+          dropdownStates.forEach((state) => {
+            if (state !== dropdownState && state.isOpen) {
+              state.isOpen = closeDropdown(state.isOpen, state.buttonElem, state.contentElem, false);
+            }
+          });
+          dropdownState.isOpen = openDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, false);
+        } else {
+          dropdownState.isOpen = closeDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, false);
         }
       });
     }

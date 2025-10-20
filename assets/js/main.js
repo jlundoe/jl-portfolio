@@ -389,6 +389,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
 
     const resumeContentElem = document.getElementsByClassName("resume-content");
+    const dropdownStates = [];
 
     for (const elem of resumeContentElem) {
         const buttonContainerElem = elem.firstElementChild.firstElementChild;
@@ -399,12 +400,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const dropdownButtonElem = document.getElementById(buttonElemIDs);
         const dropdownContentElem = document.getElementById(contentElemIDs);
 
-        let isDropdownOpen = false;
+        const dropdownState = {
+            isOpen: false,
+            buttonElem: dropdownButtonElem,
+            contentElem: dropdownContentElem
+        };
+        dropdownStates.push(dropdownState);
+
         buttonContainerElem.addEventListener("click", () => {
-            if (!isDropdownOpen) {
-                isDropdownOpen = dropdownToggle.openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
-            } else if (isDropdownOpen) {
-                isDropdownOpen = dropdownToggle.closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+            // If opening a dropdown, close all others first
+            if (!dropdownState.isOpen) {
+                dropdownStates.forEach(state => {
+                    if (state !== dropdownState && state.isOpen) {
+                        state.isOpen = dropdownToggle.closeDropdown(state.isOpen, state.buttonElem, state.contentElem, true);
+                    }
+                });
+                dropdownState.isOpen = dropdownToggle.openDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, true);
+            } else {
+                dropdownState.isOpen = dropdownToggle.closeDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, true);
             }
         });
     }
@@ -417,6 +430,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
 
     const scriptContentElem = document.getElementsByClassName("script-content");
+    const dropdownStates = [];
 
     for (const elem of scriptContentElem) {
         const buttonContainerElem = elem.firstElementChild.firstElementChild;
@@ -427,12 +441,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const dropdownButtonElem = document.getElementById(buttonElemIDs);
         const dropdownContentElem = document.getElementById(contentElemIDs);
 
-        let isDropdownOpen = false;
+        const dropdownState = {
+            isOpen: false,
+            buttonElem: dropdownButtonElem,
+            contentElem: dropdownContentElem
+        };
+        dropdownStates.push(dropdownState);
+
         buttonContainerElem.addEventListener("click", () => {
-            if (!isDropdownOpen) {
-                isDropdownOpen = dropdownToggle.openDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
-            } else if (isDropdownOpen) {
-                isDropdownOpen = dropdownToggle.closeDropdown(isDropdownOpen, dropdownButtonElem, dropdownContentElem);
+            // If opening a dropdown, close all others first
+            if (!dropdownState.isOpen) {
+                dropdownStates.forEach(state => {
+                    if (state !== dropdownState && state.isOpen) {
+                        state.isOpen = dropdownToggle.closeDropdown(state.isOpen, state.buttonElem, state.contentElem, false);
+                    }
+                });
+                dropdownState.isOpen = dropdownToggle.openDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, false);
+            } else {
+                dropdownState.isOpen = dropdownToggle.closeDropdown(dropdownState.isOpen, dropdownButtonElem, dropdownContentElem, false);
             }
         });
     }

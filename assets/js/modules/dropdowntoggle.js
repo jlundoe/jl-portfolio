@@ -1,4 +1,4 @@
-export function openDropdown (isDropdownOpen, dropdownButtonElem, dropdownContentElem) {
+export function openDropdown (isDropdownOpen, dropdownButtonElem, dropdownContentElem, enableAutoScroll = false) {
 
     if (dropdownContentElem && dropdownButtonElem && !isDropdownOpen) {
 
@@ -6,36 +6,67 @@ export function openDropdown (isDropdownOpen, dropdownButtonElem, dropdownConten
         dropdownContentElem.classList.remove("animate-collapse");
         dropdownContentElem.classList.add("animate-expand");
 
+        // Clean up any existing animation state
+        cleanupAnimationState(dropdownContentElem);
+
         if(!dropdownContentElem.getAttribute('data-height')) {
             const fullHeight = dropdownContentElem.offsetHeight;
             dropdownContentElem.setAttribute('data-height', fullHeight);
             const duration = calcAnimTime(dropdownContentElem);
             dropdownContentElem.style.animationDuration = `${duration}ms`;
-            addAnimationEventListeners(dropdownContentElem);
+            addAnimationEventListeners(dropdownContentElem, enableAutoScroll);
         } else {
             const duration = calcAnimTime(dropdownContentElem);
             dropdownContentElem.style.animationDuration = `${duration}ms`;
-            addAnimationEventListeners(dropdownContentElem);
+            addAnimationEventListeners(dropdownContentElem, enableAutoScroll);
         }
 
         return true;
     };
 };
 
-export function closeDropdown (isDropdownOpen, dropdownButtonElem, dropdownContentElem) {
-    
+export function closeDropdown (isDropdownOpen, dropdownButtonElem, dropdownContentElem, enableAutoScroll = false) {
+
     if (dropdownContentElem && dropdownButtonElem && isDropdownOpen) {
         dropdownContentElem.setAttribute('data-height', dropdownContentElem.offsetHeight);
         dropdownButtonElem.classList.add("rotate-180");
         dropdownContentElem.classList.remove("animate-expand");
         dropdownContentElem.classList.add("animate-collapse");
-        addAnimationEventListeners(dropdownContentElem);
+
+        // Clean up any existing animation state
+        cleanupAnimationState(dropdownContentElem);
+        addAnimationEventListeners(dropdownContentElem, enableAutoScroll);
 
         return false;
     };
 };
 
-function addAnimationEventListeners (dropdownContentElem) {
+function cleanupAnimationState(dropdownContentElem) {
+    // Cancel any existing animation frame
+    const existingFrameId = dropdownContentElem._animationFrameId;
+    if (existingFrameId) {
+        cancelAnimationFrame(existingFrameId);
+        dropdownContentElem._animationFrameId = null;
+    }
+
+    // Reset state attributes
+    dropdownContentElem.removeAttribute('data-isOpen');
+    dropdownContentElem.removeAttribute('data-isClosed');
+
+    // Remove existing event listeners if they exist
+    if (dropdownContentElem._eventHandlers) {
+        const handlers = dropdownContentElem._eventHandlers;
+        dropdownContentElem.removeEventListener('animationstart', handlers.expandStart);
+        dropdownContentElem.removeEventListener('animationend', handlers.expandEnd);
+        dropdownContentElem.removeEventListener('animationcancel', handlers.expandCancel);
+        dropdownContentElem.removeEventListener('animationstart', handlers.collapseStart);
+        dropdownContentElem.removeEventListener('animationend', handlers.collapseEnd);
+        dropdownContentElem.removeEventListener('animationcancel', handlers.collapseCancel);
+        dropdownContentElem._eventHandlers = null;
+    }
+}
+
+function addAnimationEventListeners (dropdownContentElem, enableAutoScroll = false) {
     const animatedElem = dropdownContentElem;
     const headerOffset = 68;
     let elementPosition = animatedElem.getBoundingClientRect().top;
@@ -43,91 +74,81 @@ function addAnimationEventListeners (dropdownContentElem) {
 
     let animationActive = false;
     let frameId = null;
-    let pageScrolled = false;
+    let elementIsExpanded = false;
 
     function scrollAnimate() {
-        // TRIED TO FLAG INPUT SCROLL SO SMOOTH SCROLL WAS APPLIED ONLY WHEN MANUAL SCROLL HAD HAPPENED PRIOR TO THE ANIMATION.
-        // IT IS STILL JANKY THOUGH. FOR SOME UNKNOWN REASON IT IS STILL RANDOM WHEN THE SMOOTH BEHAVIOUR IS
-        // APPLIED. HAVE COMMENTED THE CODE THAT MAKES THE ANIMATION JANKY.
-
-        // if (pageScrolled && !elementIsExpanded) {
-        //     window.scrollTo({
-        //         top:offsetPosition,
-        //         behavior: 'smooth'
-        //     })
-        // } else if(!pageScrolled) {
-        //     window.scrollTo({
-        //         top:offsetPosition,
-        //     })
-        // }
         window.scrollTo({
             top: offsetPosition,
         })
         if (animationActive) {
-            requestAnimationFrame(scrollAnimate);
+            frameId = requestAnimationFrame(scrollAnimate);
+            dropdownContentElem._animationFrameId = frameId;
         }
     }
 
-    let isOpen = dropdownContentElem.getAttribute('data-isOpen');
-    let isClosed = dropdownContentElem.getAttribute('data-isClosed');
-    dropdownContentElem.addEventListener('animationstart', function(anim) {
-        if (anim.animationName === "expand" && !isOpen) {
-
-            // make sure listeners is only added once on each individual dropdownButtonElem
-            dropdownContentElem.setAttribute('data-isOpen', 'true');
-
-            frameId = requestAnimationFrame(scrollAnimate);
-
-            anim.animationName.animationListenersAdded = true;
-            animationActive = true;
+    // Event handlers stored for later removal
+    const handlers = {
+        expandStart: function(anim) {
+            if (anim.animationName === "expand") {
+                dropdownContentElem.setAttribute('data-isOpen', 'true');
+                if (enableAutoScroll) {
+                    frameId = requestAnimationFrame(scrollAnimate);
+                    dropdownContentElem._animationFrameId = frameId;
+                    animationActive = true;
+                }
+            }
+        },
+        expandEnd: function(anim) {
+            if (anim.animationName === 'expand') {
+                if (enableAutoScroll && frameId) {
+                    cancelAnimationFrame(frameId);
+                    dropdownContentElem._animationFrameId = null;
+                }
+                animationActive = false;
+                elementIsExpanded = true;
+            }
+        },
+        expandCancel: function(anim) {
+            if (anim.animationName === 'expand') {
+                if (enableAutoScroll && frameId) {
+                    cancelAnimationFrame(frameId);
+                    dropdownContentElem._animationFrameId = null;
+                }
+                animationActive = false;
+                elementIsExpanded = true;
+            }
+        },
+        collapseStart: function(anim) {
+            if (anim.animationName === 'collapse') {
+                dropdownContentElem.setAttribute('data-isClosed', 'true');
+            }
+        },
+        collapseEnd: function(anim) {
+            if (anim.animationName === 'collapse') {
+                elementIsExpanded = false;
+            }
+        },
+        collapseCancel: function(anim) {
+            if (anim.animationName === 'collapse') {
+                if (enableAutoScroll && frameId) {
+                    cancelAnimationFrame(frameId);
+                    dropdownContentElem._animationFrameId = null;
+                }
+                elementIsExpanded = false;
+            }
         }
-    })
-    dropdownContentElem.addEventListener('animationend', function(anim) {
-        if (anim.animationName === 'expand' && !isOpen) {
-            cancelAnimationFrame(frameId);
-            animationActive = false;
+    };
 
-            elementIsExpanded = true;
-            pageScrolled = false;
-        }
-    })
+    // Store handlers for cleanup
+    dropdownContentElem._eventHandlers = handlers;
 
-    dropdownContentElem.addEventListener('animationcancel', function(anim) {
-        if ((anim.animationName === 'expand') && (!isOpen)) {
-            cancelAnimationFrame(frameId);
-            animationActive = false;
-            elementIsExpanded = true;
-            pageScrolled = false;
-        }
-    })
-
-    dropdownContentElem.addEventListener('animationstart', function(anim) {
-        if (anim.animationName === 'collapse' && !isClosed) {
-            dropdownContentElem.setAttribute('data-isClosed', 'true');
-            pageScrolled = true;
-        }
-    })
-
-    dropdownContentElem.addEventListener('animationend', function(anim) {
-        if (anim.animationName === 'collapse' && !isClosed) {
-            elementIsExpanded = false;
-            pageScrolled = false;
-        }
-    })
-
-    dropdownContentElem.addEventListener('animationcancel', function(anim) {
-        if ((anim.animationName === 'collapse') && (!isClosed)) {
-            cancelAnimationFrame(frameId);
-            elementIsExpanded = false;
-            pageScrolled = false;
-        }
-    })
-
-    // document.addEventListener('wheel', () => {
-    //     console.log('scroll happening');
-    //     console.log(animatedElem.getBoundingClientRect().top);
-    //     pageScrolled = true;
-    // })
+    // Add event listeners
+    dropdownContentElem.addEventListener('animationstart', handlers.expandStart);
+    dropdownContentElem.addEventListener('animationend', handlers.expandEnd);
+    dropdownContentElem.addEventListener('animationcancel', handlers.expandCancel);
+    dropdownContentElem.addEventListener('animationstart', handlers.collapseStart);
+    dropdownContentElem.addEventListener('animationend', handlers.collapseEnd);
+    dropdownContentElem.addEventListener('animationcancel', handlers.collapseCancel);
 }
 
 function calcAnimTime(dropdownContentElem) {
