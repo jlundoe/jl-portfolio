@@ -4101,7 +4101,8 @@
         }
         btn.classList.remove("bg-grey-shade-2");
         btn.classList.add("bg-white");
-        btn.classList.add("hover:bg-grey-tint-3");
+        btn.classList.add("[&_span]:hover:opacity-70");
+        btn.classList.add("hover:shadow");
       });
       const targetButton = Array.from(tabButtons).find((b) => b.getAttribute("data-tab") === tabName);
       if (targetButton) {
@@ -4112,7 +4113,8 @@
           span.classList.add("text-white");
         }
         targetButton.classList.remove("bg-white");
-        targetButton.classList.remove("hover:bg-grey-tint-3");
+        targetButton.classList.remove("[&_span]:hover:opacity-70");
+        targetButton.classList.remove("hover:shadow");
         targetButton.classList.add("bg-grey-shade-2");
       }
       document.querySelectorAll(".tab-content").forEach((content) => {

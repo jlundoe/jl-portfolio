@@ -880,12 +880,14 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .hover\:text-grey-shade-1:hover{--tw-text-opacity:1;color:rgb(80 80 80 / var(--tw-text-opacity))}
 .hover\:opacity-70:hover{opacity:0.7}
 .hover\:opacity-80:hover{opacity:0.8}
+.hover\:shadow:hover{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
 .hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
 .hover\:brightness-75:hover{--tw-brightness:brightness(.75);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}}
 .active\:scale-105:active{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .active\:bg-grey-tint-2:active{--tw-bg-opacity:1;background-color:rgb(224 224 224 / var(--tw-bg-opacity))}
 .active\:opacity-50:active{opacity:0.5}
 .active\:opacity-60:active{opacity:0.6}
+.active\:shadow-none:active{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
 @media (min-width: 640px){
 .sm\:mx-0{margin-left:0px;margin-right:0px}
 .sm\:mx-4{margin-left:1rem;margin-right:1rem}
@@ -1058,6 +1060,10 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .\[\&_span\]\:tracking-normal span{letter-spacing:0em}
 .\[\&_span\]\:tracking-wide span{letter-spacing:0.025em}
 .\[\&_span\]\:text-black span{--tw-text-opacity:1;color:rgb(31 31 31 / var(--tw-text-opacity))}
+.\[\&_span\]\:transition-all span{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+.\[\&_span\]\:duration-200 span{transition-duration:200ms}
+@media (hover: hover) and (pointer: fine){
+.\[\&_span\]\:hover\:opacity-70:hover span{opacity:0.7}}
 @media (min-width: 640px){
 .sm\:\[\&_span\]\:tracking-wide span{letter-spacing:0.025em}}
 .\[\&_ul\]\:mb-3 ul{margin-bottom:0.75rem}

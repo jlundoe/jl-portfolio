@@ -3,13 +3,13 @@
     <div class="flex justify-center items-center py-8">
         <div class="px-2 py-1.5 bg-gradient-to-br from-grey-tint-3 to-grey-tint-2 rounded-md border border-grey-tint-2 inline-flex justify-start items-start gap-2
                     [&>button]:px-12 [&>button]:py-2 [&>button]:rounded-md [&>button]:border [&>button]:border-grey-tint-1 [&>button]:flex [&>button]:justify-center [&>button]:items-center [&>button]:gap-2.5 [&>button]:transition-all [&>button]:duration-200
-                    [&_span]:text-sm [&_span]:tracking-normal
+                    [&_span]:transition-all [&_span]:duration-200 [&_span]:text-sm [&_span]:tracking-normal
                     sm:[&_span]:tracking-wide sm:[&_button]:px-20">
-            <button data-tab="showreel" class="tab-button bg-grey-shade-2">
+            <button data-tab="showreel" class="tab-button bg-grey-shade-2 active:shadow-none">
                 <span class="text-white font-normal">Showreel</span>
             </button>
-            <button data-tab="portfolio" class="tab-button bg-white
-            hover:bg-grey-tint-3">
+            <button data-tab="portfolio" class="tab-button bg-white hover:shadow active:shadow-none
+            [&_span]:hover:opacity-70">
                 <span class="text-black font-normal">Portfolio</span>
             </button>
         </div>
