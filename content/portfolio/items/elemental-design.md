@@ -15,6 +15,6 @@ focus_areas:
   - "Props Recording"
   - "Sound Processing"
 ---
-Some text about the redesign.
+I did this design to explore the more stylized sound of elemental magic and electricity. Created with layered and processed recordings of crackling cardstock, cellophane and a chips bag + some synthesis with Phaseplant.
 
 *Animation Artist: [Deeamo Julien](https://www.artstation.com/artwork/v2wdLa)*
