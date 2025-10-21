@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scripts &amp; Audio Tools on JL-PORTFOLIO</title>
-    <link>http://localhost:1313/scripts/</link>
+    <link>http://localhost:1313/cripts%20&amp;%20Audio%20Tools/</link>
     <description>Recent content in Scripts &amp; Audio Tools on JL-PORTFOLIO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/cripts%20&%20Audio%20Tools/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -6387,7 +6387,7 @@
       }
     });
     const pageAttribute = document.body.getAttribute("data-page");
-    const musicPageActive = pageAttribute && pageAttribute.toLowerCase() === "home";
+    const musicPageActive = pageAttribute && pageAttribute === "index_page";
     if (!musicPageActive) {
       return;
     }
@@ -6526,7 +6526,7 @@
     });
   });
   document.addEventListener("DOMContentLoaded", () => {
-    const aboutPageActive = document.body.getAttribute("data-page").toLowerCase() === "about" || false;
+    const aboutPageActive = document.body.getAttribute("data-page") === "about_page" || false;
     if (!aboutPageActive)
       return;
     const resumeContentElem = document.getElementsByClassName("resume-content");
@@ -6558,7 +6558,7 @@
     }
   });
   document.addEventListener("DOMContentLoaded", () => {
-    const scriptsPageActive = document.body.getAttribute("data-page").toLowerCase() === "scripts" || false;
+    const scriptsPageActive = document.body.getAttribute("data-page") === "scripts_page" || false;
     if (!scriptsPageActive)
       return;
     const scriptContentElem = document.getElementsByClassName("script-content");

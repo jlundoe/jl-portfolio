@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const pageAttribute = document.body.getAttribute("data-page");
-    const musicPageActive = pageAttribute && (pageAttribute.toLowerCase() === "home");
+    const musicPageActive = pageAttribute && (pageAttribute === "index_page");
     if (!musicPageActive) {
         return;
     }
@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // DROPDOWN CONTENT TOGGLE - ABOUT PAGE
 document.addEventListener("DOMContentLoaded", () => {
-    const aboutPageActive = (document.body.getAttribute("data-page").toLowerCase() === "about") || false;
+    const aboutPageActive = (document.body.getAttribute("data-page") === "about_page") || false;
     if (!aboutPageActive)
         return;
 
@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // DROPDOWN CONTENT TOGGLE - SCRIPTS PAGE
 document.addEventListener("DOMContentLoaded", () => {
-    const scriptsPageActive = (document.body.getAttribute("data-page").toLowerCase() === "scripts") || false;
+    const scriptsPageActive = (document.body.getAttribute("data-page") === "scripts_page") || false;
     if (!scriptsPageActive)
         return;
 
