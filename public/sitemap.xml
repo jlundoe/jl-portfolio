@@ -18,6 +18,8 @@
   </url><url>
     <loc>http://localhost:1313/portfolio/items/sound-logo-redesign/</loc>
   </url><url>
+    <loc>http://localhost:1313/pages/scripts/audio-tools/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -107,6 +109,14 @@
     <loc>http://localhost:1313/tags/synthesis/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/test/</loc>
+  </url><url>
+    <loc>http://localhost:1313/test/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/test1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/test2/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/theencore/</loc>
   </url><url>
