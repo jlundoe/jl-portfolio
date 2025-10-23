@@ -6558,7 +6558,7 @@
     }
   });
   document.addEventListener("DOMContentLoaded", () => {
-    const scriptsPageActive = document.body.getAttribute("data-page") === "scripts_page" || false;
+    const scriptsPageActive = document.body.getAttribute("data-page") === "dev_page" || false;
     if (!scriptsPageActive)
       return;
     const scriptContentElem = document.getElementsByClassName("script-content");
