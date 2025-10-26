@@ -6,7 +6,7 @@ download: "/audio-tools/fx-tools/JL_Grain Synthesizer.zip"
 video: https://content.jakoblundoe.com/grain-synth-videodemo-v1.mp4
 order: 0
 ---
-### A grain synthesizer controller by a XY pad
+### Granular Synth Controlled by an XY Pad
 This tool includes an audio grain synth generator and a machine-learning-based controller. It is an exploration of grain synthesis and the use of machine learning to create expressive, intuitive controller mappings. These controller mappings are not only designed to simplify control over an extensive set of parameters, but also expand the synthesizer’s potential and the sound exploration process.
 
 #### The grain synthesizer element
