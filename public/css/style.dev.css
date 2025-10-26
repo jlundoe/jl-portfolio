@@ -637,7 +637,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .w-7{width:1.75rem}
 .w-full{width:100%}
 .min-w-0{min-width:0px}
-.min-w-\[223\.3px\]{min-width:223.3px}
+.min-w-\[156\.14px\]{min-width:156.14px}
 .min-w-\[341px\]{min-width:341px}
 .max-w-4xl{max-width:56rem}
 .max-w-\[1120px\]{max-width:1120px}
@@ -903,6 +903,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .sm\:block{display:block}
 .sm\:flex{display:flex}
 .sm\:hidden{display:none}
+.sm\:min-w-\[223\.3px\]{min-width:223.3px}
 .sm\:items-center{align-items:center}
 .sm\:justify-center{justify-content:center}
 .sm\:justify-between{justify-content:space-between}
