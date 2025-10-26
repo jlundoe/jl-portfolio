@@ -2,7 +2,7 @@
 title: "Smart Write Automation to Timeselection"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_smart write automation to timeselection.gif"
-download: "/scripts/JL_Smart Write Automation To Timeselection.lua"
+download: "/audio-tools/reaper-scripts/JL_Smart Write Automation To Timeselection.lua"
 order: 6
 ---
 ### JL_Smart Write Automation to Timeselection

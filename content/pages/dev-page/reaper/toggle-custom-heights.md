@@ -2,7 +2,7 @@
 title: "Toggle Custom Heights - Envelopes and Tracks"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_Set custom height actions - envelopes and tracks.gif"
-download: "/scripts/JL_Toggle Custom Heights - Envelopes and Tracks.zip"
+download: "/audio-tools/reaper-scripts/JL_Toggle Custom Heights - Envelopes and Tracks.zip"
 order: 2
 ---
 ### Set custom height actions - envelopes and tracks

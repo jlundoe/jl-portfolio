@@ -2,7 +2,7 @@
 title: "Adjust Item Playrate"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_Adjust Item Playrate.gif"
-download: "/scripts/JL_Adjust Item Playrate (bundle).zip"
+download: "/audio-tools/reaper-scripts/JL_Adjust Item Playrate (bundle).zip"
 ---
 ### JL_Adjust Item Playrate (trigger)
 Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value <= 63 for decreasing values, and cc value >= 65 for increasing values. NB! This script works only together with the "Adjust Item Playrate (listener) script".

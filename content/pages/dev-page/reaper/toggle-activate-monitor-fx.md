@@ -2,7 +2,7 @@
 title: "Toggle Activate Monitor FX"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_toggle-activate-monitor-fx.gif"
-download: "/scripts/JL_Toggle activate monitor FX.lua"
+download: "/audio-tools/reaper-scripts/JL_Toggle activate monitor FX.lua"
 order: 7
 ---
 ### JL_toggle activate monitor FX

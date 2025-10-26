@@ -2,7 +2,7 @@
 title: "Create FX Track"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_Create FX Track.gif"
-download: "/scripts/JL_Create FX Track.lua"
+download: "/audio-tools/reaper-scripts/JL_Create FX Track.lua"
 order: 3
 ---
 ### JL_Create FX Track

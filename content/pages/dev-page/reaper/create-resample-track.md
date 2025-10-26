@@ -2,7 +2,7 @@
 title: "Create Resample Track"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_Create Resample Track.gif"
-download: "/scripts/JL_Create Resample Track.lua"
+download: "/audio-tools/reaper-scripts/JL_Create Resample Track.lua"
 order: 4
 ---
 ### JL_Create Resample Track

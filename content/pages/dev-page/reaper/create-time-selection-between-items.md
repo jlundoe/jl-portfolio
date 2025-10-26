@@ -2,7 +2,7 @@
 title: "Create Time Selection Between Items"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_create time selection between items.gif"
-download: "/scripts/JL_Create time selection between items.lua"
+download: "/audio-tools/reaper-scripts/JL_Create time selection between items.lua"
 order: 5
 ---
 ### JL_create time selection between items

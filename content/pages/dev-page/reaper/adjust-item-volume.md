@@ -2,7 +2,7 @@
 title: "Adjust Item Volume"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_Adjust Item Volume.gif"
-download: "/scripts/JL_Adjust Item Volume (bundle).zip"
+download: "/audio-tools/reaper-scripts/JL_Adjust Item Volume (bundle).zip"
 order: 1
 ---
 ### JL_Adjust Item Playrate (trigger)

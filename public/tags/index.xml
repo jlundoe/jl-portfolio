@@ -8,10 +8,38 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Audio Processing</title>
+      <link>http://localhost:1313/tags/audio-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/audio-processing/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Automation</title>
       <link>http://localhost:1313/tags/automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grain Synthesis</title>
+      <link>http://localhost:1313/tags/grain-synthesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/grain-synthesis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Max Msp</title>
+      <link>http://localhost:1313/tags/max-msp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/max-msp/</guid>
       <description></description>
     </item>
     <item>
@@ -43,31 +71,17 @@
       <description></description>
     </item>
     <item>
+      <title>Signal Flow Design</title>
+      <link>http://localhost:1313/tags/signal-flow-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/signal-flow-design/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Synthesis</title>
       <link>http://localhost:1313/tags/synthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/synthesis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/tags/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/test/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test1</title>
-      <link>http://localhost:1313/tags/test1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/test1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test2</title>
-      <link>http://localhost:1313/tags/test2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/test2/</guid>
       <description></description>
     </item>
   </channel>

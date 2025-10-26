@@ -595,6 +595,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .mr-3{margin-right:0.75rem}
 .mr-4{margin-right:1rem}
 .mt-1{margin-top:0.25rem}
+.mt-10{margin-top:2.5rem}
 .mt-2{margin-top:0.5rem}
 .mt-20{margin-top:5rem}
 .mt-32{margin-top:8rem}
@@ -727,6 +728,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .border-t{border-top-width:1px}
 .border-t-2{border-top-width:2px}
 .border-black{--tw-border-opacity:1;border-color:rgb(31 31 31 / var(--tw-border-opacity))}
+.border-grey-base{--tw-border-opacity:1;border-color:rgb(137 137 137 / var(--tw-border-opacity))}
 .border-grey-shade-2{--tw-border-opacity:1;border-color:rgb(65 65 65 / var(--tw-border-opacity))}
 .border-grey-tint-2{--tw-border-opacity:1;border-color:rgb(224 224 224 / var(--tw-border-opacity))}
 .bg-\[\#6e6e6e\]{--tw-bg-opacity:1;background-color:rgb(110 110 110 / var(--tw-bg-opacity))}

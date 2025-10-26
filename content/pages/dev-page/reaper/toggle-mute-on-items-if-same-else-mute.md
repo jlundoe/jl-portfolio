@@ -2,7 +2,7 @@
 title: "Smart Item Mute Toggle"
 tags: [script, reaper, automation]
 thumbnail: "/gifs/JL_toggle mute on items if same else mute.gif"
-download: "/scripts/JL_Toggle mute on items if same else mute.lua"
+download: "/audio-tools/reaper-scripts/JL_Toggle mute on items if same else mute.lua"
 order: 8
 ---
 ### JL_toggle mute on items if same else mute

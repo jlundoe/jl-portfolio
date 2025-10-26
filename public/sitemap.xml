@@ -18,6 +18,8 @@
   </url><url>
     <loc>http://localhost:1313/portfolio/items/sound-logo-redesign/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/audio-processing/</loc>
+  </url><url>
     <loc>http://localhost:1313/pages/dev-page/audio-tools/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
@@ -58,6 +60,10 @@
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/grain-synthesis/</loc>
+  </url><url>
+    <loc>http://localhost:1313/grain-synthesizer-max-msp-patch/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/showreel/introduction-sections/</loc>
@@ -67,6 +73,10 @@
     <loc>http://localhost:1313/musiccontent-audio/lazy-legacy/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/items/lydro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/max-msp/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/</loc>
   </url><url>
@@ -92,6 +102,8 @@
   </url><url>
     <loc>http://localhost:1313/showreel/reel-sections/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/signal-flow-design/</loc>
+  </url><url>
     <loc>http://localhost:1313/musiccontent-audio/sleepy-warrior/</loc>
   </url><url>
     <loc>http://localhost:1313/smart-item-mute-toggle/</loc>
@@ -109,14 +121,6 @@
     <loc>http://localhost:1313/tags/synthesis/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/test/</loc>
-  </url><url>
-    <loc>http://localhost:1313/test/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/test1/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/test2/</loc>
   </url><url>
     <loc>http://localhost:1313/musiccontent-audio/theencore/</loc>
   </url><url>
