@@ -42,12 +42,14 @@
                 <div class="flex flex-col {{ if $isEven }}3md:flex-row{{ else }}3md:flex-row-reverse{{ end }} justify-start items-center w-full max-w-[704px] gap-6
                             3md:items-start 3md:max-w-none 3md:gap-10">
                     <!-- Media (video or image) -->
-                    <div class="relative w-full max-w-[704px] 3md:flex-1 3md:min-w-0 aspect-video rounded-md overflow-hidden">
+                    <div class="relative w-full max-w-[704px] 3md:flex-1 3md:min-w-0 rounded-md overflow-hidden">
                         {{ if eq $contentType "video" }}
                         <video playsinline preload="none" controls class="plyr-video w-full h-full object-cover" poster="{{ $thumbnail }}">
                             <source src="{{ $videoPath }}" alt="{{ $thumbnail_alt }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        {{ else if eq $contentType "vimeo" }}
+                        <div class="plyr-video" data-plyr-provider="vimeo" data-plyr-embed-id="{{ $videoPath }}"></div>
                         {{ else }}
                         <a href="{{ $btn_link }}" class="block">
                             <img src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full h-full object-cover rounded-md hover:brightness-75 transition duration-300">

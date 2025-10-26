@@ -127,5 +127,7 @@
     <loc>http://localhost:1313/toggle-activate-monitor-fx/</loc>
   </url><url>
     <loc>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/items/zebra/</loc>
   </url>
 </urlset>

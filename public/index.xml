@@ -245,5 +245,12 @@
       <guid>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</guid>
       <description>&lt;h3 id=&#34;set-custom-height-actions---envelopes-and-tracks&#34;&gt;Set custom height actions - envelopes and tracks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/gifs/JL_Set%20custom%20height%20actions%20-%20envelopes%20and%20tracks.gif&#34; alt=&#34;custom height actions gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-envelope-height-in-pixelsutility&#34;&gt;JL_read envelope height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a selected envelope in pixels and displays it in the reaper console.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-track-height-in-pixelsutility&#34;&gt;JL_read track height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a track in pixels and displays it in the reaper console. If several tracks is selected it displays an error message and do not get called.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_toggle-envelope-height-on-selected-envelope-lane&#34;&gt;JL_toggle envelope height on selected envelope lane&lt;/h3&gt;&#xA;&lt;p&gt;This script requires the SWS extension installed.&#xA;Script functionality:&#xA;Toggles between two different heights for the selected envelope. It reads the individual selected envelope height and toggles to the other one. If height does not match neither of the configurated envelope heights the bool default_envelope_a determines if set to a(true) or b(false). Thanks to Edgemeal for posting code snippets of reaper.BR_EnvAlloc on the Cockos forum.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Žebra</title>
+      <link>http://localhost:1313/portfolio/items/zebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/zebra/</guid>
+      <description>&lt;p&gt;The short fiction Žebra was made in the spring and summer of 2023 and as a key member of the project my responsibilities was everything related to the audio aspects of the production. That includes the audio post-production (dx, sfx design, foley, editing, mixing, etc.) and scoring of the film.&lt;/p&gt;&#xA;&lt;p&gt;Exploring the film&amp;rsquo;s sonic universe and mood taught me a lot, and I gained valuable knowledge in audio post-production, particularly in dialogue editing and cleaning up recordings.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

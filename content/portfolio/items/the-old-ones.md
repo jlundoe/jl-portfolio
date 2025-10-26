@@ -7,7 +7,7 @@ type: video
 videopath: https://content.jakoblundoe.com/the-old-ones-demo.mp4
 thumbnail: /img/thumbnails/the-old-ones-thumbnail.webp
 thumbnail_alt: the-old-ones-thumbnail
-order: 5
+order: 6
 btn_text:
 btn_link:
 areas_title: Focus Areas
