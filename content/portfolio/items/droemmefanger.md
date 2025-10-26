@@ -4,7 +4,7 @@ subHeader: A portable sound mangling box
 tagTitle: Sound Installation
 year: 2022
 type: card
-thumbnail: /gifs/droemmefanger.gif
+thumbnail: https://content.jakoblundoe.com/droemmefanger.gif
 thumbnail_alt: Droemmefanger
 btn_text: Learn more
 btn_link: https://github.com/jlundoe/droemmefanger
