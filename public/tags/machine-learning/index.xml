@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Grain Synthesizer - Max MSP Patch</title>
-      <link>http://localhost:1313/grain-synthesizer-max-msp-patch/</link>
+      <title>Granular Synth Exploration Tool</title>
+      <link>http://localhost:1313/granular-synth-exploration-tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/grain-synthesizer-max-msp-patch/</guid>
-      <description>&lt;p&gt;This is experimentation - unfinished product - for you to download and use as you wish.&#xA;Machine learning and granular synthesis&lt;/p&gt;</description>
+      <guid>http://localhost:1313/granular-synth-exploration-tool/</guid>
+      <description>&lt;h3 id=&#34;a-grain-synthesizer-controller-by-a-xy-pad&#34;&gt;A grain synthesizer controller by a XY pad&lt;/h3&gt;&#xA;&lt;p&gt;This tool includes an audio grain synth generator and a machine-learning-based controller. It is an exploration of grain synthesis and the use of machine learning to create expressive, intuitive controller mappings. These controller mappings are not only designed to simplify control over an extensive set of parameters, but also expand the synthesizer’s potential and the sound exploration process.&lt;/p&gt;&#xA;&lt;h4 id=&#34;the-grain-synthesizer-element&#34;&gt;The grain synthesizer element&lt;/h4&gt;&#xA;&lt;p&gt;The generator is built on the core concepts of grain synthesis and is controlled by multiple parameters (grain size, curve, spread, sample travel, etc.). It includes two voices and can generate grains from two samples simultaneously.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
