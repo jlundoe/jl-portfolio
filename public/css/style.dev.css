@@ -829,6 +829,9 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .duration-500{transition-duration:500ms}
 .ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}
 .ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}
+.link-pink a{color:#e33c72;font-weight:600}
+.link-pink a:hover{opacity:0.8}
+.link-pink a:active{opacity:0.65}
 /* PLYR CUSTOMIZATION */
 :root {
     --plyr-color-main: rgb(111, 140, 184);

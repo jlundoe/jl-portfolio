@@ -15,8 +15,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const allLinks = document.querySelectorAll('a:not([data-internal-link])');
-            
+
             allLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                
+                if (href && href.startsWith('#')) {
+                    return;
+                }
                 if (!link.hasAttribute('target')) {
                     link.setAttribute('target', '_blank');
                 }
@@ -274,10 +279,10 @@
                             </div>
                         </div>
                         <div class="self-stretch flex flex-col justify-center items-start gap-1.5">
-                            <div class="self-stretch justify-start mb-2">
-                                <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive audio experiences and systems/tools of all kinds and forms!</p>
-<p>Check out my portfolio page and my reel above to see what I do, and navigate to the about page if you are interested in learning more about my journey with audio, up to now.</p>
-<p>Feel free to reach out for a talk or for any questions - I&rsquo;d be happy to hear from you!</p>
+                            <div class="self-stretch justify-start mb-2 link-pink">
+                                <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive audio experiences, as well as the tools and systems that drive them!</p>
+<p>Check out <a href="#showreel">my reel</a> and <a href="#portfolio">portfolio</a> section above, or head to the <a href="/scripts%20&%20Audio%20Tools" data-internal-link>scripts &amp; audio tools</a> page to see and download some of the tools I&rsquo;ve build. Go to the about page if you are interested in learning more about my journey with audio, up to now.</p>
+<p>Feel free to reach out for a chat or for any questions - I&rsquo;d be happy to hear from you!</p>
 
                             </div>
                         </div>
@@ -755,8 +760,8 @@
                     
                     <div class="relative w-full max-w-[704px] 3md:flex-1 3md:min-w-0 aspect-video rounded-md overflow-hidden">
                         
-                        <video playsinline preload="none" controls class="plyr-video w-full h-full object-cover" poster="/img/thumbnails/explosion-design-thumbnail-v8-16x9.webp">
-                            <source src="https://content.jakoblundoe.com/explosion-design-16x9.mp4" alt="explosion-design-thumbnail" type="video/mp4">
+                        <video playsinline preload="none" controls class="plyr-video w-full h-full object-cover" poster="/img/thumbnails/sd-explosion-thumbnail.webp">
+                            <source src="https://content.jakoblundoe.com/explosion-sd-v2-16-9.mp4" alt="explosion-design-thumbnail" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         

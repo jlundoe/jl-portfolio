@@ -139,5 +139,21 @@ module.exports = {
         { values: theme('textShadow') }
       )
     }),
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.link-pink': {
+          '& a': {
+            color: '#e33c72',
+            fontWeight: '600',
+          },
+          '& a:hover': {
+            opacity: '0.8',
+          },
+          '& a:active': {
+            opacity: '0.65',
+          },
+        },
+      })
+    }),
   ],
 }

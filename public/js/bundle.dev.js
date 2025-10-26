@@ -4137,6 +4137,7 @@
         if (this.classList.contains("active")) {
           return;
         }
+        history.pushState(null, "", `#${tabName}`);
         activateTab(tabName);
       });
     });
@@ -4152,6 +4153,28 @@
         activateTab(initialTab);
       }
     }
+    if (window.location.hash) {
+      const hash = window.location.hash.substring(1);
+      const tabButton = Array.from(tabButtons).find((b) => b.getAttribute("data-tab") === hash);
+      if (tabButton && !tabButton.classList.contains("active")) {
+        activateTab(hash);
+      }
+    }
+    window.addEventListener("hashchange", function() {
+      const hash = window.location.hash.substring(1);
+      activateTab(hash);
+      window.scrollTo({ top: 0, behavior: "instant" });
+    });
+    document.addEventListener("click", function(e) {
+      const link = e.target.closest('a[href^="#"]');
+      if (link) {
+        const hash = link.getAttribute("href").substring(1);
+        const tabButton = Array.from(tabButtons).find((b) => b.getAttribute("data-tab") === hash);
+        if (tabButton) {
+          window.scrollTo({ top: 0, behavior: "instant" });
+        }
+      }
+    });
   });
 
   // ns-hugo-imp:/Users/jakoblundoe/Local Files/Repos/jl-portfolio/assets/js/modules/sidebartoggle.js

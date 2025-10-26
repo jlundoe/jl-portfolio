@@ -12,8 +12,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const allLinks = document.querySelectorAll('a:not([data-internal-link])');
-            
+
             allLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                // Skip hash links (same-page navigation)
+                if (href && href.startsWith('#')) {
+                    return;
+                }
                 if (!link.hasAttribute('target')) {
                     link.setAttribute('target', '_blank');
                 }

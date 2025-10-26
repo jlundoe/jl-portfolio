@@ -14,8 +14,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const allLinks = document.querySelectorAll('a:not([data-internal-link])');
-            
+
             allLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                
+                if (href && href.startsWith('#')) {
+                    return;
+                }
                 if (!link.hasAttribute('target')) {
                     link.setAttribute('target', '_blank');
                 }
@@ -169,9 +174,9 @@
         </div>
         <div class="flex flex-col flex-nowrap justify-center">
             
-    <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive audio experiences and systems/tools of all kinds and forms!</p>
-<p>Check out my portfolio page and my reel above to see what I do, and navigate to the about page if you are interested in learning more about my journey with audio, up to now.</p>
-<p>Feel free to reach out for a talk or for any questions - I&rsquo;d be happy to hear from you!</p>
+    <p><span>Hi there!</span> My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive audio experiences, as well as the tools and systems that drive them!</p>
+<p>Check out <a href="#showreel">my reel</a> and <a href="#portfolio">portfolio</a> section above, or head to the <a href="/scripts%20&%20Audio%20Tools" data-internal-link>scripts &amp; audio tools</a> page to see and download some of the tools I&rsquo;ve build. Go to the about page if you are interested in learning more about my journey with audio, up to now.</p>
+<p>Feel free to reach out for a chat or for any questions - I&rsquo;d be happy to hear from you!</p>
 
 
         </div>

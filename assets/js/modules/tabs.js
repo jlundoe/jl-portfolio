@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.classList.contains('active')) {
                 return;
             }
+            // Update URL hash without triggering scroll
+            history.pushState(null, '', `#${tabName}`);
             activateTab(tabName);
         });
     });
@@ -93,4 +95,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Handle hash-based navigation for tab links
+    if (window.location.hash) {
+        const hash = window.location.hash.substring(1);
+        const tabButton = Array.from(tabButtons).find(b => b.getAttribute('data-tab') === hash);
+        if (tabButton && !tabButton.classList.contains('active')) {
+            activateTab(hash);
+        }
+    }
+    // Listen for hash changes
+    window.addEventListener('hashchange', function() {
+        const hash = window.location.hash.substring(1);
+        activateTab(hash);
+        // Scroll to top when using hash links
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    });
+
+    // Handle clicks on hash links to scroll even if already on that tab
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href^="#"]');
+        if (link) {
+            const hash = link.getAttribute('href').substring(1);
+            const tabButton = Array.from(tabButtons).find(b => b.getAttribute('data-tab') === hash);
+            if (tabButton) {
+                // Scroll to top when clicking hash links
+                window.scrollTo({ top: 0, behavior: 'instant' });
+            }
+        }
+    });
 });
