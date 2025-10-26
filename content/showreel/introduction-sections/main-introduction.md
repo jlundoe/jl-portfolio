@@ -1,5 +1,5 @@
 ---
-title: "Exploring Audio and Systems"
+title: "Exploring Audio Experiences"
 order: 0
 img: /img/pressphoto-jln.webp
 btn_text: "More Info"
