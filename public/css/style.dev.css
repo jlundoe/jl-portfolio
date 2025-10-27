@@ -742,9 +742,14 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .bg-pink{--tw-bg-opacity:1;background-color:rgb(227 60 114 / var(--tw-bg-opacity))}
 .bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}
 .bg-opacity-50{--tw-bg-opacity:0.5}
+.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}
 .bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}
+.from-grey-shade-3{--tw-gradient-from:#2f2f2f var(--tw-gradient-from-position);--tw-gradient-to:rgb(47 47 47 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
 .from-grey-tint-3{--tw-gradient-from:#f4f4f4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(244 244 244 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
+.from-50\%{--tw-gradient-from-position:50%}
 .to-grey-tint-2{--tw-gradient-to:#e0e0e0 var(--tw-gradient-to-position)}
+.to-white{--tw-gradient-to:#ffffff var(--tw-gradient-to-position)}
+.to-50\%{--tw-gradient-to-position:50%}
 .object-contain{-o-object-fit:contain;object-fit:contain}
 .object-cover{-o-object-fit:cover;object-fit:cover}
 .p-0{padding:0px}
@@ -763,6 +768,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .pb-1{padding-bottom:0.25rem}
 .pb-12{padding-bottom:3rem}
 .pb-2{padding-bottom:0.5rem}
+.pb-20{padding-bottom:5rem}
 .pb-6{padding-bottom:1.5rem}
 .pb-8{padding-bottom:2rem}
 .pl-1{padding-left:0.25rem}
