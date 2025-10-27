@@ -44,8 +44,9 @@
 <script src="/js/bundle.dev.js" defer></script>
 </head>
 <body data-page="soundlibraries_page" class="bg-grey-shade-3" style="padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom);">
-
-    <div id="mainviewport" class="relative min-h-dvh pb-20 bg-white">
+    <div class="fixed top-0 left-0 w-full bg-grey-shade-3 z-50" style="height: env(safe-area-inset-top);"></div>
+    <div class="fixed bottom-0 left-0 w-full bg-grey-shade-3 z-50" style="height: env(safe-area-inset-bottom);"></div>
+    <div id="mainviewport" class="relative min-h-screen pb-20 bg-white">
         <div id="sidebarnav"
              class="fixed top-0 right-0 h-full translate-x-full bg-white z-30 pl-6 pr-3 border-l border-black">
             <div class="flex flex-col flex-nowrap justify-start items-start gap-12 h-full">
