@@ -561,6 +561,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .top-0{top:0px}
 .z-30{z-index:30}
 .z-40{z-index:40}
+.z-\[-1\]{z-index:-1}
 .m-0{margin:0px}
 .m-auto{margin:auto}
 .-mx-4{margin-left:-1rem;margin-right:-1rem}
