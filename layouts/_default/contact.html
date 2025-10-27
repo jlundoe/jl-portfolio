@@ -17,7 +17,7 @@
                 {{ $btn_text := .Params.btn_text }}
                 {{ $btn_link := .Params.btn_link }}
                 {{ $btn_target := .Params.btn_target }}
-                <div class="[&_span]:text-lg [&_span]:font-light [&_span]:text-sm [&_span]:tracking-wide
+                <div class="[&_span]:font-light [&_span]:text-sm [&_span]:tracking-wide
                             [&_a]:py-6">
                     {{ if $btn_text }}
                         {{ partial "button-primary" (dict "text" $btn_text "url" $btn_link "target" $btn_target) }}
