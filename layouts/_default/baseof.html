@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "meta.html" . }}
-<body data-page="{{ .Params.page_class }}">
-    <div class="fixed top-0 left-0 w-full h-64 bg-grey-shade-3 z-10"></div>
-    <div id="mainviewport" class="relative min-h-screen z-20">
+<body data-page="{{ .Params.page_class }}" class="bg-grey-shade-3">
+<!--    <div class="fixed top-0 left-0 w-full "></div>-->
+    <div id="mainviewport" class="relative min-h-screen bg-white">
         <div id="sidebarnav"
              class="fixed top-0 right-0 h-full translate-x-full bg-white z-30 pl-6 pr-3 border-l border-black">
             {{ partial "sidebarnav" . }}
