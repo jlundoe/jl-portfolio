@@ -599,6 +599,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .mt-10{margin-top:2.5rem}
 .mt-2{margin-top:0.5rem}
 .mt-20{margin-top:5rem}
+.mt-28{margin-top:7rem}
 .mt-32{margin-top:8rem}
 .mt-4{margin-top:1rem}
 .mt-6{margin-top:1.5rem}
@@ -906,6 +907,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .sm\:mx-4{margin-left:1rem;margin-right:1rem}
 .sm\:mr-2{margin-right:0.5rem}
 .sm\:mr-4{margin-right:1rem}
+.sm\:mt-36{margin-top:9rem}
 .sm\:mt-5{margin-top:1.25rem}
 .sm\:block{display:block}
 .sm\:flex{display:flex}
@@ -931,6 +933,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .sm\:tracking-wider{letter-spacing:0.05em}}
 @media (min-width: 768px){
 .md\:mx-6{margin-left:1.5rem;margin-right:1.5rem}
+.md\:mt-52{margin-top:13rem}
 .md\:h-11{height:2.75rem}
 .md\:h-\[10vw\]{height:10vw}
 .md\:h-\[clamp\(320px\2c 32vw\2c 460px\)\]{height:clamp(320px,32vw,460px)}
