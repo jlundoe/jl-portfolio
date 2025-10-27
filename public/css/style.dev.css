@@ -627,7 +627,7 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .h-full{height:100%}
 .max-h-32{max-height:8rem}
 .min-h-28{min-height:7rem}
-.min-h-screen{min-height:100vh}
+.min-h-dvh{min-height:100dvh}
 .w-1{width:0.25rem}
 .w-1\.5{width:0.375rem}
 .w-10{width:2.5rem}
