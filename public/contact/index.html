@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Contact - Jakob Lundoe</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 <script src="/js/bundle.dev.js" defer></script>
 </head>
-<body data-page="contact_page" class="bg-grey-shade-3">
+<body data-page="contact_page" class="bg-grey-shade-3 pt-safe-top pb-safe-bottom">
+    
+    <div class="fixed top-0 left-0 right-0 h-safe-top bg-grey-shade-3 pointer-events-none"></div>
+    <div class="fixed bottom-0 left-0 right-0 h-safe-bottom bg-white pointer-events-none"></div>
+
 
     <div id="mainviewport" class="relative min-h-dvh pb-20 bg-white">
         <div id="sidebarnav"
