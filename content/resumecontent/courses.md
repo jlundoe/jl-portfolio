@@ -1,6 +1,7 @@
 ---
 title: Courses
 order: 2
+display: false
 ---
 
 #### 2024

@@ -1,6 +1,7 @@
 ---
 title: Education
 order: 1
+display: true
 ---
 
 #### 2021 - 2024

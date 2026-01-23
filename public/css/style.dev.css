@@ -1066,7 +1066,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .sm\:\[\&_p\]\:text-lg p{font-size:1.125rem;line-height:1.75rem}}
 @media (min-width: 768px){
 .md\:\[\&_p\]\:text-start p{text-align:start}}
-.\[\&_span\]\:text-lg span{font-size:1.125rem;line-height:1.75rem}
 .\[\&_span\]\:text-sm span{font-size:0.875rem;line-height:1.25rem}
 .\[\&_span\]\:font-light span{font-weight:300}
 .\[\&_span\]\:font-medium span{font-weight:500}

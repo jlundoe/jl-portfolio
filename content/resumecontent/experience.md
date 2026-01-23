@@ -1,6 +1,7 @@
 ---
 title: Experience
 order: 0
+display: false
 ---
 
 #### Jan 2025 - Feb 2025

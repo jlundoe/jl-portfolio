@@ -1,6 +1,6 @@
 ---
 title: Žebra
-subHeader: Sound Design & Scoring
+subHeader: Audio Post-Production, Sound Design & Scoring
 tagTitle:
 year:
 type: vimeo
@@ -17,7 +17,7 @@ focus_areas:
   - "Foley"
   - "Sound Effects Design"
   - "Scoring"
-  - "Mix & Mastering"
+  - "Mix & Master"
 ---
 The short fiction Žebra was made in the spring and summer of 2023 and as a key member of the project my responsibilities was everything related to the audio aspects of the production. That includes the audio post-production (dx, sfx design, foley, editing, mixing, etc.) and scoring of the film.
 
