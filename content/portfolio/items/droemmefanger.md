@@ -2,10 +2,11 @@
 title: Droemmefanger
 subHeader: A portable sound mangling box
 tagTitle: Sound Installation
-year: 2022
+year:
 type: card
 thumbnail: https://content.jakoblundoe.com/droemmefanger.gif
 thumbnail_alt: Droemmefanger
+order: 1
 btn_text: Learn more
 btn_link: https://github.com/jlundoe/droemmefanger
 btn_target: _blank

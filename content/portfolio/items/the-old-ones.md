@@ -2,7 +2,7 @@
 title: Game Audio Implementation
 subHeader: Sound design and Implementation
 tagTitle: Student Assignment
-year: 2022
+year:
 type: video
 videopath: https://content.jakoblundoe.com/the-old-ones-demo.mp4
 thumbnail: /img/thumbnails/the-old-ones-thumbnail.webp

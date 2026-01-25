@@ -22,7 +22,7 @@
         {{ if $sectionItem }}
             <div class="flex flex-col gap-16 mx-4 justify-center items-center
                         3md:gap-28">
-                {{ range $index, $element := (sort $sectionItem.Pages "Params.order") }}
+                {{ range $index, $element := (sort (where $sectionItem.Pages "Params.order" "!=" nil) "Params.order") }}
                 {{ $itemTitle := .Params.title }}
                 {{ $subHeader:= .Params.subHeader }}
                 {{ $tagTitle := .Params.tagTitle }}

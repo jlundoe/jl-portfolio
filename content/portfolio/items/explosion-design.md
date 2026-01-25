@@ -7,7 +7,7 @@ type: video
 videopath: https://content.jakoblundoe.com/explosion-sd-v2-16-9.mp4
 thumbnail: /img/thumbnails/sd-explosion-thumbnail.webp
 thumbnail_alt: explosion-design-thumbnail
-order: 3
+order: 4
 btn_text:
 btn_link:
 areas_title: Focus Areas

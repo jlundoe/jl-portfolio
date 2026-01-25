@@ -190,6 +190,13 @@
       <description>&lt;p&gt;Lydro is an XR-based spatialized sound experience, which utilizes the 3dof head tracking technology available in modern headphone devices. It is a fully interactive experience, where the user can explore the environment and interact with the soundscape.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The app was conceptualized as part of a larger &lt;a href=&#34;https://danishsoundcluster.dk/praksisnaere-loesningsmodeller-til-positiv-og-engagerede-brug-af-musik-og-lydinterventioner-paa-plejehjem/&#34;&gt;research project&lt;/a&gt; on Aarhus University in 2023, in collaboration with the VR company &lt;a href=&#34;https://aatevr.com/&#34;&gt;AATE VR&lt;/a&gt;. The whole experience was designed and developed by me.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Sampler Patch in PD</title>
+      <link>http://localhost:1313/portfolio/items/samplii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/items/samplii/</guid>
+      <description>&lt;p&gt;This is a small patch I made a while back in Pure Data to experiment with a Bela Board I borrowed. Simple yet effective sampling and very fun to play with.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Samplii</title>
       <link>http://localhost:1313/archived/samplii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

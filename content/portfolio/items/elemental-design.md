@@ -7,6 +7,7 @@ type: video
 videoPath: https://content.jakoblundoe.com/electricity-sd-v2.mp4
 thumbnail: /img/thumbnails/electricity-sd-thumbnail.webp
 thumbnail_alt: elemental-design-thumbnail
+order: 2
 btn_text:
 btn_link:
 areas_title: Focus Areas
