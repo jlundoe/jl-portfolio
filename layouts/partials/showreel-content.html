@@ -1,9 +1,6 @@
 {{ $showreelSection := .Site.GetPage "section" "showreel" }}
 {{ if $showreelSection }}
-    <div class="flex flex-col items-center gap-10 mt-8 self-stretch w-full min-w-0 px-4
-                lg:px-20
-                md:px-16
-                sm:px-12">
+    <div class="flex flex-col items-center gap-10 mt-8 self-stretch w-full min-w-0">
         {{ $sectionPage := $showreelSection.GetPage "reel-sections" }}
         {{ if $sectionPage }}
             {{ range sort $sectionPage.Pages "Params.order" }}
@@ -16,7 +13,11 @@
                 {{ $pageVideoPath := .Params.videoPath }}
                 {{ $thumbnailPath := .Params.thumbnail }}
                 {{ if eq $contentType "video" }}
-                    <div class="max-w-[1120px] px-4 pt-5 pb-2 bg-grey-tint-3 rounded-none -mx-4 sm:mx-0 sm:rounded-lg
+                <div class="px-4 flex flex-col items-center bg-grey-tint-3 w-full
+                            lg:px-5
+                            md:px-16
+                            sm:px-12">
+                    <div class="max-w-[1120px] px-4 pt-5 pb-2 rounded-none sm:mx-0 sm:rounded-lg
                                 lg:px-16 lg:pt-10 lg:pb-8
                                 sm:pt-8">
                         <div class="text-center justify-start text-black text-3xl font-normal leading-9">
@@ -34,6 +35,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 {{ end }}
             {{ end }}
         {{ end }}
@@ -50,6 +52,10 @@
             {{ $btn_link := .Params.btn_link }}
             {{ $pageVideoPath := .Params.videopath }}
             {{ $thumbnailPath := .Params.thumbnail }}
+            <div class="px-4
+                 lg:px-20
+                 md:px-16
+                 sm:px-12">
                 <div class="self-stretch px-2 py-4 flex flex-col justify-center items-center gap-12
                             lg:px-12 lg:py-10 [&_p]:text-center [&_h2]:text-center
                             md:px-10 md:py-8 md:flex-row md:gap-x-[clamp(1rem,8vw,8rem)] md:items-start
@@ -73,6 +79,7 @@
                         <img class="absolute inset-0 size-full rounded-lg object-cover" src="/img/pressphoto-jln.webp" alt="Profile" />
                     </div>
                 </div>
+            </div>
             {{ end }}
         {{ end }}
     </div>
