@@ -4,7 +4,7 @@ subHeader: Electricity & Arcane Magic Design
 tagTitle: Sound Redesign
 year:
 type: video
-videoPath: https://content.jakoblundoe.com/electricity-sd.mp4
+videoPath: https://content.jakoblundoe.com/electricity-sd-v2.mp4
 thumbnail: /img/thumbnails/electricity-sd-thumbnail.webp
 thumbnail_alt: elemental-design-thumbnail
 btn_text:
