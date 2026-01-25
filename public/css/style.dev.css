@@ -915,7 +915,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .sm\:gap-4{gap:1rem}
 .sm\:gap-6{gap:1.5rem}
 .sm\:rounded-lg{border-radius:0.5rem}
-.sm\:px-12{padding-left:3rem;padding-right:3rem}
 .sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
 .sm\:px-8{padding-left:2rem;padding-right:2rem}
 .sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}
@@ -947,7 +946,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .md\:gap-x-\[clamp\(1rem\2c 8vw\2c 8rem\)\]{-moz-column-gap:clamp(1rem,8vw,8rem);column-gap:clamp(1rem,8vw,8rem)}
 .md\:px-10{padding-left:2.5rem;padding-right:2.5rem}
 .md\:px-12{padding-left:3rem;padding-right:3rem}
-.md\:px-16{padding-left:4rem;padding-right:4rem}
 .md\:py-8{padding-top:2rem;padding-bottom:2rem}}
 @media (min-width: 1024px){
 .lg\:mx-8{margin-left:2rem;margin-right:2rem}
@@ -957,7 +955,6 @@ p + p{margin-top:0.5rem /* margin-top on any p that follows another p */}
 .lg\:gap-12{gap:3rem}
 .lg\:px-12{padding-left:3rem;padding-right:3rem}
 .lg\:px-16{padding-left:4rem;padding-right:4rem}
-.lg\:px-20{padding-left:5rem;padding-right:5rem}
 .lg\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}
 .lg\:pb-8{padding-bottom:2rem}
 .lg\:pt-10{padding-top:2.5rem}}
