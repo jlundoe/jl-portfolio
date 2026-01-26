@@ -22,6 +22,13 @@
       <description></description>
     </item>
     <item>
+      <title>Designed</title>
+      <link>http://localhost:1313/tags/designed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/designed/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Grain Synthesis</title>
       <link>http://localhost:1313/tags/grain-synthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -43,6 +50,13 @@
       <description></description>
     </item>
     <item>
+      <title>Raw</title>
+      <link>http://localhost:1313/tags/raw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/raw/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Reaper</title>
       <link>http://localhost:1313/tags/reaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -61,6 +75,13 @@
       <link>http://localhost:1313/tags/signal-flow-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/signal-flow-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sound Effects</title>
+      <link>http://localhost:1313/tags/sound-effects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sound-effects/</guid>
       <description></description>
     </item>
   </channel>

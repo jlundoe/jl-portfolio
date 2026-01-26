@@ -38,6 +38,8 @@
   </url><url>
     <loc>http://localhost:1313/pages/dev-page/reaper/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/designed/</loc>
+  </url><url>
     <loc>http://localhost:1313/showreel/introduction-sections/main-introduction/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/items/droemmefanger/</loc>
@@ -82,6 +84,8 @@
   </url><url>
     <loc>http://localhost:1313/portfolio/items/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/raw/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/reaper/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/</loc>
@@ -89,6 +93,8 @@
     <loc>http://localhost:1313/portfolio/items/samplii/</loc>
   </url><url>
     <loc>http://localhost:1313/archived/samplii/</loc>
+  </url><url>
+    <loc>http://localhost:1313/scrapbook-library/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/script/</loc>
   </url><url>
@@ -104,8 +110,6 @@
   </url><url>
     <loc>http://localhost:1313/smart-item-mute-toggle/</loc>
   </url><url>
-    <loc>http://localhost:1313/smart-item-mute-toggle/</loc>
-  </url><url>
     <loc>http://localhost:1313/smart-write-automation-to-timeselection/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/</loc>
@@ -113,6 +117,8 @@
     <loc>http://localhost:1313/showreel/reel-sections/main-reel/</loc>
   </url><url>
     <loc>http://localhost:1313/sound-effects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sound-effects/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/soundeffects-page/scrapbook/</loc>
   </url><url>

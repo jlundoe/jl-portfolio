@@ -21,14 +21,13 @@
 {{ $subHeader := .Params.subHeader }}
 {{ $tagTitle := .Params.tagTitle }}
 {{ $year := .Params.year }}
-<div class="script-content w-full max-w-4xl mx-auto mb-4">
+<div class="w-full max-w-4xl mx-auto mb-4">
     <div class="mt-2 py-1 mx-2">
-        <div id="dropdown-button-container-{{ $itemTitle }}" class="flex flex-row flex-nowrap justify-between items-center py-2 px-4 hover:cursor-pointer border border-grey-base rounded-lg bg-white hover:shadow-md transition-shadow duration-200">
+        <div id="dropdown-button-container-{{ $itemTitle }}" class="flex flex-row flex-nowrap justify-between items-center py-2 px-4 border border-grey-base rounded-lg bg-white">
             <div class="flex flex-row items-center flex-1">
                 <button id="dropdown-button-{{ $itemTitle }}" class="flex justify-center rotate-180 transition ease-out duration-300 mr-3 hover:opacity-80 hover:scale-102 active:opacity-60">
-                    <ion-icon name="chevron-up-sharp" alt="dropdown arrow icon" style="color: #414141; font-size: 28px;"></ion-icon>
                 </button>
-                <h2 class="select-text font-normal text-base text-grey-shade-3 py-2 hover:opacity-80 active:opacity-60 sm:text-xl">
+                <h2 class="select-text font-normal text-base text-grey-shade-3 py-2 sm:text-xl">
                     {{ $itemTitle }}
                 </h2>
             </div>
@@ -46,10 +45,10 @@
             </div>
         </div>
     </div>
-    <div class="select-text mx-4 flex flex-col items-center
+    <div class="select-text mx-4 flex flex-col items-start
                     [&_p]:mt-3 [&_p]:mb-3 [&_p]:text-grey-shade-3 [&_ul]:mt-3 [&_ul]:mb-3 [&_li]:ml-6 [&_li]:list-disc [&_h3]:font-medium [&_h3]:text-grey-shade-3 [&_h3]:mt-6 [&_h3]:mb-2 [&_h6]:font-semibold [&_h6]:text-sm [&_h6]:text-grey-shade-3 [&_h6]:mt-4 [&_h6]:mb-1 [&_a]:text-pink [&_a]:font-semibold hover:[&_a]:opacity-80 active:[&_a]:opacity-65 [&_img]:mt-4 [&_img]:mb-4 [&_img]:rounded [&_img]:border [&_img]:border-grey-shade-2 [&_img]:max-w-full [&_img]:h-auto [&_br]:my-2 relative">
         <div id="dropdown-content-{{ $itemTitle }}" class="grid grid-rows-0fr">
-            <div class="overflow-hidden flex flex-col items-center w-full">
+            <div class="flex flex-col items-center w-full">
                 <!-- add video to content section -->
                 {{ if $video }}
                 <div class="flex flex-col mt-10 3md:flex-row justify-center items-center w-full max-w-[704px] gap-6 3md:max-w-none 3md:gap-10">
@@ -66,6 +65,9 @@
                 {{ end }}
                 <div class="select-text px-2 pt-4 pb-6">
                     {{ .Content }}
+                    <audio id="sfx-player" controls>
+                        <source src="https://content.jakoblundoe.com/MAGElem_Ice%20Magic%20Spell%20Impact%20Blast_Jakob%20Lundoe_Sound%20Scrapbook.wav" type="audio/wav">
+                    </audio>
                     {{ if $tags }}
                     <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-grey-shade-2">
                         {{ range $tags }}

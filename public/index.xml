@@ -197,6 +197,13 @@
       <description></description>
     </item>
     <item>
+      <title>Scrapbook library</title>
+      <link>http://localhost:1313/scrapbook-library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scrapbook-library/</guid>
+      <description>&lt;h3 id=&#34;a-short-preview&#34;&gt;A short preview&lt;/h3&gt;</description>
+    </item>
+    <item>
       <title>Sleepy Warrior</title>
       <link>http://localhost:1313/musiccontent-audio/sleepy-warrior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -209,13 +216,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/smart-item-mute-toggle/</guid>
       <description>&lt;h3 id=&#34;jl_toggle-mute-on-items-if-same-else-mute&#34;&gt;JL_toggle mute on items if same else mute&lt;/h3&gt;&#xA;&lt;p&gt;Toggle mute on selected media items with the following conditions:&#xA;If the selected media items are all muted, then unmute all the selected media items.&#xA;If the selected media items are all unmuted, then mute all the selected media items.&#xA;If the selected media items are both muted and unmuted (they differ), then mute all the selected media items.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle%20mute%20on%20items%20if%20same%20else%20mute.gif&#34; alt=&#34;toggle mute gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Bool. Set to true if item should unmute(instead of mute) if the selected item mute states don&amp;rsquo;t match.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Smart Item Mute Toggle</title>
-      <link>http://localhost:1313/smart-item-mute-toggle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/smart-item-mute-toggle/</guid>
-      <description>&lt;h3 id=&#34;a-short-preview&#34;&gt;A short preview&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle%20mute%20on%20items%20if%20same%20else%20mute.gif&#34; alt=&#34;toggle mute gif&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Smart Write Automation to Timeselection</title>
