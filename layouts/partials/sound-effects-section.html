@@ -1,0 +1,81 @@
+<!-- section header -->
+{{ $sectionTitle := .Params.title }}
+{{ $sectionContent := .Content }}
+<div class="mt-20 mb-8 flex flex-col justify-center items-center border-t-2 border-grey-tint-2">
+</div>
+<div class="mx-4 mb-6 [&_a]:text-pink [&_a]:font-semibold hover:[&_a]:opacity-80 active:[&_a]:opacity-65">
+    <div>
+        <h2 class="font-normal text-2xl text-grey-shade-2">{{ $sectionTitle }}</h2>
+    </div>
+    <div>
+        {{ $sectionContent }}
+    </div>
+</div>
+<!-- section media -->
+{{ range sort .Pages "Params.order" }}
+{{ $itemTitle := .Params.title }}
+{{ $thumbnail := .Params.thumbnail }}
+{{ $tags := .Params.tags }}
+{{ $download := .Params.download }}
+{{ $video := .Params.video }}
+{{ $subHeader := .Params.subHeader }}
+{{ $tagTitle := .Params.tagTitle }}
+{{ $year := .Params.year }}
+<div class="script-content w-full max-w-4xl mx-auto mb-4">
+    <div class="mt-2 py-1 mx-2">
+        <div id="dropdown-button-container-{{ $itemTitle }}" class="flex flex-row flex-nowrap justify-between items-center py-2 px-4 hover:cursor-pointer border border-grey-base rounded-lg bg-white hover:shadow-md transition-shadow duration-200">
+            <div class="flex flex-row items-center flex-1">
+                <button id="dropdown-button-{{ $itemTitle }}" class="flex justify-center rotate-180 transition ease-out duration-300 mr-3 hover:opacity-80 hover:scale-102 active:opacity-60">
+                    <ion-icon name="chevron-up-sharp" alt="dropdown arrow icon" style="color: #414141; font-size: 28px;"></ion-icon>
+                </button>
+                <h2 class="select-text font-normal text-base text-grey-shade-3 py-2 hover:opacity-80 active:opacity-60 sm:text-xl">
+                    {{ $itemTitle }}
+                </h2>
+            </div>
+            <div class="flex flex-row items-center gap-3">
+                {{ if $download }}
+                <div class="mx-4">
+                    {{ partial "button-download" (dict "download" $download) }}
+                </div>
+                {{ end }}
+                {{ if $thumbnail }}
+                <div class="flex-shrink-0 sm:flex hidden">
+                    <img src="{{ $thumbnail }}" alt="{{ $itemTitle }} preview" class="w-16 h-16 object-cover rounded border border-grey-shade-2">
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="select-text mx-4 flex flex-col items-center
+                    [&_p]:mt-3 [&_p]:mb-3 [&_p]:text-grey-shade-3 [&_ul]:mt-3 [&_ul]:mb-3 [&_li]:ml-6 [&_li]:list-disc [&_h3]:font-medium [&_h3]:text-grey-shade-3 [&_h3]:mt-6 [&_h3]:mb-2 [&_h6]:font-semibold [&_h6]:text-sm [&_h6]:text-grey-shade-3 [&_h6]:mt-4 [&_h6]:mb-1 [&_a]:text-pink [&_a]:font-semibold hover:[&_a]:opacity-80 active:[&_a]:opacity-65 [&_img]:mt-4 [&_img]:mb-4 [&_img]:rounded [&_img]:border [&_img]:border-grey-shade-2 [&_img]:max-w-full [&_img]:h-auto [&_br]:my-2 relative">
+        <div id="dropdown-content-{{ $itemTitle }}" class="grid grid-rows-0fr">
+            <div class="overflow-hidden flex flex-col items-center w-full">
+                <!-- add video to content section -->
+                {{ if $video }}
+                <div class="flex flex-col mt-10 3md:flex-row justify-center items-center w-full max-w-[704px] gap-6 3md:max-w-none 3md:gap-10">
+                    <!-- Media (video or image) -->
+                    <div class="relative w-full max-w-[704px] 3md:flex-1 3md:min-w-0 aspect-video rounded-md overflow-hidden">
+                        <video playsinline preload="none" controls class="plyr-video w-full h-full object-cover" poster="{{ $thumbnail }}">
+                            <source src="{{ $video }}" alt="{{ $itemTitle }} video preview" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- overlay text wrapper -->
+                        {{ partial "video-overlay" (dict "itemTitle" $itemTitle "subHeader" $subHeader "tagTitle" $tagTitle "year" $year) }}
+                    </div>
+                </div>
+                {{ end }}
+                <div class="select-text px-2 pt-4 pb-6">
+                    {{ .Content }}
+                    {{ if $tags }}
+                    <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-grey-shade-2">
+                        {{ range $tags }}
+                        <span class="inline-block px-3 py-1 text-xs font-medium text-white bg-pink rounded-full">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

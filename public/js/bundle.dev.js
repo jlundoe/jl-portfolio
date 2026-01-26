@@ -6581,9 +6581,10 @@
     }
   });
   document.addEventListener("DOMContentLoaded", () => {
-    const scriptsPageActive = document.body.getAttribute("data-page") === "dev_page" || false;
-    if (!scriptsPageActive)
-      return;
+    const scriptsPageActive = ["dev_page", "soundeffects_page"].includes(
+      document.body.getAttribute("data-page")
+    );
+    if (!scriptsPageActive) return;
     const scriptContentElem = document.getElementsByClassName("script-content");
     const dropdownStates = [];
     for (const elem of scriptContentElem) {

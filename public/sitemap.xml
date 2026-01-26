@@ -38,6 +38,8 @@
   </url><url>
     <loc>http://localhost:1313/pages/dev-page/reaper/</loc>
   </url><url>
+    <loc>http://localhost:1313/showreel/introduction-sections/main-introduction/</loc>
+  </url><url>
     <loc>http://localhost:1313/portfolio/items/droemmefanger/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/education/</loc>
@@ -46,11 +48,7 @@
   </url><url>
     <loc>http://localhost:1313/resumecontent/experience/</loc>
   </url><url>
-    <loc>http://localhost:1313/showreel/introduction-sections/main-introduction/</loc>
-  </url><url>
     <loc>http://localhost:1313/portfolio/items/explosion-design/</loc>
-  </url><url>
-    <loc>http://localhost:1313/explosion-pack/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
@@ -86,8 +84,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/reaper/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/recording/</loc>
-  </url><url>
     <loc>http://localhost:1313/resumecontent/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/items/samplii/</loc>
@@ -97,8 +93,6 @@
     <loc>http://localhost:1313/tags/script/</loc>
   </url><url>
     <loc>http://localhost:1313/scripts%20&amp;%20Audio%20Tools/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/sfx/</loc>
   </url><url>
     <loc>http://localhost:1313/showreel/</loc>
   </url><url>
@@ -110,17 +104,17 @@
   </url><url>
     <loc>http://localhost:1313/smart-item-mute-toggle/</loc>
   </url><url>
+    <loc>http://localhost:1313/smart-item-mute-toggle/</loc>
+  </url><url>
     <loc>http://localhost:1313/smart-write-automation-to-timeselection/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/</loc>
   </url><url>
     <loc>http://localhost:1313/showreel/reel-sections/main-reel/</loc>
   </url><url>
-    <loc>http://localhost:1313/sound-libraries/</loc>
+    <loc>http://localhost:1313/sound-effects/</loc>
   </url><url>
-    <loc>http://localhost:1313/pages/sound-libraries/items/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/synthesis/</loc>
+    <loc>http://localhost:1313/pages/soundeffects-page/scrapbook/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
