@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/portfolio/items/samplii/</loc>
-  </url><url>
     <loc>http://localhost:1313/socials/github/</loc>
   </url><url>
     <loc>http://localhost:1313/socials/instagram/</loc>
@@ -91,6 +89,8 @@
     <loc>http://localhost:1313/tags/recording/</loc>
   </url><url>
     <loc>http://localhost:1313/resumecontent/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/items/samplii/</loc>
   </url><url>
     <loc>http://localhost:1313/archived/samplii/</loc>
   </url><url>

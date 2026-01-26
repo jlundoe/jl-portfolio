@@ -92,6 +92,13 @@
       <description>&lt;h3 id=&#34;jl_create-time-selection-between-items&#34;&gt;JL_create time selection between items&lt;/h3&gt;&#xA;&lt;p&gt;This script creates a timeselection between to items in the arrange view. It uses default Reaper action commands to achieve this behaviour. The cursor needs to be placed between the two items where you want to create the time selection, since the script uses the cursor to achieve the desired behaviour. You can assign it to a mouse modifier of your choice.&#xA;For example: Preferences/Editing Behavior/Mouse Modifiers: Track | Double-Click | Default Action&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_create%20time%20selection%20between%20items.gif&#34; alt=&#34;create time selection between items gif&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Designing Interactive Audio</title>
+      <link>http://localhost:1313/showreel/introduction-sections/main-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/showreel/introduction-sections/main-introduction/</guid>
+      <description>&lt;p&gt;I’m Jakob, a sound and interaction designer with a strong technical foundation. I focus on creating engaging interactive audio experiences, and on building the tools and systems that support them.&lt;/p&gt;&#xA;&lt;p&gt;Check out &lt;a href=&#34;#showreel&#34;&gt;my reel&lt;/a&gt; and &lt;a href=&#34;#portfolio&#34;&gt;portfolio&lt;/a&gt; section above, or visit &lt;a href=&#34;http://localhost:1313/scripts%20&amp;%20Audio%20Tools&#34; data-internal-link&gt;Scripts &amp;amp; Audio Tools&lt;/a&gt; to see and download some of the tools I&amp;rsquo;ve build. Go to the about page if you are interested in learning more about my journey with audio, up to now.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Droemmefanger</title>
       <link>http://localhost:1313/portfolio/items/droemmefanger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -118,13 +125,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resumecontent/experience/</guid>
       <description>&lt;h4 id=&#34;jan-2025---feb-2025&#34;&gt;Jan 2025 - Feb 2025&lt;/h4&gt;&#xA;&lt;h3 id=&#34;software-developer&#34;&gt;Software Developer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-the-byte-flow--phoenix-design-aid--internship&#34;&gt;Company: The Byte Flow / Phoenix Design Aid | Internship&lt;/h5&gt;&#xA;&lt;p&gt;Web design and development&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Management&lt;/li&gt;&#xA;&lt;li&gt;UX/UI design&lt;/li&gt;&#xA;&lt;li&gt;Javascript, PHP, HTML, CSS&lt;/li&gt;&#xA;&lt;li&gt;Versions Control (Git)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;I gained experience and valuable insights into professional development environments, including it’s processes and pipelines.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;aug-2023---feb-2024&#34;&gt;Aug 2023 - Feb 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;technical-sound-designer&#34;&gt;Technical Sound Designer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-gumbo-games--part-time&#34;&gt;Company: Gumbo Games | Part time&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developing audiosystems in Unity with C#.&lt;/li&gt;&#xA;&lt;li&gt;Using the version control software tool Git in the development process.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learned a lot about remote collaboration and how to use version control tool Git in the development process.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploring Audio Experiences</title>
-      <link>http://localhost:1313/showreel/introduction-sections/main-introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/showreel/introduction-sections/main-introduction/</guid>
-      <description>&lt;p&gt;&lt;span&gt;Hi there!&lt;/span&gt; My name is Jakob and I am a technical sound and interaction designer. I am passionate about creating engaging interactive audio experiences, as well as the tools and systems that drive them!&lt;/p&gt;&#xA;&lt;p&gt;Check out &lt;a href=&#34;#showreel&#34;&gt;my reel&lt;/a&gt; and &lt;a href=&#34;#portfolio&#34;&gt;portfolio&lt;/a&gt; section above, or head to the &lt;a href=&#34;http://localhost:1313/scripts%20&amp;%20Audio%20Tools&#34; data-internal-link&gt;scripts &amp;amp; audio tools&lt;/a&gt; page to see and download some of the tools I&amp;rsquo;ve build. Go to the about page if you are interested in learning more about my journey with audio, up to now.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Explosion Design</title>
