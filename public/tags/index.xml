@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on JL-PORTFOLIO</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://jakoblundoe.com/tags/</link>
     <description>Recent content in Tags on JL-PORTFOLIO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jakoblundoe.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audio Processing</title>
-      <link>http://localhost:1313/tags/audio-processing/</link>
+      <link>https://jakoblundoe.com/tags/audio-processing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/audio-processing/</guid>
+      <guid>https://jakoblundoe.com/tags/audio-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
+      <link>https://jakoblundoe.com/tags/automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
+      <guid>https://jakoblundoe.com/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Grain Synthesis</title>
-      <link>http://localhost:1313/tags/grain-synthesis/</link>
+      <link>https://jakoblundoe.com/tags/grain-synthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/grain-synthesis/</guid>
+      <guid>https://jakoblundoe.com/tags/grain-synthesis/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
+      <link>https://jakoblundoe.com/tags/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <guid>https://jakoblundoe.com/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Max Msp</title>
-      <link>http://localhost:1313/tags/max-msp/</link>
+      <link>https://jakoblundoe.com/tags/max-msp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/max-msp/</guid>
+      <guid>https://jakoblundoe.com/tags/max-msp/</guid>
       <description></description>
     </item>
     <item>
       <title>Reaper</title>
-      <link>http://localhost:1313/tags/reaper/</link>
+      <link>https://jakoblundoe.com/tags/reaper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/reaper/</guid>
+      <guid>https://jakoblundoe.com/tags/reaper/</guid>
       <description></description>
     </item>
     <item>
       <title>Script</title>
-      <link>http://localhost:1313/tags/script/</link>
+      <link>https://jakoblundoe.com/tags/script/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/script/</guid>
+      <guid>https://jakoblundoe.com/tags/script/</guid>
       <description></description>
     </item>
     <item>
       <title>Signal Flow Design</title>
-      <link>http://localhost:1313/tags/signal-flow-design/</link>
+      <link>https://jakoblundoe.com/tags/signal-flow-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/signal-flow-design/</guid>
+      <guid>https://jakoblundoe.com/tags/signal-flow-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Sound Effects</title>
-      <link>http://localhost:1313/tags/sound-effects/</link>
+      <link>https://jakoblundoe.com/tags/sound-effects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sound-effects/</guid>
+      <guid>https://jakoblundoe.com/tags/sound-effects/</guid>
       <description></description>
     </item>
   </channel>

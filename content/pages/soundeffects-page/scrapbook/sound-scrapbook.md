@@ -1,5 +1,5 @@
 ---
-title: "Scrapbook library"
+title: "SFX Scrapbook"
 tags: [sound effects]
 thumbnail:
 download: "https://content.jakoblundoe.com/Sound%20Scrapbook%20JL.zip"

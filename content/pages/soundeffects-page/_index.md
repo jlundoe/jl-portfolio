@@ -9,4 +9,4 @@ page_class: soundeffects_page
 url: /sound-effects/
 ---
 
-Sound effects and libraries I’ve created over time, available for download and use in your own projects.
+Recorded and designed by me.

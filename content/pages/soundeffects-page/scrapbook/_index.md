@@ -1,6 +1,6 @@
 ---
-title: "Sound Scrapbook"
+title: "Some sound effects I've made"
 ---
-This is a scrapbook of selected sound effects from my work and experiments which I’ve created over the years. It’s shared here as an ongoing archive, with new material added over time.
+I am putting together a bunch of small sound effect libraries and this is a collection of some of the sounds from them.<br>Feel free to download and use them in your own projects.
 <br><br>
 All sound files have metadata embedded following the [UCS category system](https://universalcategorysystem.com/).
