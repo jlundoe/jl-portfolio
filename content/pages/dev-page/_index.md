@@ -8,4 +8,4 @@ navbarOrder: 1
 page_class: dev_page
 url: /scripts & Audio Tools/
 ---
-This is a bunch of custom scripts and audio tools I have made for various projects.
+This is a bunch of custom scripts and audio tools I've built.
