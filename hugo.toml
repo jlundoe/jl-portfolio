@@ -7,3 +7,5 @@ name = 'Jakob Lundoe'
 pages = "/:slug/"
 [markup.goldmark.renderer]
 unsafe = true
+[security.node.permissions]
+disable = true
