@@ -4,7 +4,7 @@ subHeader: Realistic Explosion Sound Effects
 tagTitle: Sound Redesign
 year:
 type: video
-videopath: https://content.jakoblundoe.com/explosion-sd-v2-16-9.mp4
+videopath: https://content.jakoblundoe.com/explosion-design-16x9_v2.mp4
 thumbnail: /img/thumbnails/sd-explosion-thumbnail.webp
 thumbnail_alt: explosion-design-thumbnail
 order: 4

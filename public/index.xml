@@ -2,261 +2,261 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on JL-PORTFOLIO</title>
-    <link>https://jakoblundoe.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on JL-PORTFOLIO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://jakoblundoe.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://jakoblundoe.com/socials/github/</link>
+      <link>http://localhost:1313/socials/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/socials/github/</guid>
+      <guid>http://localhost:1313/socials/github/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://jakoblundoe.com/socials/instagram/</link>
+      <link>http://localhost:1313/socials/instagram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/socials/instagram/</guid>
+      <guid>http://localhost:1313/socials/instagram/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://jakoblundoe.com/socials/linkedin/</link>
+      <link>http://localhost:1313/socials/linkedin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/socials/linkedin/</guid>
+      <guid>http://localhost:1313/socials/linkedin/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
-      <link>https://jakoblundoe.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Adjust Item Playrate</title>
-      <link>https://jakoblundoe.com/adjust-item-playrate/</link>
+      <link>http://localhost:1313/adjust-item-playrate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/adjust-item-playrate/</guid>
-      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/adjust-item-playrate/</guid>
+      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adjust Item Volume</title>
-      <link>https://jakoblundoe.com/adjust-item-volume/</link>
+      <link>http://localhost:1313/adjust-item-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/adjust-item-volume/</guid>
-      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+      <guid>http://localhost:1313/adjust-item-volume/</guid>
+      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Audio Logo Design</title>
-      <link>https://jakoblundoe.com/portfolio/items/sound-logo-redesign/</link>
+      <link>http://localhost:1313/portfolio/items/sound-logo-redesign/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/sound-logo-redesign/</guid>
+      <guid>http://localhost:1313/portfolio/items/sound-logo-redesign/</guid>
       <description>&lt;p&gt;My take on re-creating Prism Entertainment’s sound logo. Designed with soft synths and processing, aiming to match the original as closely as possible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://jakoblundoe.com/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Courses</title>
-      <link>https://jakoblundoe.com/resumecontent/courses/</link>
+      <link>http://localhost:1313/resumecontent/courses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/resumecontent/courses/</guid>
+      <guid>http://localhost:1313/resumecontent/courses/</guid>
       <description>&lt;h4 id=&#34;2024&#34;&gt;2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;the-odin-project-web-development&#34;&gt;The Odin Project: Web Development&lt;/h3&gt;&#xA;&lt;h5 id=&#34;foundations-course&#34;&gt;Foundations Course&lt;/h5&gt;&#xA;&lt;p&gt;Extensive course in event-driven programming, algorithmic understanding and general concepts in software development.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Version Control (Git)&lt;/li&gt;&#xA;&lt;li&gt;JavaScript&lt;/li&gt;&#xA;&lt;li&gt;CSS and HTML&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h5 id=&#34;databases&#34;&gt;Databases&lt;/h5&gt;&#xA;&lt;p&gt;Understanding relational databases, including how to query and manipulate data efficiently using SQL&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Relational Databases&lt;/li&gt;&#xA;&lt;li&gt;SQL&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;2022&#34;&gt;2022&lt;/h4&gt;&#xA;&lt;h3 id=&#34;audiokinetic-certificate-courses&#34;&gt;Audiokinetic Certificate Courses&lt;/h3&gt;&#xA;&lt;h5 id=&#34;wwise-301-certification-course&#34;&gt;Wwise 301 Certification Course&lt;/h5&gt;&#xA;&lt;p&gt;&lt;span&gt;Wwise Unity Integration&lt;/span&gt;&lt;br&gt;&#xA;A course covering the integration between Wwise and Unity and all the tools necessary to implement audio and music from Wwise into the Unity game engine.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create FX Track</title>
-      <link>https://jakoblundoe.com/create-fx-track/</link>
+      <link>http://localhost:1313/create-fx-track/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/create-fx-track/</guid>
-      <description>&lt;h3 id=&#34;jl_create-fx-track&#34;&gt;JL_Create FX Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as an FX send. Audio input based on currently selected track(s).&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_Create%20FX%20Track.gif&#34; alt=&#34;create fx track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied. If set to false a specified custom color will be used.&#xA;&amp;ndash; Choose to place new FX track right below selected tracks or as last in tcp.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/create-fx-track/</guid>
+      <description>&lt;h3 id=&#34;jl_create-fx-track&#34;&gt;JL_Create FX Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as an FX send. Audio input based on currently selected track(s).&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Create%20FX%20Track.gif&#34; alt=&#34;create fx track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied. If set to false a specified custom color will be used.&#xA;&amp;ndash; Choose to place new FX track right below selected tracks or as last in tcp.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create Resample Track</title>
-      <link>https://jakoblundoe.com/create-resample-track/</link>
+      <link>http://localhost:1313/create-resample-track/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/create-resample-track/</guid>
-      <description>&lt;h3 id=&#34;jl_create-resample-track&#34;&gt;JL_Create Resample Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as a resampling track for &amp;rsquo;live resampling&amp;rsquo; purposes. Audio input is based on currently selected track(s). If you are familiar with Abletons &amp;lsquo;resampling input option&amp;rsquo; it is similar, with the main difference being that you choose the specific tracks you wish to receive audio from.&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_Create%20Resample%20Track.gif&#34; alt=&#34;create resample track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied.&#xA;&amp;ndash; Set track recording state if selected track is used as a midi instrument (midi input needs to be enable). true = Record: disable (input monitoring only). false = Record: input(audio or MIDI).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/create-resample-track/</guid>
+      <description>&lt;h3 id=&#34;jl_create-resample-track&#34;&gt;JL_Create Resample Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as a resampling track for &amp;rsquo;live resampling&amp;rsquo; purposes. Audio input is based on currently selected track(s). If you are familiar with Abletons &amp;lsquo;resampling input option&amp;rsquo; it is similar, with the main difference being that you choose the specific tracks you wish to receive audio from.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Create%20Resample%20Track.gif&#34; alt=&#34;create resample track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied.&#xA;&amp;ndash; Set track recording state if selected track is used as a midi instrument (midi input needs to be enable). true = Record: disable (input monitoring only). false = Record: input(audio or MIDI).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create Time Selection Between Items</title>
-      <link>https://jakoblundoe.com/create-time-selection-between-items/</link>
+      <link>http://localhost:1313/create-time-selection-between-items/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/create-time-selection-between-items/</guid>
-      <description>&lt;h3 id=&#34;jl_create-time-selection-between-items&#34;&gt;JL_create time selection between items&lt;/h3&gt;&#xA;&lt;p&gt;This script creates a timeselection between to items in the arrange view. It uses default Reaper action commands to achieve this behaviour. The cursor needs to be placed between the two items where you want to create the time selection, since the script uses the cursor to achieve the desired behaviour. You can assign it to a mouse modifier of your choice.&#xA;For example: Preferences/Editing Behavior/Mouse Modifiers: Track | Double-Click | Default Action&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_create%20time%20selection%20between%20items.gif&#34; alt=&#34;create time selection between items gif&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/create-time-selection-between-items/</guid>
+      <description>&lt;h3 id=&#34;jl_create-time-selection-between-items&#34;&gt;JL_create time selection between items&lt;/h3&gt;&#xA;&lt;p&gt;This script creates a timeselection between to items in the arrange view. It uses default Reaper action commands to achieve this behaviour. The cursor needs to be placed between the two items where you want to create the time selection, since the script uses the cursor to achieve the desired behaviour. You can assign it to a mouse modifier of your choice.&#xA;For example: Preferences/Editing Behavior/Mouse Modifiers: Track | Double-Click | Default Action&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_create%20time%20selection%20between%20items.gif&#34; alt=&#34;create time selection between items gif&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Designing Interactive Audio</title>
-      <link>https://jakoblundoe.com/showreel/introduction-sections/main-introduction/</link>
+      <link>http://localhost:1313/showreel/introduction-sections/main-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/showreel/introduction-sections/main-introduction/</guid>
-      <description>&lt;p&gt;I’m Jakob, a sound and interaction designer with a strong technical foundation. I focus on creating engaging interactive audio experiences, and on building the tools and systems that support them.&lt;/p&gt;&#xA;&lt;p&gt;Check out &lt;a href=&#34;#showreel&#34;&gt;my reel&lt;/a&gt; and &lt;a href=&#34;#portfolio&#34;&gt;portfolio&lt;/a&gt; section above, or visit &lt;a href=&#34;https://jakoblundoe.com/scripts%20&amp;%20Audio%20Tools&#34; data-internal-link&gt;Scripts &amp;amp; Audio Tools&lt;/a&gt; to see and download some of the tools I&amp;rsquo;ve build. Go to the about page if you are interested in learning more about my journey with audio, up to now.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/showreel/introduction-sections/main-introduction/</guid>
+      <description>&lt;p&gt;I’m Jakob, a sound and interaction designer with a strong technical foundation. I focus on creating engaging interactive audio experiences, and on building the tools and systems that support them.&lt;/p&gt;&#xA;&lt;p&gt;Check out &lt;a href=&#34;#showreel&#34;&gt;my reel&lt;/a&gt; and &lt;a href=&#34;#portfolio&#34;&gt;portfolio&lt;/a&gt; section above, or visit &lt;a href=&#34;http://localhost:1313/scripts%20&amp;%20Audio%20Tools&#34; data-internal-link&gt;Scripts &amp;amp; Audio Tools&lt;/a&gt; to see and download some of the tools I&amp;rsquo;ve build. Go to the about page if you are interested in learning more about my journey with audio, up to now.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Droemmefanger</title>
-      <link>https://jakoblundoe.com/portfolio/items/droemmefanger/</link>
+      <link>http://localhost:1313/portfolio/items/droemmefanger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/droemmefanger/</guid>
+      <guid>http://localhost:1313/portfolio/items/droemmefanger/</guid>
       <description>&lt;p&gt;Through live sound processing Droemmefanger captures and manipulates the real world sounds in real-time. This is done through live processing where recorded sounds is processed and replayed randomly and according to some specific rules which is defined in the code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Education</title>
-      <link>https://jakoblundoe.com/resumecontent/education/</link>
+      <link>http://localhost:1313/resumecontent/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/resumecontent/education/</guid>
+      <guid>http://localhost:1313/resumecontent/education/</guid>
       <description>&lt;h4 id=&#34;2021---2024&#34;&gt;2021 - 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;audio-design--aarhus-university&#34;&gt;Audio Design | Aarhus University&lt;/h3&gt;&#xA;&lt;p&gt;Master of Science (MSc) in Information Technology (Digital Design, Audio Design).&lt;br&gt;&#xA;&lt;strong&gt;Areas of focus:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sound and Interaction Design&lt;/li&gt;&#xA;&lt;li&gt;C# programming in the engine Unity&lt;/li&gt;&#xA;&lt;li&gt;Max MSP and Pure Data&lt;/li&gt;&#xA;&lt;li&gt;Spatial audio&lt;/li&gt;&#xA;&lt;li&gt;Soundscape Design&lt;/li&gt;&#xA;&lt;li&gt;Sound as a design material&lt;/li&gt;&#xA;&lt;li&gt;Media and Communication&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;aug-2022---dec-2022&#34;&gt;Aug 2022 - Dec 2022&lt;/h4&gt;&#xA;&lt;h3 id=&#34;game-development--the-national-film-school-of-denmark&#34;&gt;Game Development | The National Film School of Denmark&lt;/h3&gt;&#xA;&lt;h5 id=&#34;diploma-program-dadiu&#34;&gt;Diploma Program: DADIU&lt;/h5&gt;&#xA;&lt;p&gt;As &lt;strong&gt;technical lead sound designer&lt;/strong&gt; I was enrolled in a semester long course in game development, with a &lt;em&gt;strong focus on the practical aspects of development in large interdisciplinary teams&lt;/em&gt;. &lt;a href=&#34;https://dadiu.itch.io/the-old-ones&#34;&gt;Link&lt;/a&gt; to final project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elemental Design</title>
-      <link>https://jakoblundoe.com/portfolio/items/elemental-design/</link>
+      <link>http://localhost:1313/portfolio/items/elemental-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/elemental-design/</guid>
+      <guid>http://localhost:1313/portfolio/items/elemental-design/</guid>
       <description>&lt;p&gt;I did this design to explore the more stylized sound of elemental magic and electricity. Created with layered and processed recordings of crackling cardstock, cellophane and a chips bag + some synthesis with Phaseplant.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Animation Artist: &lt;a href=&#34;https://www.artstation.com/artwork/v2wdLa&#34;&gt;Deeamo Julien&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Experience</title>
-      <link>https://jakoblundoe.com/resumecontent/experience/</link>
+      <link>http://localhost:1313/resumecontent/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/resumecontent/experience/</guid>
+      <guid>http://localhost:1313/resumecontent/experience/</guid>
       <description>&lt;h4 id=&#34;jan-2025---feb-2025&#34;&gt;Jan 2025 - Feb 2025&lt;/h4&gt;&#xA;&lt;h3 id=&#34;software-developer&#34;&gt;Software Developer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-the-byte-flow--phoenix-design-aid--internship&#34;&gt;Company: The Byte Flow / Phoenix Design Aid | Internship&lt;/h5&gt;&#xA;&lt;p&gt;Web design and development&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project Management&lt;/li&gt;&#xA;&lt;li&gt;UX/UI design&lt;/li&gt;&#xA;&lt;li&gt;Javascript, PHP, HTML, CSS&lt;/li&gt;&#xA;&lt;li&gt;Versions Control (Git)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;I gained experience and valuable insights into professional development environments, including it’s processes and pipelines.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;aug-2023---feb-2024&#34;&gt;Aug 2023 - Feb 2024&lt;/h4&gt;&#xA;&lt;h3 id=&#34;technical-sound-designer&#34;&gt;Technical Sound Designer&lt;/h3&gt;&#xA;&lt;h5 id=&#34;company-gumbo-games--part-time&#34;&gt;Company: Gumbo Games | Part time&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developing audiosystems in Unity with C#.&lt;/li&gt;&#xA;&lt;li&gt;Using the version control software tool Git in the development process.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learned a lot about remote collaboration and how to use version control tool Git in the development process.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Explosion Design</title>
-      <link>https://jakoblundoe.com/portfolio/items/explosion-design/</link>
+      <link>http://localhost:1313/portfolio/items/explosion-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/explosion-design/</guid>
+      <guid>http://localhost:1313/portfolio/items/explosion-design/</guid>
       <description>&lt;p&gt;Took small firework recordings and processed them into large, low-end explosions. Watch the video to hear the before and after.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Game Audio Implementation</title>
-      <link>https://jakoblundoe.com/portfolio/items/giants-rest/</link>
+      <link>http://localhost:1313/portfolio/items/giants-rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/giants-rest/</guid>
+      <guid>http://localhost:1313/portfolio/items/giants-rest/</guid>
       <description>&lt;p&gt;As a student assignment, I was tasked with recording, designing and implementing all sounds for a demo game named The Giant&amp;rsquo;s Rest. Everything from the background ambience to the monsters screams is made by me.&#xA;Made in Reaper, and implemented into Unity game engine with the middleware Wwise.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Game Audio Implementation</title>
-      <link>https://jakoblundoe.com/portfolio/items/the-old-ones/</link>
+      <link>http://localhost:1313/portfolio/items/the-old-ones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/the-old-ones/</guid>
+      <guid>http://localhost:1313/portfolio/items/the-old-ones/</guid>
       <description>&lt;p&gt;As a student assignment, I was tasked with recording, designing and implementing all sounds for a demo game named The Old Ones. Everything from the background ambience to the monsters screams is made by me.&#xA;Made in Reaper, and implemented into Unity game engine with the middleware Wwise.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Game Concept</title>
-      <link>https://jakoblundoe.com/musiccontent-audio/alex-gameconcept-theme/</link>
+      <link>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/musiccontent-audio/alex-gameconcept-theme/</guid>
+      <guid>http://localhost:1313/musiccontent-audio/alex-gameconcept-theme/</guid>
       <description>&lt;p&gt;Composition, production, mix and master. &lt;br&gt;&#xA;&lt;em&gt;Concept and graphics by Alexandar Kierkegaard.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Granular Synth Exploration Tool</title>
-      <link>https://jakoblundoe.com/granular-synth-exploration-tool/</link>
+      <link>http://localhost:1313/granular-synth-exploration-tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/granular-synth-exploration-tool/</guid>
+      <guid>http://localhost:1313/granular-synth-exploration-tool/</guid>
       <description>&lt;h3 id=&#34;granular-synth-controlled-by-an-xy-pad&#34;&gt;Granular Synth Controlled by an XY Pad&lt;/h3&gt;&#xA;&lt;p&gt;This tool includes an audio grain synth generator and a machine-learning-based controller. It is an exploration of grain synthesis and the use of machine learning to create expressive, intuitive controller mappings. These controller mappings are not only designed to simplify control over an extensive set of parameters, but also expand the synthesizer’s potential and the sound exploration process.&lt;/p&gt;&#xA;&lt;h4 id=&#34;the-grain-synthesizer-element&#34;&gt;The grain synthesizer element&lt;/h4&gt;&#xA;&lt;p&gt;The generator is built on the core concepts of grain synthesis and is controlled by multiple parameters (grain size, curve, spread, sample travel, etc.). It includes two voices and can generate grains from two samples simultaneously.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kaito&#39;s Club</title>
-      <link>https://jakoblundoe.com/musiccontent-audio/sakas-club/</link>
+      <link>http://localhost:1313/musiccontent-audio/sakas-club/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/musiccontent-audio/sakas-club/</guid>
+      <guid>http://localhost:1313/musiccontent-audio/sakas-club/</guid>
       <description>&lt;p&gt;Composition, production, mix and master by me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lazy Legacy</title>
-      <link>https://jakoblundoe.com/musiccontent-audio/lazy-legacy/</link>
+      <link>http://localhost:1313/musiccontent-audio/lazy-legacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/musiccontent-audio/lazy-legacy/</guid>
+      <guid>http://localhost:1313/musiccontent-audio/lazy-legacy/</guid>
       <description>&lt;p&gt;Production and mix by me.&#xA;Composition made in collaboration with Oliver Dengsø.&#xA;Listen on &lt;a href=&#34;https://open.spotify.com/track/3nNpxwma0gqAjTc3hvFqXs?si=6cf7754b8fd24ab8&#34;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lydro</title>
-      <link>https://jakoblundoe.com/portfolio/items/lydro/</link>
+      <link>http://localhost:1313/portfolio/items/lydro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/lydro/</guid>
+      <guid>http://localhost:1313/portfolio/items/lydro/</guid>
       <description>&lt;p&gt;Lydro is an XR-based spatialized sound experience, which utilizes the 3dof head tracking technology available in modern headphone devices. It is a fully interactive experience, where the user can explore the environment and interact with the soundscape.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The app was conceptualized as part of a larger &lt;a href=&#34;https://danishsoundcluster.dk/praksisnaere-loesningsmodeller-til-positiv-og-engagerede-brug-af-musik-og-lydinterventioner-paa-plejehjem/&#34;&gt;research project&lt;/a&gt; on Aarhus University in 2023, in collaboration with the VR company &lt;a href=&#34;https://aatevr.com/&#34;&gt;AATE VR&lt;/a&gt;. The whole experience was designed and developed by me.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sampler Patch in PD</title>
-      <link>https://jakoblundoe.com/portfolio/items/samplii/</link>
+      <link>http://localhost:1313/portfolio/items/samplii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/samplii/</guid>
+      <guid>http://localhost:1313/portfolio/items/samplii/</guid>
       <description>&lt;p&gt;This is a small patch I made a while back in Pure Data to experiment with a Bela Board I borrowed. Simple yet effective sampling and very fun to play with.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Samplii</title>
-      <link>https://jakoblundoe.com/archived/samplii/</link>
+      <link>http://localhost:1313/archived/samplii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/archived/samplii/</guid>
+      <guid>http://localhost:1313/archived/samplii/</guid>
       <description></description>
     </item>
     <item>
       <title>SFX Scrapbook</title>
-      <link>https://jakoblundoe.com/sfx-scrapbook/</link>
+      <link>http://localhost:1313/sfx-scrapbook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/sfx-scrapbook/</guid>
+      <guid>http://localhost:1313/sfx-scrapbook/</guid>
       <description>&lt;h3 id=&#34;listen&#34;&gt;Listen&lt;/h3&gt;</description>
     </item>
     <item>
       <title>Sleepy Warrior</title>
-      <link>https://jakoblundoe.com/musiccontent-audio/sleepy-warrior/</link>
+      <link>http://localhost:1313/musiccontent-audio/sleepy-warrior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/musiccontent-audio/sleepy-warrior/</guid>
+      <guid>http://localhost:1313/musiccontent-audio/sleepy-warrior/</guid>
       <description>&lt;p&gt;Production and mix by me.&#xA;Composition made in collaboration with Oliver Dengsø.&#xA;Listen on &lt;a href=&#34;https://open.spotify.com/track/2kNmsMoipBLcIFI44O2xUF?si=62303c9281dc4101&#34;&gt;Spotify&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Smart Item Mute Toggle</title>
-      <link>https://jakoblundoe.com/smart-item-mute-toggle/</link>
+      <link>http://localhost:1313/smart-item-mute-toggle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/smart-item-mute-toggle/</guid>
-      <description>&lt;h3 id=&#34;jl_toggle-mute-on-items-if-same-else-mute&#34;&gt;JL_toggle mute on items if same else mute&lt;/h3&gt;&#xA;&lt;p&gt;Toggle mute on selected media items with the following conditions:&#xA;If the selected media items are all muted, then unmute all the selected media items.&#xA;If the selected media items are all unmuted, then mute all the selected media items.&#xA;If the selected media items are both muted and unmuted (they differ), then mute all the selected media items.&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_toggle%20mute%20on%20items%20if%20same%20else%20mute.gif&#34; alt=&#34;toggle mute gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Bool. Set to true if item should unmute(instead of mute) if the selected item mute states don&amp;rsquo;t match.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/smart-item-mute-toggle/</guid>
+      <description>&lt;h3 id=&#34;jl_toggle-mute-on-items-if-same-else-mute&#34;&gt;JL_toggle mute on items if same else mute&lt;/h3&gt;&#xA;&lt;p&gt;Toggle mute on selected media items with the following conditions:&#xA;If the selected media items are all muted, then unmute all the selected media items.&#xA;If the selected media items are all unmuted, then mute all the selected media items.&#xA;If the selected media items are both muted and unmuted (they differ), then mute all the selected media items.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle%20mute%20on%20items%20if%20same%20else%20mute.gif&#34; alt=&#34;toggle mute gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Bool. Set to true if item should unmute(instead of mute) if the selected item mute states don&amp;rsquo;t match.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Smart Write Automation to Timeselection</title>
-      <link>https://jakoblundoe.com/smart-write-automation-to-timeselection/</link>
+      <link>http://localhost:1313/smart-write-automation-to-timeselection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/smart-write-automation-to-timeselection/</guid>
-      <description>&lt;h3 id=&#34;jl_smart-write-automation-to-timeselection&#34;&gt;JL_Smart Write Automation to Timeselection&lt;/h3&gt;&#xA;&lt;p&gt;Writes automation to selection (based on time selection) when toggling from latch preview to trim/read mode. Toggles between trim/read and latch preview on selected tracks automation mode. If latch preview mode is not selected it sets all tracks to trim/read mode (to prevent mistakes) and then sets the selected track to latch preview. If latch preview mode is selected it writes the changed values(changed during latch preview mode) to the track envelopes within the time selection, and then sets all tracks to trim/read mode, including the selected ones(to prevent mistakes).&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_smart%20write%20automation%20to%20timeselection.gif&#34; alt=&#34;latch preview toggle action gif&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/smart-write-automation-to-timeselection/</guid>
+      <description>&lt;h3 id=&#34;jl_smart-write-automation-to-timeselection&#34;&gt;JL_Smart Write Automation to Timeselection&lt;/h3&gt;&#xA;&lt;p&gt;Writes automation to selection (based on time selection) when toggling from latch preview to trim/read mode. Toggles between trim/read and latch preview on selected tracks automation mode. If latch preview mode is not selected it sets all tracks to trim/read mode (to prevent mistakes) and then sets the selected track to latch preview. If latch preview mode is selected it writes the changed values(changed during latch preview mode) to the track envelopes within the time selection, and then sets all tracks to trim/read mode, including the selected ones(to prevent mistakes).&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_smart%20write%20automation%20to%20timeselection.gif&#34; alt=&#34;latch preview toggle action gif&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sound Design Reel</title>
-      <link>https://jakoblundoe.com/showreel/reel-sections/main-reel/</link>
+      <link>http://localhost:1313/showreel/reel-sections/main-reel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/showreel/reel-sections/main-reel/</guid>
+      <guid>http://localhost:1313/showreel/reel-sections/main-reel/</guid>
       <description></description>
     </item>
     <item>
       <title>The Encore</title>
-      <link>https://jakoblundoe.com/musiccontent-audio/theencore/</link>
+      <link>http://localhost:1313/musiccontent-audio/theencore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/musiccontent-audio/theencore/</guid>
+      <guid>http://localhost:1313/musiccontent-audio/theencore/</guid>
       <description>&lt;p&gt;Composition, production, mix and master by me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Toggle Activate Monitor FX</title>
-      <link>https://jakoblundoe.com/toggle-activate-monitor-fx/</link>
+      <link>http://localhost:1313/toggle-activate-monitor-fx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/toggle-activate-monitor-fx/</guid>
-      <description>&lt;h3 id=&#34;jl_toggle-activate-monitor-fx&#34;&gt;JL_toggle activate monitor FX&lt;/h3&gt;&#xA;&lt;p&gt;Toggle activate/deactivate individually targeted FX or Containers on the monitor FX chain. Useful if you have a setup with special routings or use a plugin like the SonoBus plugin to monitor on different devices. Put it in the Reaper startup actions (requires SWS extension) to reset the state to default (off or on based on user config) when booting Reaper.&#xA;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_toggle-activate-monitor-fx.gif&#34; alt=&#34;toggle activate monitor FX gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Define name of FX to toggle on/off.&#xA;&amp;ndash; MUST be an exact match (except for upper and lower case letters).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/toggle-activate-monitor-fx/</guid>
+      <description>&lt;h3 id=&#34;jl_toggle-activate-monitor-fx&#34;&gt;JL_toggle activate monitor FX&lt;/h3&gt;&#xA;&lt;p&gt;Toggle activate/deactivate individually targeted FX or Containers on the monitor FX chain. Useful if you have a setup with special routings or use a plugin like the SonoBus plugin to monitor on different devices. Put it in the Reaper startup actions (requires SWS extension) to reset the state to default (off or on based on user config) when booting Reaper.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle-activate-monitor-fx.gif&#34; alt=&#34;toggle activate monitor FX gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Define name of FX to toggle on/off.&#xA;&amp;ndash; MUST be an exact match (except for upper and lower case letters).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Toggle Custom Heights - Envelopes and Tracks</title>
-      <link>https://jakoblundoe.com/toggle-custom-heights-envelopes-and-tracks/</link>
+      <link>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/toggle-custom-heights-envelopes-and-tracks/</guid>
-      <description>&lt;h3 id=&#34;set-custom-height-actions---envelopes-and-tracks&#34;&gt;Set custom height actions - envelopes and tracks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jakoblundoe.com/gifs/JL_Set%20custom%20height%20actions%20-%20envelopes%20and%20tracks.gif&#34; alt=&#34;custom height actions gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-envelope-height-in-pixelsutility&#34;&gt;JL_read envelope height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a selected envelope in pixels and displays it in the reaper console.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-track-height-in-pixelsutility&#34;&gt;JL_read track height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a track in pixels and displays it in the reaper console. If several tracks is selected it displays an error message and do not get called.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_toggle-envelope-height-on-selected-envelope-lane&#34;&gt;JL_toggle envelope height on selected envelope lane&lt;/h3&gt;&#xA;&lt;p&gt;This script requires the SWS extension installed.&#xA;Script functionality:&#xA;Toggles between two different heights for the selected envelope. It reads the individual selected envelope height and toggles to the other one. If height does not match neither of the configurated envelope heights the bool default_envelope_a determines if set to a(true) or b(false). Thanks to Edgemeal for posting code snippets of reaper.BR_EnvAlloc on the Cockos forum.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</guid>
+      <description>&lt;h3 id=&#34;set-custom-height-actions---envelopes-and-tracks&#34;&gt;Set custom height actions - envelopes and tracks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/gifs/JL_Set%20custom%20height%20actions%20-%20envelopes%20and%20tracks.gif&#34; alt=&#34;custom height actions gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-envelope-height-in-pixelsutility&#34;&gt;JL_read envelope height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a selected envelope in pixels and displays it in the reaper console.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-track-height-in-pixelsutility&#34;&gt;JL_read track height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a track in pixels and displays it in the reaper console. If several tracks is selected it displays an error message and do not get called.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_toggle-envelope-height-on-selected-envelope-lane&#34;&gt;JL_toggle envelope height on selected envelope lane&lt;/h3&gt;&#xA;&lt;p&gt;This script requires the SWS extension installed.&#xA;Script functionality:&#xA;Toggles between two different heights for the selected envelope. It reads the individual selected envelope height and toggles to the other one. If height does not match neither of the configurated envelope heights the bool default_envelope_a determines if set to a(true) or b(false). Thanks to Edgemeal for posting code snippets of reaper.BR_EnvAlloc on the Cockos forum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Žebra</title>
-      <link>https://jakoblundoe.com/portfolio/items/zebra/</link>
+      <link>http://localhost:1313/portfolio/items/zebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jakoblundoe.com/portfolio/items/zebra/</guid>
+      <guid>http://localhost:1313/portfolio/items/zebra/</guid>
       <description>&lt;p&gt;The short fiction Žebra was made in the spring and summer of 2023 and as a key member of the project my responsibilities was everything related to the audio aspects of the production. That includes the audio post-production (dx, sfx design, foley, editing, mixing, etc.) and scoring of the film.&lt;/p&gt;&#xA;&lt;p&gt;Exploring the film&amp;rsquo;s sonic universe and mood taught me a lot, and I gained valuable knowledge in audio post-production, particularly in dialogue editing and cleaning up recordings.&lt;/p&gt;</description>
     </item>
   </channel>
