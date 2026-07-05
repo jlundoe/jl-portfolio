@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Audio Processing on JL-PORTFOLIO</title>
-    <link>http://localhost:1313/tags/audio-processing/</link>
-    <description>Recent content in Audio Processing on JL-PORTFOLIO</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/audio-processing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Granular Synth Exploration Tool</title>
-      <link>http://localhost:1313/granular-synth-exploration-tool/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/granular-synth-exploration-tool/</guid>
-      <description>&lt;h3 id=&#34;granular-synth-controlled-by-an-xy-pad&#34;&gt;Granular Synth Controlled by an XY Pad&lt;/h3&gt;&#xA;&lt;p&gt;This tool includes an audio grain synth generator and a machine-learning-based controller. It is an exploration of grain synthesis and the use of machine learning to create expressive, intuitive controller mappings. These controller mappings are not only designed to simplify control over an extensive set of parameters, but also expand the synthesizer’s potential and the sound exploration process.&lt;/p&gt;&#xA;&lt;h4 id=&#34;the-grain-synthesizer-element&#34;&gt;The grain synthesizer element&lt;/h4&gt;&#xA;&lt;p&gt;The generator is built on the core concepts of grain synthesis and is controlled by multiple parameters (grain size, curve, spread, sample travel, etc.). It includes two voices and can generate grains from two samples simultaneously.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Audio Processing on JL-PORTFOLIO</title>
+		<link>http://localhost:1313/tags/audio-processing/</link>
+		<description>Recent content in Audio Processing on JL-PORTFOLIO</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/tags/audio-processing/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Granular Synth Exploration Tool</title>
+				<link>http://localhost:1313/granular-synth-exploration-tool/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/granular-synth-exploration-tool/</guid>
+				<description>&lt;h3 id=&#34;granular-synth-controlled-by-an-xy-pad&#34;&gt;Granular Synth Controlled by an XY Pad&lt;/h3&gt;&#xA;&lt;p&gt;This tool includes an audio grain synth generator and a machine-learning-based controller. It is an exploration of grain synthesis and the use of machine learning to create expressive, intuitive controller mappings. These controller mappings are not only designed to simplify control over an extensive set of parameters, but also expand the synthesizer’s potential and the sound exploration process.&lt;/p&gt;&#xA;&lt;h4 id=&#34;the-grain-synthesizer-element&#34;&gt;The grain synthesizer element&lt;/h4&gt;&#xA;&lt;p&gt;The generator is built on the core concepts of grain synthesis and is controlled by multiple parameters (grain size, curve, spread, sample travel, etc.). It includes two voices and can generate grains from two samples simultaneously.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

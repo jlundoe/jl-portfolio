@@ -1,74 +1,78 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Script on JL-PORTFOLIO</title>
-    <link>http://localhost:1313/tags/script/</link>
-    <description>Recent content in Script on JL-PORTFOLIO</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/script/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Adjust Item Playrate</title>
-      <link>http://localhost:1313/adjust-item-playrate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/adjust-item-playrate/</guid>
-      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Adjust Item Volume</title>
-      <link>http://localhost:1313/adjust-item-volume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/adjust-item-volume/</guid>
-      <description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create FX Track</title>
-      <link>http://localhost:1313/create-fx-track/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/create-fx-track/</guid>
-      <description>&lt;h3 id=&#34;jl_create-fx-track&#34;&gt;JL_Create FX Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as an FX send. Audio input based on currently selected track(s).&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Create%20FX%20Track.gif&#34; alt=&#34;create fx track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied. If set to false a specified custom color will be used.&#xA;&amp;ndash; Choose to place new FX track right below selected tracks or as last in tcp.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create Resample Track</title>
-      <link>http://localhost:1313/create-resample-track/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/create-resample-track/</guid>
-      <description>&lt;h3 id=&#34;jl_create-resample-track&#34;&gt;JL_Create Resample Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as a resampling track for &amp;rsquo;live resampling&amp;rsquo; purposes. Audio input is based on currently selected track(s). If you are familiar with Abletons &amp;lsquo;resampling input option&amp;rsquo; it is similar, with the main difference being that you choose the specific tracks you wish to receive audio from.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Create%20Resample%20Track.gif&#34; alt=&#34;create resample track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied.&#xA;&amp;ndash; Set track recording state if selected track is used as a midi instrument (midi input needs to be enable). true = Record: disable (input monitoring only). false = Record: input(audio or MIDI).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create Time Selection Between Items</title>
-      <link>http://localhost:1313/create-time-selection-between-items/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/create-time-selection-between-items/</guid>
-      <description>&lt;h3 id=&#34;jl_create-time-selection-between-items&#34;&gt;JL_create time selection between items&lt;/h3&gt;&#xA;&lt;p&gt;This script creates a timeselection between to items in the arrange view. It uses default Reaper action commands to achieve this behaviour. The cursor needs to be placed between the two items where you want to create the time selection, since the script uses the cursor to achieve the desired behaviour. You can assign it to a mouse modifier of your choice.&#xA;For example: Preferences/Editing Behavior/Mouse Modifiers: Track | Double-Click | Default Action&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_create%20time%20selection%20between%20items.gif&#34; alt=&#34;create time selection between items gif&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Smart Item Mute Toggle</title>
-      <link>http://localhost:1313/smart-item-mute-toggle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/smart-item-mute-toggle/</guid>
-      <description>&lt;h3 id=&#34;jl_toggle-mute-on-items-if-same-else-mute&#34;&gt;JL_toggle mute on items if same else mute&lt;/h3&gt;&#xA;&lt;p&gt;Toggle mute on selected media items with the following conditions:&#xA;If the selected media items are all muted, then unmute all the selected media items.&#xA;If the selected media items are all unmuted, then mute all the selected media items.&#xA;If the selected media items are both muted and unmuted (they differ), then mute all the selected media items.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle%20mute%20on%20items%20if%20same%20else%20mute.gif&#34; alt=&#34;toggle mute gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Bool. Set to true if item should unmute(instead of mute) if the selected item mute states don&amp;rsquo;t match.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Smart Write Automation to Timeselection</title>
-      <link>http://localhost:1313/smart-write-automation-to-timeselection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/smart-write-automation-to-timeselection/</guid>
-      <description>&lt;h3 id=&#34;jl_smart-write-automation-to-timeselection&#34;&gt;JL_Smart Write Automation to Timeselection&lt;/h3&gt;&#xA;&lt;p&gt;Writes automation to selection (based on time selection) when toggling from latch preview to trim/read mode. Toggles between trim/read and latch preview on selected tracks automation mode. If latch preview mode is not selected it sets all tracks to trim/read mode (to prevent mistakes) and then sets the selected track to latch preview. If latch preview mode is selected it writes the changed values(changed during latch preview mode) to the track envelopes within the time selection, and then sets all tracks to trim/read mode, including the selected ones(to prevent mistakes).&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_smart%20write%20automation%20to%20timeselection.gif&#34; alt=&#34;latch preview toggle action gif&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Toggle Activate Monitor FX</title>
-      <link>http://localhost:1313/toggle-activate-monitor-fx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/toggle-activate-monitor-fx/</guid>
-      <description>&lt;h3 id=&#34;jl_toggle-activate-monitor-fx&#34;&gt;JL_toggle activate monitor FX&lt;/h3&gt;&#xA;&lt;p&gt;Toggle activate/deactivate individually targeted FX or Containers on the monitor FX chain. Useful if you have a setup with special routings or use a plugin like the SonoBus plugin to monitor on different devices. Put it in the Reaper startup actions (requires SWS extension) to reset the state to default (off or on based on user config) when booting Reaper.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle-activate-monitor-fx.gif&#34; alt=&#34;toggle activate monitor FX gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Define name of FX to toggle on/off.&#xA;&amp;ndash; MUST be an exact match (except for upper and lower case letters).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Toggle Custom Heights - Envelopes and Tracks</title>
-      <link>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</guid>
-      <description>&lt;h3 id=&#34;set-custom-height-actions---envelopes-and-tracks&#34;&gt;Set custom height actions - envelopes and tracks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/gifs/JL_Set%20custom%20height%20actions%20-%20envelopes%20and%20tracks.gif&#34; alt=&#34;custom height actions gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-envelope-height-in-pixelsutility&#34;&gt;JL_read envelope height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a selected envelope in pixels and displays it in the reaper console.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-track-height-in-pixelsutility&#34;&gt;JL_read track height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a track in pixels and displays it in the reaper console. If several tracks is selected it displays an error message and do not get called.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_toggle-envelope-height-on-selected-envelope-lane&#34;&gt;JL_toggle envelope height on selected envelope lane&lt;/h3&gt;&#xA;&lt;p&gt;This script requires the SWS extension installed.&#xA;Script functionality:&#xA;Toggles between two different heights for the selected envelope. It reads the individual selected envelope height and toggles to the other one. If height does not match neither of the configurated envelope heights the bool default_envelope_a determines if set to a(true) or b(false). Thanks to Edgemeal for posting code snippets of reaper.BR_EnvAlloc on the Cockos forum.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Script on JL-PORTFOLIO</title>
+		<link>http://localhost:1313/tags/script/</link>
+		<description>Recent content in Script on JL-PORTFOLIO</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/tags/script/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Adjust Item Playrate</title>
+				<link>http://localhost:1313/adjust-item-playrate/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/adjust-item-playrate/</guid>
+				<description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Adjust Item Volume</title>
+				<link>http://localhost:1313/adjust-item-volume/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/adjust-item-volume/</guid>
+				<description>&lt;h3 id=&#34;jl_adjust-item-playrate-trigger&#34;&gt;JL_Adjust Item Playrate (trigger)&lt;/h3&gt;&#xA;&lt;p&gt;Adjust playrate of currently hovered Item. It needs to be an endless encoder set to relative mode, that outputs cc value &amp;lt;= 63 for decreasing values, and cc value &amp;gt;= 65 for increasing values. NB! This script works only together with the &amp;ldquo;Adjust Item Playrate (listener) script&amp;rdquo;.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Adjust%20Item%20Playrate.gif&#34; alt=&#34;adjust item playrate gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; set the rate increment as float (the value will either be added or subtracted depending on knob &amp;ldquo;scroll&amp;rdquo; direction)&#xA;&amp;ndash; paste in the action ID from &amp;ldquo;Adjust Item Playrate (listener)&amp;rdquo;. This is individual to all Reaper installs, so it needs to be done manually.&#xA;&amp;ndash; adjust time interval threshold between ticks in ms, which defines when the undo point is created (a low value might create several undo points during the same knob motion)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Create FX Track</title>
+				<link>http://localhost:1313/create-fx-track/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/create-fx-track/</guid>
+				<description>&lt;h3 id=&#34;jl_create-fx-track&#34;&gt;JL_Create FX Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as an FX send. Audio input based on currently selected track(s).&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Create%20FX%20Track.gif&#34; alt=&#34;create fx track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied. If set to false a specified custom color will be used.&#xA;&amp;ndash; Choose to place new FX track right below selected tracks or as last in tcp.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Create Resample Track</title>
+				<link>http://localhost:1313/create-resample-track/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/create-resample-track/</guid>
+				<description>&lt;h3 id=&#34;jl_create-resample-track&#34;&gt;JL_Create Resample Track&lt;/h3&gt;&#xA;&lt;p&gt;Inserts a new track that acts as a resampling track for &amp;rsquo;live resampling&amp;rsquo; purposes. Audio input is based on currently selected track(s). If you are familiar with Abletons &amp;lsquo;resampling input option&amp;rsquo; it is similar, with the main difference being that you choose the specific tracks you wish to receive audio from.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_Create%20Resample%20Track.gif&#34; alt=&#34;create resample track gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Set Track Height A in pixels(default).&#xA;&amp;ndash; Set same track color. If several tracks selected the first selected track color is copied.&#xA;&amp;ndash; Set track recording state if selected track is used as a midi instrument (midi input needs to be enable). true = Record: disable (input monitoring only). false = Record: input(audio or MIDI).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Create Time Selection Between Items</title>
+				<link>http://localhost:1313/create-time-selection-between-items/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/create-time-selection-between-items/</guid>
+				<description>&lt;h3 id=&#34;jl_create-time-selection-between-items&#34;&gt;JL_create time selection between items&lt;/h3&gt;&#xA;&lt;p&gt;This script creates a timeselection between to items in the arrange view. It uses default Reaper action commands to achieve this behaviour. The cursor needs to be placed between the two items where you want to create the time selection, since the script uses the cursor to achieve the desired behaviour. You can assign it to a mouse modifier of your choice.&#xA;For example: Preferences/Editing Behavior/Mouse Modifiers: Track | Double-Click | Default Action&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_create%20time%20selection%20between%20items.gif&#34; alt=&#34;create time selection between items gif&#34;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Smart Item Mute Toggle</title>
+				<link>http://localhost:1313/smart-item-mute-toggle/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/smart-item-mute-toggle/</guid>
+				<description>&lt;h3 id=&#34;jl_toggle-mute-on-items-if-same-else-mute&#34;&gt;JL_toggle mute on items if same else mute&lt;/h3&gt;&#xA;&lt;p&gt;Toggle mute on selected media items with the following conditions:&#xA;If the selected media items are all muted, then unmute all the selected media items.&#xA;If the selected media items are all unmuted, then mute all the selected media items.&#xA;If the selected media items are both muted and unmuted (they differ), then mute all the selected media items.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle%20mute%20on%20items%20if%20same%20else%20mute.gif&#34; alt=&#34;toggle mute gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Bool. Set to true if item should unmute(instead of mute) if the selected item mute states don&amp;rsquo;t match.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Smart Write Automation to Timeselection</title>
+				<link>http://localhost:1313/smart-write-automation-to-timeselection/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/smart-write-automation-to-timeselection/</guid>
+				<description>&lt;h3 id=&#34;jl_smart-write-automation-to-timeselection&#34;&gt;JL_Smart Write Automation to Timeselection&lt;/h3&gt;&#xA;&lt;p&gt;Writes automation to selection (based on time selection) when toggling from latch preview to trim/read mode. Toggles between trim/read and latch preview on selected tracks automation mode. If latch preview mode is not selected it sets all tracks to trim/read mode (to prevent mistakes) and then sets the selected track to latch preview. If latch preview mode is selected it writes the changed values(changed during latch preview mode) to the track envelopes within the time selection, and then sets all tracks to trim/read mode, including the selected ones(to prevent mistakes).&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_smart%20write%20automation%20to%20timeselection.gif&#34; alt=&#34;latch preview toggle action gif&#34;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Toggle Activate Monitor FX</title>
+				<link>http://localhost:1313/toggle-activate-monitor-fx/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/toggle-activate-monitor-fx/</guid>
+				<description>&lt;h3 id=&#34;jl_toggle-activate-monitor-fx&#34;&gt;JL_toggle activate monitor FX&lt;/h3&gt;&#xA;&lt;p&gt;Toggle activate/deactivate individually targeted FX or Containers on the monitor FX chain. Useful if you have a setup with special routings or use a plugin like the SonoBus plugin to monitor on different devices. Put it in the Reaper startup actions (requires SWS extension) to reset the state to default (off or on based on user config) when booting Reaper.&#xA;&lt;img src=&#34;http://localhost:1313/gifs/JL_toggle-activate-monitor-fx.gif&#34; alt=&#34;toggle activate monitor FX gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h6 id=&#34;user-config&#34;&gt;User Config&lt;br&gt;&lt;/h6&gt;&#xA;&lt;p&gt;&amp;ndash; Define name of FX to toggle on/off.&#xA;&amp;ndash; MUST be an exact match (except for upper and lower case letters).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Toggle Custom Heights - Envelopes and Tracks</title>
+				<link>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/toggle-custom-heights-envelopes-and-tracks/</guid>
+				<description>&lt;h3 id=&#34;set-custom-height-actions---envelopes-and-tracks&#34;&gt;Set custom height actions - envelopes and tracks&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/gifs/JL_Set%20custom%20height%20actions%20-%20envelopes%20and%20tracks.gif&#34; alt=&#34;custom height actions gif&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-envelope-height-in-pixelsutility&#34;&gt;JL_read envelope height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a selected envelope in pixels and displays it in the reaper console.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_read-track-height-in-pixelsutility&#34;&gt;JL_read track height in pixels(utility)&lt;/h3&gt;&#xA;&lt;p&gt;Reads the height of a track in pixels and displays it in the reaper console. If several tracks is selected it displays an error message and do not get called.&lt;/p&gt;&#xA;&lt;h3 id=&#34;jl_toggle-envelope-height-on-selected-envelope-lane&#34;&gt;JL_toggle envelope height on selected envelope lane&lt;/h3&gt;&#xA;&lt;p&gt;This script requires the SWS extension installed.&#xA;Script functionality:&#xA;Toggles between two different heights for the selected envelope. It reads the individual selected envelope height and toggles to the other one. If height does not match neither of the configurated envelope heights the bool default_envelope_a determines if set to a(true) or b(false). Thanks to Edgemeal for posting code snippets of reaper.BR_EnvAlloc on the Cockos forum.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
