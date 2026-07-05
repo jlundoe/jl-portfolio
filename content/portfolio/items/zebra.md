@@ -7,7 +7,7 @@ type: vimeo
 videopath: 859905467
 thumbnail:
 thumbnail_alt: Žebra-thumbnail
-order: 7
+order: 8
 btn_text:
 btn_link:
 areas_title: Focus Areas

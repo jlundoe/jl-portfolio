@@ -7,7 +7,7 @@ type: video
 videopath: https://content.jakoblundoe.com/pd-sampli_video_demo.mp4
 thumbnail: /img/thumbnails/samplii-thumbnail.webp
 thumbnail_alt:
-order: 8
+order: 7
 btn_text:
 btn_link:
 areas_title: Focus Areas
