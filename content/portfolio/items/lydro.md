@@ -1,7 +1,7 @@
 ---
 title: Lydro
-subHeader: An Interactive 3D Soundscape Experience
-tagTitle: Master Thesis Project
+subHeader: An interactive 3D soundscape experience
+tagTitle: Master thesis project
 year:
 type: card
 videoPath:
@@ -15,7 +15,7 @@ focus_areas:
 - "App Development and Programming"
 - "Soundscape Design and Composition"
 - "Reaper / Unity Game Engine / Fmod Studio / C#"
-order: 3
+order: 2
 ---
 Lydro is an XR-based spatialized sound experience, which utilizes the 3dof head tracking technology available in modern headphone devices. It is a fully interactive experience, where the user can explore the environment and interact with the soundscape.
 

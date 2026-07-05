@@ -56,7 +56,8 @@
                         </a>
                         {{ end }}
                         <!-- overlay text wrapper -->
-                        {{ partial "video-overlay" (dict "itemTitle" $itemTitle "subHeader" $subHeader "tagTitle" $tagTitle "year" $year) }}
+                        <!-- {{ partial "video-overlay" (dict "itemTitle" $itemTitle "subHeader" $subHeader "tagTitle" $tagTitle "year" $year) }} -->
+                        {{ partial "video-overlay" (dict "itemTitle" $itemTitle "subHeader" $subHeader) }}
                     </div>
 
                     <!-- Text content -->

@@ -1,7 +1,7 @@
 ---
 title: Audio Logo Design
-subHeader: Recreating Prism Entertainments Sound Logo
-tagTitle: Sound Redesign
+# subHeader: Recreating Prism Entertainments sound logo
+tagTitle: Sound redesign
 year:
 type: video
 videopath: https://content.jakoblundoe.com/Sound-Redesign-PrismEntertainment-v2.mp4
@@ -16,4 +16,4 @@ focus_areas:
 - "Sound Effects Design"
 - "Sound Processing"
 ---
-My take on re-creating Prism Entertainment’s sound logo. Designed with soft synths and processing, aiming to match the original as closely as possible.
+Creating a 1-to-1 replica of a vintage sound logo for practice. Designed with soft synths and processing, aiming to match the original as closely as possible.
